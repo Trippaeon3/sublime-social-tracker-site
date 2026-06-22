@@ -1,0 +1,1837 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Social Media Growth Dashboard</title>
+  <style>
+    :root {
+      color-scheme: dark light;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --bg-0: #07111f;
+      --bg-1: #0b1830;
+      --bg-2: #231436;
+      --ink: #f5f8ff;
+      --ink-soft: rgba(246, 250, 255, .78);
+      --ink-muted: rgba(229, 239, 255, .58);
+      --line-soft: rgba(255, 255, 255, .14);
+      --line-strong: rgba(255, 255, 255, .24);
+      --solid-card: rgba(9, 17, 32, .82);
+      --solid-card-2: rgba(14, 25, 46, .78);
+      --accent-cyan: #55e9ff;
+      --accent-pink: #ff63d8;
+      --accent-violet: #9b79ff;
+      --accent-green: #71f0b0;
+      --accent-yellow: #ffd66e;
+      --danger: #ff8b8b;
+      --glass-blur: 28px;
+      --glass-saturation: 1.82;
+      --glass-opacity: .26;
+      --glass-border-brightness: .72;
+      --glass-shadow-depth: 38px;
+      --glass-radius: 32px;
+      --glass-tint: 210 90% 98%;
+      --glass-highlight-x: 18%;
+      --glass-highlight-y: 14%;
+      --glass-highlight-alpha: .68;
+      --focus-ring: 0 0 0 3px rgba(85, 233, 255, .72), 0 0 0 7px rgba(85, 233, 255, .18);
+      --page-max: 1240px;
+      --nav-height: 78px;
+      --radius-lg: 30px;
+      --radius-xl: 42px;
+      --radius-2xl: 56px;
+    }
+    * { box-sizing: border-box; }
+    html { min-height: 100%; background: var(--bg-0); scroll-behavior: smooth; }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      color: var(--ink);
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 8% 10%, rgba(85, 233, 255, .42), transparent 28rem),
+        radial-gradient(circle at 88% 8%, rgba(255, 99, 216, .32), transparent 30rem),
+        radial-gradient(circle at 72% 58%, rgba(155, 121, 255, .24), transparent 34rem),
+        linear-gradient(135deg, var(--bg-0), var(--bg-1) 48%, var(--bg-2));
+      overflow-x: hidden;
+    }
+    body::before,
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      z-index: -3;
+      pointer-events: none;
+    }
+    body::before {
+      background:
+        linear-gradient(115deg, rgba(255,255,255,.075) 0 1px, transparent 1px 128px),
+        linear-gradient(25deg, rgba(255,255,255,.055) 0 1px, transparent 1px 146px),
+        radial-gradient(circle at 20% 72%, rgba(113, 240, 176, .20), transparent 24rem),
+        radial-gradient(circle at 97% 72%, rgba(255, 214, 110, .16), transparent 22rem);
+      mask-image: linear-gradient(to bottom, #000 0%, #000 72%, transparent 100%);
+    }
+    body::after {
+      background:
+        radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.18), transparent 48%),
+        radial-gradient(circle at var(--scene-x, 52%) var(--scene-y, 18%), rgba(255,255,255,.13), transparent 18rem);
+      mix-blend-mode: screen;
+      opacity: .55;
+    }
+    a { color: inherit; text-decoration: none; }
+    a:hover { text-decoration: none; }
+    button, input { font: inherit; }
+    button {
+      color: inherit;
+      border: 0;
+      background: transparent;
+      padding: 0;
+      text-align: inherit;
+      cursor: pointer;
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    .skip-link {
+      position: fixed;
+      left: 18px;
+      top: 14px;
+      z-index: 50;
+      transform: translateY(-150%);
+      padding: 10px 14px;
+      border-radius: 999px;
+      background: #fff;
+      color: #07111f;
+      font-weight: 800;
+    }
+    .skip-link:focus { transform: translateY(0); outline: none; box-shadow: var(--focus-ring); }
+    .filter-defs { position: absolute; width: 0; height: 0; overflow: hidden; }
+    .ambient-shape {
+      position: fixed;
+      z-index: -2;
+      pointer-events: none;
+      border-radius: 999px;
+      filter: blur(1px);
+      opacity: .76;
+      transform: translateZ(0);
+    }
+    .ambient-shape.one {
+      width: 640px;
+      height: 640px;
+      left: -190px;
+      top: 240px;
+      background: radial-gradient(circle, rgba(24, 119, 242, .28), transparent 64%);
+    }
+    .ambient-shape.two {
+      width: 560px;
+      height: 560px;
+      right: -160px;
+      top: 540px;
+      background: radial-gradient(circle, rgba(255, 99, 216, .25), transparent 66%);
+    }
+    .ambient-shape.three {
+      width: 420px;
+      height: 420px;
+      left: 38%;
+      top: 760px;
+      background: radial-gradient(circle, rgba(85, 233, 255, .18), transparent 70%);
+    }
+	    .liquid {
+	      --local-opacity: var(--glass-opacity);
+	      --local-blur: var(--glass-blur);
+	      --local-saturation: var(--glass-saturation);
+	      --glass-x-num: .18;
+	      --glass-y-num: .14;
+	      --motion-scale: 1;
+	      --lift: 0px;
+	      --tilt-x: 0deg;
+	      --tilt-y: 0deg;
+	      position: relative;
+	      isolation: isolate;
+	      border: 0;
+	      border-radius: var(--glass-radius);
+      background:
+        linear-gradient(135deg, hsl(var(--glass-tint) / calc(var(--local-opacity) + .13)), hsl(var(--glass-tint) / var(--local-opacity)) 42%, rgba(255,255,255,.09)),
+        radial-gradient(circle at var(--glass-highlight-x) var(--glass-highlight-y), rgba(255,255,255,.48), transparent 28%),
+        linear-gradient(180deg, rgba(255,255,255,.11), rgba(255,255,255,.025));
+      -webkit-backdrop-filter: blur(var(--local-blur)) saturate(var(--local-saturation)) contrast(1.03);
+      backdrop-filter: blur(var(--local-blur)) saturate(var(--local-saturation)) contrast(1.03);
+      box-shadow:
+        0 calc(var(--glass-shadow-depth) * .62) var(--glass-shadow-depth) rgba(0,0,0,.34),
+	        inset 0 1px 0 rgba(255,255,255,.62),
+	        inset 0 -1px 0 rgba(255,255,255,.16),
+	        inset 0 0 0 1px rgba(255,255,255,.10);
+	      overflow: hidden;
+	      transform: perspective(960px) rotateX(var(--tilt-y)) rotateY(var(--tilt-x)) translateY(var(--lift)) scale(var(--motion-scale)) translateZ(0);
+	      transform-style: preserve-3d;
+	      transition: transform .28s cubic-bezier(.2,.8,.2,1), box-shadow .28s ease, filter .28s ease, background .28s ease;
+	      will-change: transform;
+	    }
+    .liquid::before,
+    .liquid::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      border-radius: inherit;
+    }
+    .liquid::before {
+      z-index: 0;
+      background:
+        radial-gradient(circle at var(--glass-highlight-x) var(--glass-highlight-y), rgba(255,255,255,var(--glass-highlight-alpha)), transparent 16%),
+        radial-gradient(circle at calc(var(--glass-highlight-x) + 38%) calc(var(--glass-highlight-y) + 42%), rgba(85,233,255,.20), transparent 22%),
+        linear-gradient(115deg, transparent 0%, rgba(255,255,255,.19) 38%, transparent 55%);
+	      filter: url(#liquid-ripple);
+	      mix-blend-mode: screen;
+	      opacity: .78;
+	      transform: translate3d(calc((var(--glass-x-num) - .5) * 8px), calc((var(--glass-y-num) - .5) * 8px), 0);
+	      transition: transform .28s cubic-bezier(.2,.8,.2,1), opacity .28s ease;
+	    }
+    .liquid::after {
+      z-index: 1;
+      padding: 1px;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,calc(var(--glass-border-brightness) * .92)), rgba(255,255,255,.18) 26%, rgba(85,233,255,.35) 52%, rgba(255,99,216,.28) 78%, rgba(255,255,255,calc(var(--glass-border-brightness) * .52)));
+      -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+      opacity: .9;
+    }
+    .liquid > * { position: relative; z-index: 2; }
+    .liquid.stained {
+      --glass-tint: 196 100% 83%;
+      --glass-opacity: .34;
+      box-shadow:
+        0 28px 60px rgba(39, 201, 255, .20),
+        0 20px 52px rgba(0,0,0,.34),
+        inset 0 1px 0 rgba(255,255,255,.66),
+        inset 0 -1px 0 rgba(255,255,255,.14);
+    }
+    .liquid.clear { --glass-opacity: .16; --glass-border-brightness: .82; }
+	    .liquid-control {
+	      color: var(--ink);
+	      cursor: pointer;
+	    }
+	    .liquid-control:hover {
+	      --lift: -2px;
+	      --motion-scale: 1.018;
+	      filter: brightness(1.09) saturate(1.08);
+	      --glass-opacity: .34;
+	      --glass-highlight-alpha: .78;
+	    }
+	    .liquid-control:active { --lift: 0px; --motion-scale: .985; filter: brightness(1.02); }
+    .liquid-control:focus-visible,
+    .search-pill:focus-within,
+    .segmented:focus-within {
+      outline: none;
+      box-shadow: var(--focus-ring), 0 28px 60px rgba(0,0,0,.32), inset 0 1px 0 rgba(255,255,255,.62);
+    }
+    .shell {
+      max-width: var(--page-max);
+      margin: 0 auto;
+      padding: 22px 24px 88px;
+    }
+    .top-nav-wrap {
+      position: sticky;
+      top: 18px;
+      z-index: 30;
+      max-width: var(--page-max);
+      margin: 0 auto;
+      padding: 0 24px;
+    }
+    .top-nav {
+      min-height: var(--nav-height);
+      padding: 12px 14px;
+      border-radius: var(--radius-xl);
+      display: grid;
+	      grid-template-columns: auto minmax(240px, 1fr) auto;
+      gap: 14px;
+      align-items: center;
+    }
+    .brand {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      min-width: max-content;
+      padding: 5px 8px 5px 5px;
+      border-radius: 22px;
+      font-weight: 850;
+      letter-spacing: -.03em;
+    }
+    .brand-mark {
+      width: 42px;
+      height: 42px;
+      display: grid;
+      place-items: center;
+      border-radius: 16px;
+      color: #06101e;
+      font-weight: 950;
+      background: radial-gradient(circle at 25% 20%, #fff, rgba(255,255,255,.62) 24%, transparent 40%), linear-gradient(135deg, var(--accent-cyan), var(--accent-pink));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.68), 0 12px 24px rgba(85,233,255,.24);
+    }
+    .brand strong {
+      display: block;
+      color: var(--ink);
+      font-size: 15px;
+      line-height: 1;
+      letter-spacing: -.025em;
+    }
+    .brand small {
+      display: block;
+      margin-top: 2px;
+      color: var(--ink-muted);
+	      font-size: 12px;
+      letter-spacing: .02em;
+      font-weight: 700;
+    }
+    .nav-actions {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: flex-end;
+    }
+    .search-pill {
+      --glass-radius: 999px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 280px;
+      max-width: 460px;
+      width: min(36vw, 460px);
+      padding: 12px 16px;
+    }
+    .search-pill svg { flex: 0 0 auto; opacity: .92; }
+	    .search-pill input {
+	      width: 100%;
+	      min-width: 0;
+	      color: var(--ink);
+	      background: transparent;
+	      border: 0;
+	      outline: none;
+	    }
+	    .section-search {
+	      min-width: 240px;
+	      width: min(34vw, 390px);
+	    }
+	    .nav-search {
+	      justify-self: stretch;
+	      width: 100%;
+	      max-width: none;
+	      min-width: 220px;
+	    }
+    .search-pill input::placeholder { color: rgba(246, 250, 255, .62); }
+    .icon-btn {
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border-radius: 18px;
+      padding: 0;
+    }
+	    .primary-action,
+	    .top-status {
+	      min-height: 48px;
+	      padding: 0 17px;
+	      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      border-radius: 999px;
+      font-weight: 850;
+	      letter-spacing: -.015em;
+	      white-space: nowrap;
+	    }
+	    .top-status { color: var(--ink); }
+    .app-layout {
+      display: grid;
+      grid-template-columns: 84px minmax(0, 1fr);
+      gap: 18px;
+      align-items: start;
+      margin-top: 24px;
+    }
+    .rail {
+      position: sticky;
+      top: 118px;
+      min-height: 560px;
+      padding: 13px 10px;
+      border-radius: var(--radius-xl);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+    }
+    .rail .icon-btn { width: 56px; height: 56px; border-radius: 22px; }
+    .rail-divider { width: 30px; height: 1px; margin: 6px 0; background: rgba(255,255,255,.20); }
+    .main-content { display: grid; gap: 18px; min-width: 0; }
+    .hero {
+      position: relative;
+	      min-height: 300px;
+      border-radius: var(--radius-2xl);
+	      padding: 32px 34px;
+      overflow: hidden;
+      background:
+        radial-gradient(circle at 16% 12%, rgba(85,233,255,.43), transparent 20rem),
+        radial-gradient(circle at 68% 0%, rgba(255,99,216,.30), transparent 22rem),
+        radial-gradient(circle at 88% 88%, rgba(113,240,176,.22), transparent 20rem),
+        linear-gradient(140deg, rgba(13,24,45,.92), rgba(21,22,49,.76));
+      border: 1px solid rgba(255,255,255,.16);
+      box-shadow: 0 34px 96px rgba(0,0,0,.34), inset 0 1px 0 rgba(255,255,255,.12);
+    }
+    .hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(115deg, rgba(255,255,255,.15), transparent 26%, transparent 70%, rgba(255,255,255,.08)),
+        repeating-radial-gradient(circle at 82% 18%, rgba(255,255,255,.12) 0 1px, transparent 1px 16px);
+      mask-image: linear-gradient(90deg, #000, transparent 70%);
+      opacity: .58;
+      pointer-events: none;
+    }
+    .hero > * { position: relative; z-index: 1; }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 310px;
+      gap: 22px;
+      align-items: end;
+    }
+    .eyebrow {
+      width: fit-content;
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      margin-bottom: 18px;
+      padding: 8px 13px;
+      border-radius: 999px;
+      color: rgba(245,248,255,.86);
+      background: rgba(255,255,255,.10);
+      border: 1px solid rgba(255,255,255,.16);
+      font-size: 12px;
+      font-weight: 850;
+      letter-spacing: .075em;
+	      text-transform: none;
+    }
+    .eyebrow::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: var(--accent-green);
+      box-shadow: 0 0 18px rgba(113,240,176,.9);
+    }
+    h1 {
+      margin: 0;
+      max-width: 750px;
+      color: #fff;
+	      font-size: clamp(44px, 5vw, 68px);
+	      line-height: .96;
+	      letter-spacing: -.065em;
+      text-wrap: balance;
+    }
+    .hero-copy {
+      max-width: 680px;
+      margin: 20px 0 0;
+      color: var(--ink-soft);
+      font-size: 17px;
+      line-height: 1.52;
+    }
+    .hero-controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 26px;
+    }
+    .range-status {
+      --glass-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 6px;
+      padding: 5px;
+      width: fit-content;
+      color: rgba(245,248,255,.82);
+    }
+    .range-current,
+    .range-chip {
+      min-height: 34px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 850;
+      white-space: nowrap;
+    }
+    .range-current {
+      color: #06101e;
+      background: rgba(255,255,255,.90);
+      box-shadow: 0 7px 18px rgba(255,255,255,.12), inset 0 1px 0 #fff;
+    }
+    .range-chip {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.10);
+    }
+    .range-chip.disabled {
+      color: rgba(245,248,255,.62);
+      opacity: .86;
+    }
+    .segmented {
+      --glass-radius: 999px;
+      display: inline-grid;
+      grid-auto-flow: column;
+      gap: 4px;
+      padding: 5px;
+      width: fit-content;
+    }
+    .segment {
+      appearance: none;
+      border: 0;
+      border-radius: 999px;
+      padding: 10px 13px;
+      color: rgba(245,248,255,.78);
+      background: transparent;
+      font-weight: 800;
+      cursor: pointer;
+      transition: .24s ease;
+    }
+    .segment[aria-pressed="true"],
+    .segment:hover {
+      color: #06101e;
+      background: rgba(255,255,255,.88);
+      box-shadow: 0 7px 18px rgba(255,255,255,.12), inset 0 1px 0 #fff;
+    }
+    .hero-orb {
+      min-height: 245px;
+      padding: 18px;
+      border-radius: var(--radius-xl);
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      gap: 14px;
+    }
+    .orb-chart {
+      position: relative;
+      min-height: 130px;
+      display: grid;
+      place-items: center;
+      border-radius: 34px;
+      background:
+        radial-gradient(circle at 50% 48%, rgba(255,255,255,.28), transparent 34%),
+        conic-gradient(from 230deg, var(--accent-cyan), var(--accent-pink), var(--accent-yellow), var(--accent-green), var(--accent-cyan));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.55), 0 18px 48px rgba(0,0,0,.24);
+      overflow: hidden;
+    }
+    .orb-chart::before {
+      content: "";
+      position: absolute;
+      inset: 12px;
+      border-radius: 28px;
+      background: rgba(5, 12, 24, .76);
+      -webkit-backdrop-filter: blur(10px) saturate(1.5);
+      backdrop-filter: blur(10px) saturate(1.5);
+    }
+    .orb-chart strong {
+      position: relative;
+      z-index: 1;
+      display: block;
+      font-size: 42px;
+      letter-spacing: -.055em;
+      text-align: center;
+    }
+    .orb-chart span {
+      position: relative;
+      z-index: 1;
+      display: block;
+      color: rgba(245,248,255,.70);
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      text-align: center;
+    }
+    .orb-meta { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+    .mini-stat {
+      padding: 12px;
+      border-radius: 22px;
+      background: rgba(6, 12, 24, .42);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .mini-stat b { display: block; font-size: 18px; letter-spacing: -.04em; }
+    .mini-stat span { display: block; margin-top: 2px; color: var(--ink-muted); font-size: 11px; }
+	    .tracking-notice { margin-top: -2px; }
+	    .tracking-card {
+	      min-height: 72px;
+	      padding: 16px 18px;
+	      border-radius: 26px;
+	      display: flex;
+	      align-items: center;
+	      justify-content: space-between;
+	      gap: 14px;
+	      background: rgba(8, 15, 28, .64);
+	      border: 1px solid rgba(255,255,255,.12);
+	      box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+	    }
+	    .tracking-card strong {
+	      color: var(--ink);
+	      font-size: 15px;
+	      letter-spacing: -.02em;
+	    }
+	    .tracking-card span {
+	      color: var(--ink-muted);
+	      font-size: 13px;
+	      line-height: 1.45;
+	      text-align: right;
+	    }
+	    .readiness-grid {
+	      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 12px;
+    }
+    .readiness-item {
+      min-height: 104px;
+      padding: 15px;
+      border-radius: 28px;
+      background:
+        linear-gradient(145deg, rgba(255,255,255,.085), rgba(255,255,255,.032)),
+        rgba(8, 15, 28, .62);
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.08);
+    }
+    .readiness-label {
+      color: var(--ink-muted);
+	      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .075em;
+      text-transform: uppercase;
+    }
+    .readiness-value {
+      margin-top: 8px;
+      color: var(--ink);
+      font-size: 26px;
+      line-height: 1;
+      font-weight: 950;
+      letter-spacing: -.055em;
+    }
+    .readiness-note {
+      margin-top: 8px;
+      color: var(--ink-muted);
+      font-size: 12px;
+      line-height: 1.35;
+    }
+    .section-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 18px;
+      margin: 8px 2px 0;
+    }
+    .section-head h2,
+    .panel h2 {
+      margin: 0;
+      color: var(--ink);
+      font-size: 18px;
+      letter-spacing: -.035em;
+    }
+    .section-head p {
+      margin: 7px 0 0;
+      color: var(--ink-muted);
+      line-height: 1.45;
+      font-size: 14px;
+    }
+    .toolbar {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: flex-end;
+      flex-wrap: wrap;
+    }
+    .tool-chip {
+      min-height: 42px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 0 13px;
+      border-radius: 999px;
+      color: var(--ink);
+      font-size: 13px;
+      font-weight: 800;
+    }
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(140px, 1fr));
+      gap: 14px;
+    }
+    .content-card {
+      position: relative;
+      min-height: 132px;
+      padding: 19px;
+      border-radius: var(--radius-lg);
+      background:
+        linear-gradient(145deg, rgba(255,255,255,.095), rgba(255,255,255,.035)),
+        linear-gradient(180deg, var(--solid-card), var(--solid-card-2));
+      border: 1px solid rgba(255,255,255,.14);
+      box-shadow: 0 18px 50px rgba(0,0,0,.24), inset 0 1px 0 rgba(255,255,255,.10);
+      overflow: hidden;
+    }
+	    .content-card::before { display: none; }
+    .content-card.green::before { background: linear-gradient(90deg, var(--accent-green), var(--accent-cyan)); }
+    .content-card.yellow::before { background: linear-gradient(90deg, var(--accent-yellow), var(--accent-pink)); }
+    .card-label {
+      color: var(--ink-muted);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .085em;
+      text-transform: uppercase;
+    }
+    .card-value {
+      margin-top: 13px;
+      color: #fff;
+      font-size: 34px;
+      line-height: .95;
+      letter-spacing: -.06em;
+      font-weight: 900;
+    }
+    .card-value.good { color: var(--accent-green); text-shadow: 0 0 18px rgba(113,240,176,.26); }
+    .card-value.bad { color: var(--danger); }
+    .card-note {
+      margin-top: 10px;
+      color: rgba(229, 239, 255, .62);
+      font-size: 12px;
+      line-height: 1.4;
+    }
+    .panel-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.28fr) minmax(330px, .72fr);
+      gap: 16px;
+      align-items: start;
+    }
+    .panel {
+      position: relative;
+      padding: 20px;
+      border-radius: var(--radius-xl);
+	      background:
+	        linear-gradient(145deg, rgba(255,255,255,.055), rgba(255,255,255,.024)),
+	        rgba(8, 15, 28, .82);
+      border: 1px solid rgba(255,255,255,.13);
+      box-shadow: 0 22px 62px rgba(0,0,0,.24), inset 0 1px 0 rgba(255,255,255,.09);
+      overflow: hidden;
+    }
+    .panel.light {
+	      background:
+	        linear-gradient(145deg, rgba(255,255,255,.085), rgba(255,255,255,.038)),
+	        rgba(14, 24, 44, .76);
+    }
+    .panel-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin-bottom: 16px;
+    }
+    .panel-kicker {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      margin-bottom: 6px;
+      color: var(--ink-muted);
+      font-size: 11px;
+      font-weight: 900;
+      letter-spacing: .075em;
+      text-transform: uppercase;
+    }
+    .panel-kicker::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 999px;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-pink));
+      box-shadow: 0 0 14px rgba(85,233,255,.42);
+    }
+    .chart-shell {
+      border-radius: 30px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.025)),
+        rgba(2, 8, 18, .36);
+      border: 1px solid rgba(255,255,255,.10);
+      overflow: hidden;
+    }
+    .chart-shell svg { display: block; width: 100%; height: auto; border: 0; background: transparent; }
+    .axis { stroke: rgba(255,255,255,.14); stroke-width: 1; }
+    .chart-text { fill: rgba(229,239,255,.64); font-size: 11px; }
+    .chart-shell path { filter: drop-shadow(0 0 10px rgba(85,233,255,.35)); }
+    .chart-note {
+      margin-top: 12px;
+      padding: 12px 14px;
+      border-radius: 22px;
+      color: var(--ink-muted);
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.10);
+      line-height: 1.45;
+      font-size: 12px;
+    }
+    .chart-note strong { color: var(--ink); }
+    .chart-note ul {
+      margin: 8px 0 0;
+      padding-left: 18px;
+    }
+    .chart-note li + li { margin-top: 4px; }
+    .legend {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+      color: var(--ink-muted);
+      font-size: 12px;
+      font-weight: 750;
+    }
+    .legend span {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      padding: 7px 10px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.10);
+    }
+    .swatch {
+      width: 18px;
+      height: 3px;
+      border-radius: 999px;
+      background: currentColor;
+      box-shadow: 0 0 12px currentColor;
+    }
+    .recommendations {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .recommendations li {
+      padding: 14px;
+      border-radius: 24px;
+      color: var(--ink-soft);
+      line-height: 1.45;
+      background: rgba(255,255,255,.065);
+      border: 1px solid rgba(255,255,255,.10);
+    }
+	    .recommendations strong { color: #fff; }
+	    .more-stack { display: grid; gap: 14px; }
+	    .detail-panel { padding: 0; }
+	    .detail-panel > summary {
+	      min-height: 62px;
+	      padding: 0 20px;
+	      display: flex;
+	      align-items: center;
+	      gap: 10px;
+	      color: var(--ink);
+	      font-size: 16px;
+	      font-weight: 850;
+	      letter-spacing: -.025em;
+	      cursor: pointer;
+	      list-style: none;
+	    }
+	    .detail-panel > summary::-webkit-details-marker { display: none; }
+	    .detail-panel > summary::after {
+	      content: "+";
+	      margin-left: auto;
+	      color: var(--ink-muted);
+	      font-size: 22px;
+	      line-height: 1;
+	      transition: transform .2s ease;
+	    }
+	    .detail-panel[open] > summary::after { transform: rotate(45deg); }
+	    .detail-panel > .table-scroll,
+	    .detail-panel > .chart-shell,
+	    .detail-panel > .legend,
+	    .detail-panel > .chart-note,
+	    .detail-panel > p {
+	      margin: 0 20px 20px;
+	    }
+	    .detail-panel .panel-header { margin: 0 20px 16px; }
+	    .detail-actions {
+	      display: flex;
+	      justify-content: flex-end;
+	      padding: 0 20px 14px;
+	    }
+	    .platform-category-list {
+	      display: grid;
+	      gap: 16px;
+	    }
+	    .platform-category-group {
+	      display: grid;
+	      gap: 10px;
+	    }
+	    .platform-category-head {
+	      display: grid;
+	      grid-template-columns: 1fr auto;
+	      gap: 14px;
+	      align-items: end;
+	      padding: 0 2px;
+	    }
+	    .platform-category-title {
+	      color: var(--ink);
+	      font-size: 13px;
+	      font-weight: 900;
+	      letter-spacing: .06em;
+	      text-transform: uppercase;
+	    }
+	    .platform-category-note {
+	      margin-top: 3px;
+	      color: var(--ink-muted);
+	      font-size: 12px;
+	      line-height: 1.35;
+	    }
+	    .platform-category-stat {
+	      text-align: right;
+	      white-space: nowrap;
+	    }
+	    .platform-category-stat strong {
+	      display: block;
+	      color: var(--ink);
+	      font-size: 18px;
+	      line-height: 1;
+	    }
+	    .platform-category-rows { display: grid; gap: 10px; }
+	    .platform-list { display: grid; gap: 10px; }
+    .platform-row {
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: 12px;
+      align-items: center;
+      padding: 12px;
+      border-radius: 24px;
+      background: rgba(255,255,255,.055);
+      border: 1px solid rgba(255,255,255,.10);
+    }
+    .platform-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 15px;
+      display: grid;
+      place-items: center;
+      color: #07111f;
+      font-weight: 950;
+      background: linear-gradient(135deg, var(--accent-cyan), var(--accent-pink));
+      box-shadow: inset 0 1px 0 rgba(255,255,255,.55);
+    }
+    .platform-name { font-weight: 850; letter-spacing: -.02em; }
+    .platform-handle { color: var(--ink-muted); font-size: 12px; margin-top: 2px; overflow-wrap: anywhere; }
+    .platform-stat { text-align: right; font-weight: 900; }
+    .platform-delta { color: var(--accent-green); font-size: 12px; margin-top: 2px; }
+    .platform-delta.negative { color: var(--danger); }
+    .platform-delta.neutral { color: var(--ink-muted); }
+    .data-table {
+      width: 100%;
+      min-width: 720px;
+      border-collapse: separate;
+      border-spacing: 0;
+      color: rgba(246,250,255,.86);
+      font-size: 13px;
+    }
+    .data-table th,
+    .data-table td {
+      padding: 12px 10px;
+      border-bottom: 1px solid rgba(255,255,255,.09);
+      vertical-align: middle;
+      text-align: right;
+      white-space: nowrap;
+    }
+    .data-table th:first-child,
+    .data-table td:first-child,
+    .data-table th:nth-child(2),
+    .data-table td:nth-child(2),
+    .data-table th:nth-child(3),
+    .data-table td:nth-child(3) { text-align: left; }
+    .quality-table th,
+    .quality-table td { text-align: left; white-space: normal; }
+    .quality-table { min-width: 0; }
+    .data-table th {
+      color: rgba(229,239,255,.55);
+      font-size: 10px;
+      font-weight: 900;
+      letter-spacing: .07em;
+      text-transform: uppercase;
+      background: rgba(255,255,255,.035);
+    }
+    .data-table tbody tr:hover td { background: rgba(255,255,255,.045); }
+    .data-table tr:last-child td { border-bottom: 0; }
+    .status-ok { color: var(--accent-green); font-weight: 900; }
+    .status-warning { color: var(--accent-yellow); font-weight: 900; }
+    .status-error, .status-bad { color: var(--danger); font-weight: 900; }
+    .table-scroll {
+      overflow-x: auto;
+      border-radius: 24px;
+      border: 1px solid rgba(255,255,255,.09);
+    }
+    .insight-strip {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 14px;
+    }
+    .insight {
+      min-height: 158px;
+      padding: 20px;
+      border-radius: var(--radius-xl);
+      background:
+        linear-gradient(145deg, rgba(255,255,255,.10), rgba(255,255,255,.035)),
+        rgba(7, 14, 27, .82);
+      border: 1px solid rgba(255,255,255,.12);
+      box-shadow: 0 20px 56px rgba(0,0,0,.24), inset 0 1px 0 rgba(255,255,255,.08);
+    }
+    .insight b { display: block; font-size: 15px; letter-spacing: -.025em; margin-bottom: 8px; }
+    .insight p { margin: 0; color: var(--ink-muted); line-height: 1.48; font-size: 13px; }
+    .method { color: var(--ink-soft); line-height: 1.5; }
+    .method p { margin-top: 0; }
+    .source-list a { color: var(--accent-cyan); overflow-wrap: anywhere; }
+    .source-list { min-width: 980px; }
+    .fab {
+      --glass-radius: 28px;
+      position: fixed;
+      right: max(24px, calc((100vw - var(--page-max)) / 2 + 24px));
+      bottom: 28px;
+      z-index: 35;
+      width: 64px;
+      height: 64px;
+      display: none;
+      place-items: center;
+      border-radius: 28px;
+    }
+    .bottom-tabs {
+      display: none;
+      position: fixed;
+      left: 12px;
+      right: 12px;
+      bottom: 12px;
+      z-index: 40;
+      min-height: 72px;
+      padding: 8px;
+      border-radius: 34px;
+	      grid-template-columns: repeat(4, 1fr);
+      gap: 6px;
+      transition: transform .24s ease, opacity .24s ease;
+    }
+    .tab-item {
+      border: 0;
+      background: transparent;
+      color: rgba(246,250,255,.68);
+      border-radius: 24px;
+      display: grid;
+      place-items: center;
+      gap: 2px;
+      cursor: pointer;
+      transition: .24s ease;
+      font-weight: 800;
+      font-size: 10px;
+    }
+    .tab-item svg { width: 22px; height: 22px; }
+    .tab-item[aria-current="page"],
+    .tab-item:hover { color: #07111f; background: rgba(255,255,255,.88); }
+    .tab-item:focus-visible { outline: none; box-shadow: var(--focus-ring); }
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0,0,0,0);
+      white-space: nowrap;
+      border: 0;
+    }
+    .search-filter-hidden { display: none !important; }
+    @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))) {
+      .liquid {
+        background: rgba(11, 20, 38, .96);
+        border: 1px solid rgba(255,255,255,.24);
+        box-shadow: 0 18px 42px rgba(0,0,0,.38), inset 0 1px 0 rgba(255,255,255,.22);
+      }
+      .liquid::before { opacity: .22; filter: none; }
+      .liquid::after { display: none; }
+    }
+    @media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+      :root {
+        --glass-opacity: .92;
+        --glass-blur: 0px;
+        --glass-saturation: 1;
+        --ink-muted: rgba(246,250,255,.76);
+      }
+      .liquid,
+      .panel,
+      .content-card,
+      .insight {
+        background: #0b1426 !important;
+        border-color: rgba(255,255,255,.34) !important;
+      }
+      .liquid::before { display: none; }
+    }
+	    @media (prefers-reduced-motion: reduce) {
+	      *, *::before, *::after {
+	        animation-duration: .001ms !important;
+	        animation-iteration-count: 1 !important;
+	        scroll-behavior: auto !important;
+	        transition-duration: .001ms !important;
+	      }
+	      .liquid {
+	        --tilt-x: 0deg !important;
+	        --tilt-y: 0deg !important;
+	        --motion-scale: 1 !important;
+	        --lift: 0px !important;
+	        transform: translateZ(0) !important;
+	      }
+	      .liquid::before { filter: none; }
+	    }
+    @media (prefers-color-scheme: light) {
+      :root {
+        color-scheme: light;
+        --bg-0: #f8fbff;
+        --bg-1: #eef6ff;
+        --bg-2: #fff7fc;
+        --ink: #07111f;
+        --ink-soft: rgba(13, 25, 45, .76);
+        --ink-muted: rgba(37, 51, 74, .62);
+        --solid-card: rgba(255,255,255,.94);
+        --solid-card-2: rgba(248,251,255,.86);
+        --line-soft: rgba(15,23,42,.12);
+        --line-strong: rgba(15,23,42,.18);
+        --glass-opacity: .62;
+        --glass-border-brightness: .94;
+        --glass-shadow-depth: 30px;
+        --focus-ring: 0 0 0 3px rgba(49, 94, 234, .20), 0 0 0 7px rgba(255,255,255,.90);
+      }
+      body {
+        background:
+          radial-gradient(circle at 8% 10%, rgba(85, 233, 255, .28), transparent 28rem),
+          radial-gradient(circle at 88% 8%, rgba(255, 99, 216, .18), transparent 30rem),
+          radial-gradient(circle at 72% 58%, rgba(155, 121, 255, .12), transparent 34rem),
+          linear-gradient(135deg, var(--bg-0), var(--bg-1) 48%, var(--bg-2));
+      }
+      body::before {
+        background:
+          linear-gradient(115deg, rgba(12,23,44,.055) 0 1px, transparent 1px 128px),
+          linear-gradient(25deg, rgba(12,23,44,.042) 0 1px, transparent 1px 146px),
+          radial-gradient(circle at 20% 72%, rgba(113, 240, 176, .13), transparent 24rem),
+          radial-gradient(circle at 97% 72%, rgba(255, 214, 110, .12), transparent 22rem);
+      }
+      body::after {
+        background:
+          radial-gradient(ellipse at 50% 0%, rgba(255,255,255,.65), transparent 48%),
+          radial-gradient(circle at var(--scene-x, 52%) var(--scene-y, 18%), rgba(255,255,255,.50), transparent 18rem);
+        opacity: .68;
+      }
+      .ambient-shape.one { background: radial-gradient(circle, rgba(85, 233, 255, .22), transparent 66%); }
+      .ambient-shape.two { background: radial-gradient(circle, rgba(255, 99, 216, .16), transparent 68%); }
+      .ambient-shape.three { background: radial-gradient(circle, rgba(155, 121, 255, .12), transparent 72%); }
+      .liquid {
+        background:
+          linear-gradient(135deg, rgba(255,255,255,.94), rgba(244,249,255,.74) 46%, rgba(255,255,255,.82)),
+          radial-gradient(circle at var(--glass-highlight-x) var(--glass-highlight-y), rgba(255,255,255,.80), transparent 32%),
+          linear-gradient(180deg, rgba(255,255,255,.58), rgba(255,255,255,.18));
+        box-shadow:
+          0 calc(var(--glass-shadow-depth) * .62) var(--glass-shadow-depth) rgba(54, 70, 98, .16),
+          inset 0 1px 0 rgba(255,255,255,.90),
+          inset 0 -1px 0 rgba(15,23,42,.06),
+          inset 0 0 0 1px rgba(255,255,255,.48);
+      }
+      .liquid::before {
+        background:
+          radial-gradient(circle at var(--glass-highlight-x) var(--glass-highlight-y), rgba(255,255,255,.96), transparent 18%),
+          radial-gradient(circle at calc(var(--glass-highlight-x) + 38%) calc(var(--glass-highlight-y) + 42%), rgba(85,233,255,.15), transparent 24%),
+          linear-gradient(115deg, transparent 0%, rgba(255,255,255,.48) 38%, transparent 58%);
+        opacity: .62;
+      }
+      .liquid::after {
+        background:
+          linear-gradient(135deg, rgba(255,255,255,.98), rgba(255,255,255,.30) 28%, rgba(85,233,255,.25) 54%, rgba(255,99,216,.18) 78%, rgba(255,255,255,.74));
+      }
+      .liquid.stained {
+        --glass-opacity: .72;
+        box-shadow:
+          0 22px 48px rgba(49, 94, 234, .14),
+          inset 0 1px 0 rgba(255,255,255,.92),
+          inset 0 -1px 0 rgba(15,23,42,.06);
+      }
+      .liquid.clear { --glass-opacity: .70; --glass-border-brightness: .96; }
+      .top-nav {
+        border: 1px solid rgba(255,255,255,.72);
+        box-shadow: 0 20px 54px rgba(54,70,98,.18), inset 0 1px 0 rgba(255,255,255,.92);
+      }
+      .brand {
+        background: rgba(255,255,255,.32);
+      }
+      .brand-mark {
+        background:
+          radial-gradient(circle at 28% 22%, rgba(255,255,255,.92), transparent 24%),
+          linear-gradient(135deg, #55e9ff, #9b79ff 52%, #ff63d8);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.86), 0 12px 26px rgba(49,94,234,.18);
+      }
+      .brand small { color: rgba(37,51,74,.64); }
+      .primary-action {
+        color: #07111f;
+        background:
+          radial-gradient(circle at var(--glass-highlight-x) var(--glass-highlight-y), rgba(255,255,255,.76), transparent 28%),
+          linear-gradient(135deg, rgba(255,255,255,.82), rgba(230,243,255,.72));
+        border: 1px solid rgba(255,255,255,.68);
+      }
+      .icon-btn,
+      .tool-chip,
+      .tab-item { color: #07111f; }
+      .content-card,
+      .panel,
+      .panel.light,
+      .insight {
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 88% 8%, var(--metric-glow, rgba(49,94,234,.08)), transparent 44%),
+          linear-gradient(145deg, rgba(255,255,255,.94), rgba(248,251,255,.82));
+        border-color: rgba(15,23,42,.10);
+        box-shadow: 0 20px 56px rgba(54, 70, 98, .14), inset 0 1px 0 rgba(255,255,255,.82);
+      }
+      .card-value, .recommendations strong, .panel h2, .section-head h2, .insight b { color: #0a1424; }
+      .card-value.good { color: #087a4a; }
+      .card-value.bad { color: #b4232f; }
+      .card-label { color: rgba(25, 38, 60, .62); }
+      .card-note { color: rgba(25, 38, 60, .64); }
+      .search-pill input { color: #07111f; }
+      .search-pill input::placeholder { color: rgba(7, 17, 31, .52); }
+      .hero {
+        color: var(--ink);
+        background:
+          radial-gradient(circle at 14% 8%, rgba(255,255,255,.88), transparent 32%),
+          radial-gradient(circle at 84% 8%, rgba(84, 202, 255, .20), transparent 25%),
+          radial-gradient(circle at 88% 82%, rgba(139, 92, 246, .16), transparent 28%),
+          linear-gradient(145deg, rgba(255,255,255,.93), rgba(244,248,255,.76));
+        border-color: rgba(15,23,42,.10);
+        box-shadow: 0 34px 92px rgba(54,70,98,.18), inset 0 1px 0 rgba(255,255,255,.84);
+      }
+      .hero::before {
+        background:
+          linear-gradient(115deg, rgba(255,255,255,.48), transparent 28%, transparent 70%, rgba(49,94,234,.08)),
+          repeating-radial-gradient(circle at 82% 18%, rgba(49,94,234,.10) 0 1px, transparent 1px 16px);
+        opacity: .42;
+      }
+      .hero h1,
+      .hero .panel-kicker,
+      .hero .tool-chip,
+      .hero .mini-stat b { color: #07111f; }
+      .hero .hero-copy { color: rgba(13,25,45,.76); }
+      .hero .eyebrow {
+        color: rgba(37,51,74,.74);
+        background: rgba(255,255,255,.68);
+        border-color: rgba(255,255,255,.76);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.86), 0 8px 22px rgba(54,70,98,.08);
+      }
+      .hero .range-status,
+      .hero .tool-chip {
+        background: rgba(255,255,255,.54);
+        border-color: rgba(255,255,255,.70);
+      }
+      .range-chip.disabled { color: rgba(37,51,74,.55); }
+      .hero .mini-stat {
+        background: rgba(255,255,255,.58);
+        border-color: rgba(255,255,255,.64);
+      }
+      .hero .mini-stat span { color: rgba(37,51,74,.56); }
+      .orb-chart {
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.78), 0 18px 42px rgba(54,70,98,.16);
+      }
+      .orb-chart::before {
+        background: rgba(255,255,255,.76);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.82);
+      }
+      .orb-chart strong { color: #07111f; }
+      .orb-chart span { color: rgba(37,51,74,.62); }
+      .data-table { color: rgba(10,20,36,.78); }
+      .data-table th { color: rgba(25,38,60,.58); background: rgba(247,249,255,.82); }
+      .data-table td { background: rgba(255,255,255,.34); }
+      .data-table tbody tr:nth-child(even) td { background: rgba(247,250,255,.48); }
+      .data-table tbody tr:hover td { background: rgba(238,246,255,.66); }
+      .data-table th, .data-table td { border-color: rgba(15,23,42,.09); }
+      .chart-text { fill: rgba(25,38,60,.58); }
+      .axis { stroke: rgba(15,23,42,.12); }
+      .chart-shell,
+      .table-scroll {
+        background: rgba(255,255,255,.62);
+        border-color: rgba(255,255,255,.76);
+        box-shadow: inset 0 1px 0 rgba(255,255,255,.78);
+      }
+	      .platform-row, .recommendations li, .readiness-item, .tracking-card, .chart-note {
+	        color: rgba(13,25,45,.78);
+	        background: rgba(255,255,255,.58);
+	        border-color: rgba(255,255,255,.70);
+	      }
+	      .readiness-value, .tracking-card strong, .chart-note strong, .platform-category-title, .platform-category-stat strong { color: #0a1424; }
+      .range-current { color: #07111f; }
+      .range-chip { color: rgba(37,51,74,.70); background: rgba(255,255,255,.42); border-color: rgba(255,255,255,.62); }
+      .legend span {
+        background: rgba(255,255,255,.50);
+        border-color: rgba(255,255,255,.68);
+      }
+      .recommendations li { color: rgba(13,25,45,.72); }
+      .platform-handle,
+      .platform-category-note,
+      .platform-delta.neutral,
+      .insight p,
+      .method,
+	      .readiness-note,
+	      .tracking-card span { color: rgba(37,51,74,.62); }
+      .bottom-tabs {
+        box-shadow: 0 18px 44px rgba(54,70,98,.18), inset 0 1px 0 rgba(255,255,255,.88);
+      }
+    }
+	    @media (max-width: 1080px) {
+	      .shell, .top-nav-wrap { padding-left: 16px; padding-right: 16px; }
+	      .top-nav { grid-template-columns: 1fr auto; }
+	      .brand { order: 1; }
+	      .nav-actions { order: 1; }
+	      .nav-search {
+	        order: 2;
+	        grid-column: 1 / -1;
+	        max-width: none;
+	      }
+	      .app-layout { grid-template-columns: 1fr; }
+	      .rail { display: none; }
+      .hero-grid, .panel-grid { grid-template-columns: 1fr; }
+      .kpi-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .readiness-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .insight-strip { grid-template-columns: 1fr; }
+    }
+	    @media (max-width: 700px) {
+	      .top-nav-wrap { top: 10px; padding: 0 10px; }
+	      .top-nav { border-radius: 34px; padding: 10px; grid-template-columns: 1fr auto; }
+	      .brand > span:last-child { display: none; }
+	      .primary-action, .top-status { display: none; }
+	      .nav-actions .icon-btn:nth-child(2) { display: none; }
+	      .search-pill { min-width: 0; padding: 11px 14px; }
+	      .shell { padding: 14px 10px 104px; }
+	      .app-layout { margin-top: 14px; }
+	      .hero { padding: 22px; border-radius: 38px; min-height: 0; }
+	      .hero h1 { font-size: 34px; letter-spacing: -.055em; }
+	      .hero-copy { font-size: 15px; }
+      .hero-controls { gap: 10px; }
+      .range-status { width: 100%; border-radius: 28px; }
+      .range-current, .range-chip { flex: 1 1 calc(50% - 6px); white-space: normal; text-align: center; }
+      .segmented { width: 100%; grid-auto-flow: column; grid-template-columns: repeat(3, 1fr); }
+      .segment { padding: 10px 8px; }
+      .hero-orb { display: none; }
+      .primary-panel-grid { margin-top: 124px; }
+      .kpi-grid { grid-template-columns: 1fr; }
+	      .readiness-grid { grid-template-columns: 1fr; }
+	      .tracking-card { align-items: start; flex-direction: column; }
+	      .tracking-card span { text-align: left; }
+	      .platform-category-head { align-items: start; grid-template-columns: 1fr; }
+	      .platform-category-stat { text-align: left; }
+	      .panel, .content-card, .insight { border-radius: 28px; }
+	      .section-head { align-items: start; flex-direction: column; }
+	      .toolbar { width: 100%; justify-content: flex-start; }
+	      .tool-chip { min-height: 40px; }
+	      .panel-header { align-items: stretch; flex-direction: column; }
+	      .section-search { width: 100%; max-width: none; }
+      .data-table th, .data-table td { white-space: nowrap; overflow-wrap: normal; }
+      .quality-table th, .quality-table td { white-space: normal; overflow-wrap: anywhere; }
+      .fab { display: none; }
+      .bottom-tabs {
+        display: grid;
+        left: 12px;
+        right: 12px;
+        bottom: 8px;
+        min-height: 58px;
+        padding: 6px;
+        border-radius: 28px;
+      }
+      .search-active .bottom-tabs {
+        transform: translateY(calc(100% + 24px));
+        opacity: 0;
+        pointer-events: none;
+      }
+      .tab-item { border-radius: 20px; font-size: 9px; }
+      .tab-item svg { width: 19px; height: 19px; }
+    }
+    @media print {
+      body { background: #fff; color: #111827; }
+      .top-nav-wrap, .rail, .bottom-tabs, .fab { display: none; }
+      .shell { max-width: none; padding: 0; }
+      .app-layout { display: block; }
+      .hero, .panel, .content-card, .insight { box-shadow: none; break-inside: avoid; }
+    }
+    </style>
+  <meta name="design-variant" content="luminous-responsive">
+</head>
+<body>
+  <button type="button" class="skip-link" data-target="content">Skip to dashboard content</button>
+  <svg class="filter-defs" aria-hidden="true" focusable="false">
+    <filter id="liquid-ripple">
+      <feTurbulence type="fractalNoise" baseFrequency="0.018 0.032" numOctaves="2" seed="8" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="8" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+  </svg>
+  <div class="ambient-shape one"></div>
+  <div class="ambient-shape two"></div>
+  <div class="ambient-shape three"></div>
+
+  <div class="top-nav-wrap" aria-label="Primary">
+    <nav class="top-nav liquid clear" data-liquid>
+      <button type="button" class="brand" data-target="content" aria-label="Sublime Growth dashboard home">
+        <span class="brand-mark">S</span>
+        <span><strong>Sublime Growth</strong><small>creator dashboard</small></span>
+      </button>
+      <label class="search-pill nav-search liquid clear" data-liquid>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.2" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        <span class="visually-hidden">Search platforms, metrics, and insights</span>
+        <input id="dashboard-search-main" data-dashboard-search type="search" placeholder="Search platforms, metrics, insights..." autocomplete="off">
+      </label>
+      <div class="nav-actions">
+        <button type="button" class="icon-btn liquid liquid-control clear" data-liquid data-target="data-status" aria-label="Open data status"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4 21 20H3L12 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 10v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 17h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></button>
+        <button type="button" class="icon-btn liquid liquid-control clear" data-liquid data-target="about-data" aria-label="Open about this data"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="2"/><path d="M12 11v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 8h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></button>
+        <button type="button" class="top-status liquid clear" data-liquid data-target="last-updated"><svg width="19" height="19" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20 7 9 18l-5-5" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>All 7 sources updated</button>
+      </div>
+    </nav>
+  </div>
+
+  <div class="shell">
+    <div class="app-layout">
+      <aside class="rail liquid clear" data-liquid aria-label="Dashboard sections">
+        <button type="button" class="icon-btn liquid liquid-control stained" data-liquid data-target="content" aria-label="Overview"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 13h6V4H4v9Zm10 7h6V4h-6v16ZM4 20h6v-4H4v4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg></button>
+        <button type="button" class="icon-btn liquid liquid-control clear" data-liquid data-target="platforms" aria-label="Platforms"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="7" cy="8" r="3" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="8" r="3" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="17" r="3" stroke="currentColor" stroke-width="2"/><path d="m9.5 10.1 1.2 4.1m3.6 0 1.2-4.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></button>
+        <button type="button" class="icon-btn liquid liquid-control clear" data-liquid data-target="recommendations" aria-label="What to do next"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 3 21l9-4 9 4-9-18Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg></button>
+        <div class="rail-divider"></div>
+        <a id="download-dashboard-json" class="icon-btn liquid liquid-control clear" data-liquid href="data/dashboard_payload.json" aria-label="Export data"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v12m0-12 4 4m-4-4-4 4M5 14v4a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3v-4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        <button type="button" class="icon-btn liquid liquid-control clear" data-liquid data-target="more" aria-label="More"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="2"/><path d="M12 11v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 8h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg></button>
+      </aside>
+
+      <main id="content" class="main-content">
+        
+        <section class="hero" aria-labelledby="page-title">
+          <div class="hero-grid">
+            <div>
+              <div class="eyebrow">Updated Jun 21, 2026 10:35 PM</div>
+              <h1 id="page-title">Overview</h1>
+              <p class="hero-copy">148,832 followers across 5 social sites and 2 clipstores. +58 since the last update.</p>
+              <div class="hero-controls" aria-label="Overview actions">
+                <button type="button" class="tool-chip liquid liquid-control clear" data-liquid data-target="platforms"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="7" cy="8" r="3" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="8" r="3" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="17" r="3" stroke="currentColor" stroke-width="2"/><path d="m9.5 10.1 1.2 4.1m3.6 0 1.2-4.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>Platforms</button>
+                <button type="button" class="tool-chip liquid liquid-control clear" data-liquid data-target="recommendations"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 3 21l9-4 9 4-9-18Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>What to do next</button>
+                <button type="button" class="tool-chip liquid liquid-control clear" data-liquid data-target="more"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="2"/><path d="M12 11v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 8h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>More</button>
+              </div>
+            </div>
+            <aside class="hero-orb liquid clear" data-liquid aria-label="Primary audience summary">
+              <div class="panel-kicker">Followers across platforms</div>
+              <div class="orb-chart" aria-hidden="true">
+                <div><strong>148,832</strong><span>across 5 social sites and 2 clipstores</span></div>
+              </div>
+              <div class="orb-meta">
+                <div class="mini-stat"><b>+58</b><span>since last update</span></div>
+                <div class="mini-stat"><b>7 / 7</b><span>sources updated</span></div>
+              </div>
+            </aside>
+          </div>
+        </section>
+        <section class="tracking-notice" aria-label="Tracking readiness"><article class='tracking-card'><strong>All sources updated</strong><span>Tracking for 7 days · Weekly trend ready · Monthly trend ready Jul 14</span></article></section>
+
+        <section aria-labelledby="changes-title">
+          <div class="section-head">
+            <div>
+              <h2 id="changes-title">What changed</h2>
+              <p>Follower movement since the last update. Someone who follows on more than one platform may be counted more than once in the total.</p>
+            </div>
+            <div class="toolbar" aria-label="Metric tools">
+              <button type="button" class="tool-chip liquid liquid-control clear" data-liquid data-target="platforms">View platforms</button>
+              <button type="button" class="tool-chip liquid liquid-control clear" data-liquid data-target="more">Data status</button>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel-grid primary-panel-grid">
+          <article class="panel light" id="growth-chart">
+      <div class="panel-header">
+        <div>
+          <div class="panel-kicker">Follower trend</div>
+          <h2>Daily follower change</h2>
+        </div>
+      </div>
+      <div class="chart-shell">
+      <svg viewBox="0 0 520 260" role="img" aria-label="Daily follower change">
+        <rect x="0" y="0" width="520" height="260" fill="transparent"/>
+        <line class="axis" x1="44" y1="121.0" x2="506" y2="121.0"/>
+        <text class="chart-text" x="38" y="40" text-anchor="end">+174</text>
+        <text class="chart-text" x="38" y="210" text-anchor="end">-174</text>
+        <rect x='44.0' y='121.0' width='64.0' height='0.0' fill='#188a55' rx='10'/><text class='chart-text' x='76.0' y='234' text-anchor='middle'>Jun 14</text><text class='chart-text' x='76.0' y='114.0' text-anchor='middle'>No change</text><rect x='110.0' y='117.1' width='64.0' height='3.9' fill='#188a55' rx='10'/><text class='chart-text' x='142.0' y='234' text-anchor='middle'>Jun 15</text><text class='chart-text' x='142.0' y='110.1' text-anchor='middle'>+8</text><rect x='176.0' y='121.0' width='64.0' height='0.5' fill='#b94c56' rx='10'/><text class='chart-text' x='208.0' y='234' text-anchor='middle'>Jun 16</text><text class='chart-text' x='208.0' y='136.5' text-anchor='middle'>-1</text><rect x='242.0' y='98.0' width='64.0' height='23.0' fill='#188a55' rx='10'/><text class='chart-text' x='274.0' y='234' text-anchor='middle'>Jun 17</text><text class='chart-text' x='274.0' y='91.0' text-anchor='middle'>+47</text><rect x='308.0' y='36.0' width='64.0' height='85.0' fill='#188a55' rx='10'/><text class='chart-text' x='340.0' y='234' text-anchor='middle'>Jun 19</text><text class='chart-text' x='340.0' y='29.0' text-anchor='middle'>+174</text><rect x='374.0' y='80.5' width='64.0' height='40.5' fill='#188a55' rx='10'/><text class='chart-text' x='406.0' y='234' text-anchor='middle'>Jun 20</text><text class='chart-text' x='406.0' y='73.5' text-anchor='middle'>+83</text><rect x='440.0' y='92.7' width='64.0' height='28.3' fill='#188a55' rx='10'/><text class='chart-text' x='472.0' y='234' text-anchor='middle'>Jun 21</text><text class='chart-text' x='472.0' y='85.7' text-anchor='middle'>+58</text>
+      </svg>
+      </div>
+    </article>
+          <aside class="panel" id="recommendations">
+            <div class="panel-header">
+              <div>
+                <div class="panel-kicker">Next actions</div>
+                <h2>What to do next</h2>
+              </div>
+            </div>
+            <ul class="recommendations"><li><strong>Review what drove growth on Instagram:</strong> Instagram gained +49 followers since the last update. Look at what was posted or promoted around that change and reuse the strongest pattern.</li>
+<li><strong>Watch Facebook Page until the weekly trend is ready:</strong> It changed -2 since the last update. One-day movement can be noisy, so treat it as a watch item.</li>
+<li><strong>Keep your Instagram link steady:</strong> 49 of 835 profile views clicked through (5.87%). Keep the link and bio offer stable this week so the next update is comparable.</li></ul>
+          </aside>
+        </section>
+
+        <section class="panel-grid">
+          <article class="panel light">
+          <div class="panel-header">
+            <div>
+              <div class="panel-kicker">Platform movement</div>
+              <h2>Change by platform</h2>
+            </div>
+          </div>
+          <div class="chart-shell">
+        <svg viewBox="0 0 860 354" role="img" aria-label="Change by platform">
+          <rect x="0" y="0" width="860" height="354" fill="transparent"/>
+          <line class="axis" x1="479.0" y1="28" x2="479.0" y2="324"/>
+          <text class="chart-text" x="479.0" y="20" text-anchor="middle">0</text>
+          <text class='chart-text' x='160' y='70' text-anchor='end'>Instagram</text><rect x='479.0' y='57' width='305.0' height='16' rx='8' fill='#71F0B0'/><text class='chart-text' x='792' y='70'>+49</text><text class='chart-text' x='160' y='108' text-anchor='end'>YouTube</text><rect x='479.0' y='95' width='62.2' height='16' rx='8' fill='#71F0B0'/><text class='chart-text' x='792' y='108'>+10</text><text class='chart-text' x='160' y='146' text-anchor='end'>Facebook Page</text><rect x='466.6' y='133' width='12.4' height='16' rx='8' fill='#FF8B8B'/><text class='chart-text' x='792' y='146'>-2</text><text class='chart-text' x='160' y='184' text-anchor='end'>X</text><rect x='479.0' y='171' width='6.2' height='16' rx='8' fill='#71F0B0'/><text class='chart-text' x='792' y='184'>+1</text><text class='chart-text' x='160' y='222' text-anchor='end'>TikTok</text><rect x='479.0' y='209' width='2.0' height='16' rx='8' fill='#9FB1C8'/><text class='chart-text' x='792' y='222'>0</text><text class='chart-text' x='160' y='260' text-anchor='end'>ManyVids</text><rect x='479.0' y='247' width='2.0' height='16' rx='8' fill='#9FB1C8'/><text class='chart-text' x='792' y='260'>0</text><text class='chart-text' x='160' y='298' text-anchor='end'>Clips4Sale</text><rect x='479.0' y='285' width='2.0' height='16' rx='8' fill='#9FB1C8'/><text class='chart-text' x='792' y='298'>0</text>
+        </svg>
+      </div>
+      <div class="chart-note"><strong>Reading this:</strong> Sorted by the biggest movement since the last update. New platforms show no change until they have a second snapshot.</div>
+    </article>
+          <aside class="panel" id="platforms">
+            <div class="panel-header">
+              <div>
+                <div class="panel-kicker">Platforms</div>
+                <h2>Platform totals</h2>
+              </div>
+            </div>
+            <div class="platform-category-list" aria-label="Platform summary list"><section class='platform-category-group'><div class='platform-category-head'><div><div class='platform-category-title'>Social media</div><div class='platform-category-note'>Instagram, X, Facebook Page, TikTok, YouTube</div></div><div class='platform-category-stat'><strong>145,291</strong><span class='platform-delta '>+58</span></div></div><div class='platform-category-rows'><div class='platform-row'><div class='platform-icon'>IG</div><div><div class='platform-name'>Instagram</div><div class='platform-handle'>officialladysublime</div></div><div class='platform-stat'>93,091<div class='platform-delta '>+49</div></div></div>
+<div class='platform-row'><div class='platform-icon'>X</div><div><div class='platform-name'>X</div><div class='platform-handle'>LadySublimeBBW</div></div><div class='platform-stat'>30,931<div class='platform-delta '>+1</div></div></div>
+<div class='platform-row'><div class='platform-icon'>FB</div><div><div class='platform-name'>Facebook Page</div><div class='platform-handle'>Lady Sublime</div></div><div class='platform-stat'>15,025<div class='platform-delta negative'>-2</div></div></div>
+<div class='platform-row'><div class='platform-icon'>TT</div><div><div class='platform-name'>TikTok</div><div class='platform-handle'>ladysublimessbbw</div></div><div class='platform-stat'>3,134<div class='platform-delta neutral'>0</div></div></div>
+<div class='platform-row'><div class='platform-icon'>YT</div><div><div class='platform-name'>YouTube</div><div class='platform-handle'>@ladysublimessbbw</div></div><div class='platform-stat'>3,110<div class='platform-delta '>+10</div></div></div></div></section>
+<section class='platform-category-group'><div class='platform-category-head'><div><div class='platform-category-title'>Clipstores</div><div class='platform-category-note'>ManyVids, Clips4Sale</div></div><div class='platform-category-stat'><strong>3,541</strong><span class='platform-delta neutral'>No change</span></div></div><div class='platform-category-rows'><div class='platform-row'><div class='platform-icon'>MV</div><div><div class='platform-name'>ManyVids</div><div class='platform-handle'>LadySublimeSSBBW</div></div><div class='platform-stat'>2,322<div class='platform-delta neutral'>0</div></div></div>
+<div class='platform-row'><div class='platform-icon'>C4S</div><div><div class='platform-name'>Clips4Sale</div><div class='platform-handle'>Lady Sublime SSBBW</div></div><div class='platform-stat'>1,219<div class='platform-delta neutral'>0</div></div></div></div></section></div>
+          </aside>
+        </section>
+
+        <section class="panel light" aria-labelledby="platform-table-title">
+          <div class="panel-header">
+            <div>
+              <div class="panel-kicker">Detailed platform data</div>
+              <h2 id="platform-table-title">All platforms</h2>
+            </div>
+            <label class="search-pill section-search liquid clear" data-liquid>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.2" stroke="currentColor" stroke-width="2"/><path d="M15.5 15.5 21 21" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+              <span class="visually-hidden">Search platforms and metrics</span>
+              <input id="dashboard-search-detail" data-dashboard-search type="search" placeholder="Search platforms and metrics" autocomplete="off">
+            </label>
+          </div>
+          <div class="table-scroll">
+            <table class="data-table">
+              <thead><tr><th>Category</th><th>Platform</th><th>Handle</th><th>Followers</th><th>Change</th><th>% Change</th><th>Weekly Trend</th><th>Monthly Trend</th></tr></thead>
+              <tbody><tr><td>Social media</td><td>Instagram</td><td>officialladysublime</td><td>93,091</td><td>+49</td><td>0.05%</td><td>+152</td><td>7-day +152</td></tr>
+<tr><td>Social media</td><td>X</td><td>LadySublimeBBW</td><td>30,931</td><td>+1</td><td>+<0.01%</td><td>6-day +214</td><td>6-day +214</td></tr>
+<tr><td>Social media</td><td>Facebook Page</td><td>Lady Sublime</td><td>15,025</td><td>-2</td><td>-0.01%</td><td>-27</td><td>7-day -27</td></tr>
+<tr><td>Social media</td><td>TikTok</td><td>ladysublimessbbw</td><td>3,134</td><td>No change</td><td>No change</td><td>6-day +3</td><td>6-day +3</td></tr>
+<tr><td>Social media</td><td>YouTube</td><td>@ladysublimessbbw</td><td>3,110</td><td>+10</td><td>0.32%</td><td>+20</td><td>7-day +20</td></tr>
+<tr><td>Clipstores</td><td>ManyVids</td><td>LadySublimeSSBBW</td><td>2,322</td><td>No change</td><td>No change</td><td>5-day +2</td><td>5-day +2</td></tr>
+<tr><td>Clipstores</td><td>Clips4Sale</td><td>Lady Sublime SSBBW</td><td>1,219</td><td>No change</td><td>No change</td><td>5-day +5</td><td>5-day +5</td></tr></tbody>
+            </table>
+          </div>
+        </section>
+
+        <section class="more-stack" id="more" aria-labelledby="more-title">
+          <div class="section-head">
+            <div>
+              <h2 id="more-title">More</h2>
+              <p>Data status, exports, technical metrics, and source notes stay here so the overview can stay focused.</p>
+            </div>
+          </div>
+          <details class="panel detail-panel" id="data-status" open>
+            <summary><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 4 21 20H3L12 4Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M12 10v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 17h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>Data status</summary>
+            <div class="table-scroll">
+              <table class="data-table quality-table">
+                <thead><tr><th>Status</th><th>Issue</th><th>Detail</th></tr></thead>
+                <tbody><tr><td class='status-warning'>Warning</td><td>Partial 7-day history</td><td>Only 3/7 accounts have a full 7-day baseline. The longest observed history is 7 days.</td></tr>
+<tr><td class='status-warning'>Warning</td><td>Partial 30-day history</td><td>Only 0/7 accounts have a full 30-day baseline. The longest observed history is 7 days.</td></tr>
+<tr><td class='status-warning'>Warning</td><td>Stale content sample</td><td>Instagram (sample from Mar 6, 107 days old), Facebook Page (sample from Mar 6, 107 days old) use older owned-post samples. Current content recommendations are suppressed until newer media data is available.</td></tr>
+<tr><td class='status-warning'>Warning</td><td>Facebook follows context</td><td>Meta returned both a latest page-follows value (15,026) and a summed value across returned rows. The dashboard displays the latest value to avoid double-counting.</td></tr></tbody>
+              </table>
+            </div>
+          </details>
+          <details class="panel detail-panel" id="last-updated">
+            <summary><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8" stroke="currentColor" stroke-width="2"/><path d="M12 8v5l3 2" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>Last updated</summary>
+            <div class="table-scroll">
+              <table class="data-table">
+                <thead><tr><th>Platform</th><th>Handle</th><th>Latest success</th><th>Latest attempt</th><th>Status</th></tr></thead>
+                <tbody><tr><td>Instagram</td><td>officialladysublime</td><td>Jun 21, 2026 8:22 AM</td><td>Jun 21, 2026 8:22 AM</td><td class='status-ok'>ok</td></tr>
+<tr><td>X</td><td>LadySublimeBBW</td><td>Jun 21, 2026 8:22 AM</td><td>Jun 21, 2026 8:22 AM</td><td class='status-ok'>ok</td></tr>
+<tr><td>Facebook Page</td><td>Lady Sublime</td><td>Jun 21, 2026 8:22 AM</td><td>Jun 21, 2026 8:22 AM</td><td class='status-ok'>ok</td></tr>
+<tr><td>TikTok</td><td>ladysublimessbbw</td><td>Jun 21, 2026 8:22 AM</td><td>Jun 21, 2026 8:22 AM</td><td class='status-ok'>ok</td></tr>
+<tr><td>YouTube</td><td>@ladysublimessbbw</td><td>Jun 21, 2026 8:22 AM</td><td>Jun 21, 2026 8:22 AM</td><td class='status-ok'>ok</td></tr>
+<tr><td>ManyVids</td><td>LadySublimeSSBBW</td><td>Jun 21, 2026 8:22 AM</td><td>Jun 21, 2026 8:22 AM</td><td class='status-ok'>ok</td></tr>
+<tr><td>Clips4Sale</td><td>Lady Sublime SSBBW</td><td>Jun 21, 2026 8:22 AM</td><td>Jun 21, 2026 8:22 AM</td><td class='status-ok'>ok</td></tr></tbody>
+              </table>
+            </div>
+          </details>
+          <details class="panel detail-panel">
+            <summary><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 19V5m0 14h16M8 16l3-5 3 2 5-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Total followers history</summary>
+            
+      <div class="panel-header">
+        <div>
+          <div class="panel-kicker">Detail view</div>
+          <h2>Total followers history</h2>
+        </div>
+      </div>
+      <div class="chart-shell">
+      <svg viewBox="0 0 860 320" role="img" aria-label="Total followers history">
+        <rect x="0" y="0" width="860" height="320" fill="transparent"/>
+        <line class='axis' x1='58' y1='42.0' x2='836' y2='42.0'/><text class='chart-text' x='50' y='46.0' text-anchor='end'>148,832</text><line class='axis' x1='58' y1='101.0' x2='836' y2='101.0'/><text class='chart-text' x='50' y='105.0' text-anchor='end'>139,394</text><line class='axis' x1='58' y1='160.0' x2='836' y2='160.0'/><text class='chart-text' x='50' y='164.0' text-anchor='end'>129,956</text><line class='axis' x1='58' y1='219.0' x2='836' y2='219.0'/><text class='chart-text' x='50' y='223.0' text-anchor='end'>120,519</text><line class='axis' x1='58' y1='278.0' x2='836' y2='278.0'/><text class='chart-text' x='50' y='282.0' text-anchor='end'>111,081</text>
+        <line class="axis" x1="58" y1="278" x2="836" y2="278"/>
+        <text class="chart-text" x="58" y="308">2026-06-14</text>
+        <text class="chart-text" x="836" y="308" text-anchor="end">2026-06-21</text>
+        <path d='M 58.0 278.0 L 187.7 66.3 L 317.3 44.3 L 447.0 44.0 L 576.7 42.9 L 706.3 42.4 L 836.0 42.0' fill='none' stroke='#087f8c' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/><circle cx='58.0' cy='278.0' r='3.2' fill='#fff' stroke='#087f8c' stroke-width='2'/><circle cx='187.7' cy='66.3' r='3.2' fill='#fff' stroke='#087f8c' stroke-width='2'/><circle cx='317.3' cy='44.3' r='3.2' fill='#fff' stroke='#087f8c' stroke-width='2'/><circle cx='447.0' cy='44.0' r='3.2' fill='#fff' stroke='#087f8c' stroke-width='2'/><circle cx='576.7' cy='42.9' r='3.2' fill='#fff' stroke='#087f8c' stroke-width='2'/><circle cx='706.3' cy='42.4' r='3.2' fill='#fff' stroke='#087f8c' stroke-width='2'/><circle cx='836.0' cy='42.0' r='3.2' fill='#fff' stroke='#087f8c' stroke-width='2'/>
+      </svg>
+      </div>
+      <div class="legend"><span style='color:#087f8c'><i class='swatch'></i>Total followers</span></div>
+    <div class='chart-note'><strong>Coverage changes:</strong> The total line includes tracking expansion; organic movement is shown separately.<ul><li><strong>Jun 15:</strong> 33,848 newly tracked followings added to coverage.</li><li><strong>Jun 16:</strong> 3,534 newly tracked followings added to coverage.</li></ul></div>
+          </details>
+          
+        <details class="panel light detail-panel" id="activity">
+          <summary><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 19V5m0 14h16M8 16l3-5 3 2 5-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Instagram & Facebook activity</summary>
+          <div class="detail-actions">
+            <a id="download-platform-csv" class="tool-chip liquid liquid-control clear" data-liquid href="data/platform_summary.csv">Download CSV</a>
+          </div>
+          <div class="table-scroll">
+            <table class="data-table">
+              <thead>
+                <tr><th>Platform</th><th>Profile</th><th>Followers</th><th>Following/Likes</th><th>Posts</th><th>Talking About</th><th>Sample Items</th><th>Sample Engagement</th><th>Avg/Item</th><th>Avg/Follower</th><th>Sample Date</th><th>Best Item</th></tr>
+              </thead>
+              <tbody><tr><td>Instagram</td><td><a href='https://www.instagram.com/officialladysublime/'>officialladysublime</a></td><td>93,091</td><td>290</td><td>28</td><td></td><td>25</td><td>149,640</td><td>5,985.6</td><td>6.43%</td><td>sample from Mar 6, 107 days old</td><td><a href='https://www.instagram.com/reel/DIKTt55hK92/'>16,403</a></td></tr>
+<tr><td>Facebook Page</td><td><a href='https://www.facebook.com/107579258704403'>Lady Sublime</a></td><td>15,025</td><td>15,025</td><td></td><td>5</td><td>20</td><td>3,963</td><td>198.2</td><td>1.32%</td><td>sample from Mar 6, 107 days old</td><td><a href='https://www.facebook.com/984245981039908/posts/412012284929950'>373</a></td></tr></tbody>
+            </table>
+          </div>
+        </details>
+        
+          
+        <details class="panel detail-panel" aria-labelledby="meta-insights-title">
+          <summary id="meta-insights-title"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 19V5m0 14h16M8 16l3-5 3 2 5-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Meta insights</summary>
+          <div class="table-scroll">
+            <table class="data-table">
+              <thead>
+                <tr><th>Platform</th><th>Reach</th><th>Views</th><th>Profile Views</th><th>Website Clicks</th><th>Website Click Rate</th><th>Accounts Engaged</th><th>Interactions</th><th>Page Eng.</th><th>Page Views</th><th>Page Follows Latest</th><th>Period/Context</th><th>Status</th></tr>
+              </thead>
+              <tbody><tr><td>Instagram</td><td>56</td><td>2,331</td><td>835</td><td>49</td><td>5.87%</td><td>44</td><td>108</td><td></td><td></td><td></td><td>API-returned day/total_value window</td><td>ok</td></tr>
+<tr><td>Facebook Page</td><td></td><td></td><td></td><td></td><td></td><td></td><td></td><td>0</td><td>47</td><td>15,026</td><td>Latest day value from returned Page insights</td><td>ok</td></tr></tbody>
+            </table>
+          </div>
+        </details>
+        
+          <details class="panel light detail-panel method" id="about-data">
+            <summary><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="2"/><path d="M12 11v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 8h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg>About this data</summary>
+            <p>The collector stores point-in-time snapshots in SQLite, then compares accounts with prior snapshots for the since-last-update change. Followers from newly connected platforms are counted as newly added tracking coverage, not follower growth. Total follower history carries the latest known account value forward by day, so a missed platform pull does not make the total falsely drop to zero. Content metrics use the latest accessible owned posts or media returned by the platform API, and stale samples are labeled separately.</p>
+            <div class="table-scroll">
+              <table class="data-table source-list">
+                <thead><tr><th>Platform</th><th>Source</th><th>Note</th></tr></thead>
+                <tbody><tr><td>Instagram</td><td><a href='https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/'>https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/</a></td><td>Profile counts and owned-account media metrics require Instagram Graph API access for professional accounts.</td></tr>
+<tr><td>Instagram Insights</td><td><a href='https://developers.facebook.com/docs/instagram-platform/api-reference/instagram-user/insights/'>https://developers.facebook.com/docs/instagram-platform/api-reference/instagram-user/insights/</a></td><td>Account insights are optional and require additional insights permissions.</td></tr>
+<tr><td>Facebook Page</td><td><a href='https://developers.facebook.com/docs/graph-api/reference/page/'>https://developers.facebook.com/docs/graph-api/reference/page/</a></td><td>Page follower, like, rating, and talking-about counts come from the Page node.</td></tr>
+<tr><td>Facebook Page Insights</td><td><a href='https://developers.facebook.com/docs/graph-api/reference/page/insights/'>https://developers.facebook.com/docs/graph-api/reference/page/insights/</a></td><td>Page insights are optional, Page-token based, and may return empty data depending on metric availability.</td></tr>
+<tr><td>TikTok</td><td><a href='https://developers.tiktok.com/doc/tiktok-api-v2-get-user-info'>https://developers.tiktok.com/doc/tiktok-api-v2-get-user-info</a></td><td>follower_count is returned from /v2/user/info/ with user.info.stats authorization.</td></tr>
+<tr><td>YouTube</td><td><a href='https://developers.google.com/youtube/v3/docs/channels/list'>https://developers.google.com/youtube/v3/docs/channels/list</a></td><td>Subscriber counts come from channels.list statistics when public.</td></tr>
+<tr><td>X</td><td><a href='https://docs.x.com/x-api/users/get-user-by-username'>https://docs.x.com/x-api/users/get-user-by-username</a></td><td>followers_count is available in public_metrics on user lookup responses.</td></tr>
+<tr><td>Clips4Sale</td><td><a href='https://www.clips4sale.com/clips/page/studios'>https://www.clips4sale.com/clips/page/studios</a></td><td>Public store pages expose store-level Followers and Clips counts; this is public-page collection, not an official API feed.</td></tr>
+<tr><td>ManyVids</td><td><a href='https://help.manyvids.com/hc/en-ca/articles/44004825450515-How-do-I-hide-my-followers'>https://help.manyvids.com/hc/en-ca/articles/44004825450515-How-do-I-hide-my-followers</a></td><td>Public profile pages can expose Followers when the creator&#x27;s follower visibility is public; this is public-page collection, not an official API feed.</td></tr></tbody>
+              </table>
+            </div>
+          </details>
+        </section>
+      </main>
+    </div>
+  </div>
+
+  <button type="button" class="fab liquid liquid-control stained" data-liquid data-target="recommendations" aria-label="View recommendations"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3v4m0 10v4M4.22 6.22l2.83 2.83m9.9 9.9 2.83 2.83M3 12h4m10 0h4M4.22 17.78l2.83-2.83m9.9-9.9 2.83-2.83" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><circle cx="12" cy="12" r="3" stroke="currentColor" stroke-width="2"/></svg></button>
+  <nav class="bottom-tabs liquid clear" data-liquid aria-label="Mobile tabs">
+    <button type="button" class="tab-item" aria-current="page" data-target="content"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 13h6V4H4v9Zm10 7h6V4h-6v16ZM4 20h6v-4H4v4Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span>Overview</span></button>
+    <button type="button" class="tab-item" data-target="platforms"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="7" cy="8" r="3" stroke="currentColor" stroke-width="2"/><circle cx="17" cy="8" r="3" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="17" r="3" stroke="currentColor" stroke-width="2"/><path d="m9.5 10.1 1.2 4.1m3.6 0 1.2-4.1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span>Platforms</span></button>
+    <button type="button" class="tab-item" data-target="recommendations"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 3 3 21l9-4 9 4-9-18Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span>Actions</span></button>
+    <button type="button" class="tab-item" data-target="more"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke="currentColor" stroke-width="2"/><path d="M12 11v5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M12 8h.01" stroke="currentColor" stroke-width="3" stroke-linecap="round"/></svg><span>More</span></button>
+  </nav>
+  <script type="application/json" id="dashboard-payload">{"title":"Social Media Growth Dashboard","generated_at":"2026-06-21T22:35:08-04:00","kpis":{"total_followers":148832,"previous_snapshot_gain":58,"organic_previous_snapshot_gain":58,"newly_tracked_audience":0,"gain_7d":145,"gain_30d":0,"gain_7d_status":"partial","gain_30d_status":"partial","healthy_sources":7,"tracked_accounts":7,"previous_snapshot_sources":7,"full_7d_sources":3,"full_30d_sources":0},"history":{"start_date":"2026-06-14","end_date":"2026-06-21","observed_days":7,"observed_dates":7,"range_label":"Jun 14 - Jun 21","available_label":"Available: 7D","seven_day_label":"7D ready","thirty_day_label":"30D available Jul 14","all_label":"All available history","previous_snapshot_sources":7,"full_7d_sources":3,"full_30d_sources":0,"tracked_accounts":7},"accounts":[{"account_id":"girlfriend-instagram","platform":"instagram","label":"Instagram","handle":"officialladysublime","follower_count":93091,"following_count":290,"post_count":28,"like_count":null,"view_count":null,"profile_url":"https://www.instagram.com/officialladysublime/","category":null,"page_likes":null,"talking_about_count":null,"checkins":null,"were_here_count":null,"rating_count":null,"overall_star_rating":null,"display_name":"Lady Sublime","website":null,"recent_content_status":"ok","recent_content_count":25,"recent_content_reactions":144354,"recent_content_comments":5286,"recent_content_shares":null,"recent_content_engagements":149640,"recent_content_avg_engagements":5985.6,"recent_best_content_engagements":16403,"recent_best_content_url":"https://www.instagram.com/reel/DIKTt55hK92/","recent_latest_content_at":"2026-03-06T04:44:02+0000","insights_status":"ok","previous_snapshot_gain":49,"previous_snapshot_growth_rate":0.0005266438812579265,"gain_7d":152,"gain_7d_growth_rate":0.001635481337221188,"gain_7d_complete":true,"gain_7d_observed_days":7,"gain_30d":152,"gain_30d_growth_rate":0.001635481337221188,"gain_30d_complete":false,"gain_30d_observed_days":7,"first_snapshot":false,"first_snapshot_date":"2026-06-14","latest_success":"2026-06-21T08:22:15-04:00","latest_snapshot_date":"2026-06-21","insight_reach_latest":56,"insight_views_total_value":2331,"insight_profile_views_total_value":835,"insight_website_clicks_total_value":49,"insight_accounts_engaged_total_value":44,"insight_total_interactions_total_value":108,"insight_likes_total_value":72,"insight_comments_total_value":3,"insight_shares_total_value":1,"insight_saves_total_value":31,"insight_page_post_engagements_latest":null,"insight_page_post_engagements_sum":null,"insight_page_views_total_latest":null,"insight_page_views_total_sum":null,"insight_page_follows_latest":null,"insight_page_follows_sum":null},{"account_id":"girlfriend-x","platform":"x","label":"X","handle":"LadySublimeBBW","follower_count":30931,"following_count":471,"post_count":1245,"like_count":null,"view_count":null,"profile_url":null,"category":null,"page_likes":null,"talking_about_count":null,"checkins":null,"were_here_count":null,"rating_count":null,"overall_star_rating":null,"display_name":null,"website":null,"recent_content_status":null,"recent_content_count":null,"recent_content_reactions":null,"recent_content_comments":null,"recent_content_shares":null,"recent_content_engagements":null,"recent_content_avg_engagements":null,"recent_best_content_engagements":null,"recent_best_content_url":null,"recent_latest_content_at":null,"insights_status":null,"previous_snapshot_gain":1,"previous_snapshot_growth_rate":3.233107015842224e-05,"gain_7d":214,"gain_7d_growth_rate":0.006966826187453202,"gain_7d_complete":false,"gain_7d_observed_days":6,"gain_30d":214,"gain_30d_growth_rate":0.006966826187453202,"gain_30d_complete":false,"gain_30d_observed_days":6,"first_snapshot":false,"first_snapshot_date":"2026-06-15","latest_success":"2026-06-21T08:22:22-04:00","latest_snapshot_date":"2026-06-21","insight_reach_latest":null,"insight_views_total_value":null,"insight_profile_views_total_value":null,"insight_website_clicks_total_value":null,"insight_accounts_engaged_total_value":null,"insight_total_interactions_total_value":null,"insight_likes_total_value":null,"insight_comments_total_value":null,"insight_shares_total_value":null,"insight_saves_total_value":null,"insight_page_post_engagements_latest":null,"insight_page_post_engagements_sum":null,"insight_page_views_total_latest":null,"insight_page_views_total_sum":null,"insight_page_follows_latest":null,"insight_page_follows_sum":null},{"account_id":"lady-sublime-facebook-page","platform":"facebook","label":"Facebook Page","handle":"Lady Sublime","follower_count":15025,"following_count":null,"post_count":null,"like_count":15025,"view_count":null,"profile_url":"https://www.facebook.com/107579258704403","category":"Model","page_likes":15025,"talking_about_count":5,"checkins":0,"were_here_count":0,"rating_count":0,"overall_star_rating":5.0,"display_name":null,"website":null,"recent_content_status":"ok","recent_content_count":20,"recent_content_reactions":3542,"recent_content_comments":392,"recent_content_shares":29,"recent_content_engagements":3963,"recent_content_avg_engagements":198.2,"recent_best_content_engagements":373,"recent_best_content_url":"https://www.facebook.com/984245981039908/posts/412012284929950","recent_latest_content_at":"2026-03-06T04:44:07+0000","insights_status":"ok","previous_snapshot_gain":-2,"previous_snapshot_growth_rate":-0.0001330937645571305,"gain_7d":-27,"gain_7d_growth_rate":-0.0017937815572681372,"gain_7d_complete":true,"gain_7d_observed_days":7,"gain_30d":-27,"gain_30d_growth_rate":-0.0017937815572681372,"gain_30d_complete":false,"gain_30d_observed_days":7,"first_snapshot":false,"first_snapshot_date":"2026-06-14","latest_success":"2026-06-21T08:22:18-04:00","latest_snapshot_date":"2026-06-21","insight_reach_latest":null,"insight_views_total_value":null,"insight_profile_views_total_value":null,"insight_website_clicks_total_value":null,"insight_accounts_engaged_total_value":null,"insight_total_interactions_total_value":null,"insight_likes_total_value":null,"insight_comments_total_value":null,"insight_shares_total_value":null,"insight_saves_total_value":null,"insight_page_post_engagements_latest":0,"insight_page_post_engagements_sum":1,"insight_page_views_total_latest":47,"insight_page_views_total_sum":84,"insight_page_follows_latest":15026,"insight_page_follows_sum":30053},{"account_id":"girlfriend-tiktok","platform":"tiktok","label":"TikTok","handle":"ladysublimessbbw","follower_count":3134,"following_count":8,"post_count":7,"like_count":9128,"view_count":null,"profile_url":null,"category":null,"page_likes":null,"talking_about_count":null,"checkins":null,"were_here_count":null,"rating_count":null,"overall_star_rating":null,"display_name":null,"website":null,"recent_content_status":null,"recent_content_count":null,"recent_content_reactions":null,"recent_content_comments":null,"recent_content_shares":null,"recent_content_engagements":null,"recent_content_avg_engagements":null,"recent_best_content_engagements":null,"recent_best_content_url":null,"recent_latest_content_at":null,"insights_status":null,"previous_snapshot_gain":0,"previous_snapshot_growth_rate":0.0,"gain_7d":3,"gain_7d_growth_rate":0.0009581603321622484,"gain_7d_complete":false,"gain_7d_observed_days":6,"gain_30d":3,"gain_30d_growth_rate":0.0009581603321622484,"gain_30d_complete":false,"gain_30d_observed_days":6,"first_snapshot":false,"first_snapshot_date":"2026-06-15","latest_success":"2026-06-21T08:22:21-04:00","latest_snapshot_date":"2026-06-21","insight_reach_latest":null,"insight_views_total_value":null,"insight_profile_views_total_value":null,"insight_website_clicks_total_value":null,"insight_accounts_engaged_total_value":null,"insight_total_interactions_total_value":null,"insight_likes_total_value":null,"insight_comments_total_value":null,"insight_shares_total_value":null,"insight_saves_total_value":null,"insight_page_post_engagements_latest":null,"insight_page_post_engagements_sum":null,"insight_page_views_total_latest":null,"insight_page_views_total_sum":null,"insight_page_follows_latest":null,"insight_page_follows_sum":null},{"account_id":"girlfriend-youtube","platform":"youtube","label":"YouTube","handle":"@ladysublimessbbw","follower_count":3110,"following_count":null,"post_count":5,"like_count":null,"view_count":531507,"profile_url":null,"category":null,"page_likes":null,"talking_about_count":null,"checkins":null,"were_here_count":null,"rating_count":null,"overall_star_rating":null,"display_name":null,"website":null,"recent_content_status":null,"recent_content_count":null,"recent_content_reactions":null,"recent_content_comments":null,"recent_content_shares":null,"recent_content_engagements":null,"recent_content_avg_engagements":null,"recent_best_content_engagements":null,"recent_best_content_url":null,"recent_latest_content_at":null,"insights_status":null,"previous_snapshot_gain":10,"previous_snapshot_growth_rate":0.0032258064516129032,"gain_7d":20,"gain_7d_growth_rate":0.006472491909385114,"gain_7d_complete":true,"gain_7d_observed_days":7,"gain_30d":20,"gain_30d_growth_rate":0.006472491909385114,"gain_30d_complete":false,"gain_30d_observed_days":7,"first_snapshot":false,"first_snapshot_date":"2026-06-14","latest_success":"2026-06-21T08:22:22-04:00","latest_snapshot_date":"2026-06-21","insight_reach_latest":null,"insight_views_total_value":null,"insight_profile_views_total_value":null,"insight_website_clicks_total_value":null,"insight_accounts_engaged_total_value":null,"insight_total_interactions_total_value":null,"insight_likes_total_value":null,"insight_comments_total_value":null,"insight_shares_total_value":null,"insight_saves_total_value":null,"insight_page_post_engagements_latest":null,"insight_page_post_engagements_sum":null,"insight_page_views_total_latest":null,"insight_page_views_total_sum":null,"insight_page_follows_latest":null,"insight_page_follows_sum":null},{"account_id":"lady-sublime-manyvids","platform":"manyvids","label":"ManyVids","handle":"LadySublimeSSBBW","follower_count":2322,"following_count":17,"post_count":235,"like_count":null,"view_count":null,"profile_url":"https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos","category":null,"page_likes":null,"talking_about_count":null,"checkins":null,"were_here_count":null,"rating_count":null,"overall_star_rating":null,"display_name":null,"website":null,"recent_content_status":null,"recent_content_count":null,"recent_content_reactions":null,"recent_content_comments":null,"recent_content_shares":null,"recent_content_engagements":null,"recent_content_avg_engagements":null,"recent_best_content_engagements":null,"recent_best_content_url":null,"recent_latest_content_at":null,"insights_status":null,"previous_snapshot_gain":0,"previous_snapshot_growth_rate":0.0,"gain_7d":2,"gain_7d_growth_rate":0.0008620689655172414,"gain_7d_complete":false,"gain_7d_observed_days":5,"gain_30d":2,"gain_30d_growth_rate":0.0008620689655172414,"gain_30d_complete":false,"gain_30d_observed_days":5,"first_snapshot":false,"first_snapshot_date":"2026-06-16","latest_success":"2026-06-21T08:22:23-04:00","latest_snapshot_date":"2026-06-21","insight_reach_latest":null,"insight_views_total_value":null,"insight_profile_views_total_value":null,"insight_website_clicks_total_value":null,"insight_accounts_engaged_total_value":null,"insight_total_interactions_total_value":null,"insight_likes_total_value":null,"insight_comments_total_value":null,"insight_shares_total_value":null,"insight_saves_total_value":null,"insight_page_post_engagements_latest":null,"insight_page_post_engagements_sum":null,"insight_page_views_total_latest":null,"insight_page_views_total_sum":null,"insight_page_follows_latest":null,"insight_page_follows_sum":null},{"account_id":"lady-sublime-clips4sale","platform":"clips4sale","label":"Clips4Sale","handle":"Lady Sublime SSBBW","follower_count":1219,"following_count":null,"post_count":196,"like_count":null,"view_count":null,"profile_url":"https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw","category":null,"page_likes":null,"talking_about_count":null,"checkins":null,"were_here_count":null,"rating_count":null,"overall_star_rating":null,"display_name":null,"website":null,"recent_content_status":null,"recent_content_count":null,"recent_content_reactions":null,"recent_content_comments":null,"recent_content_shares":null,"recent_content_engagements":null,"recent_content_avg_engagements":null,"recent_best_content_engagements":null,"recent_best_content_url":null,"recent_latest_content_at":null,"insights_status":null,"previous_snapshot_gain":0,"previous_snapshot_growth_rate":0.0,"gain_7d":5,"gain_7d_growth_rate":0.004118616144975288,"gain_7d_complete":false,"gain_7d_observed_days":5,"gain_30d":5,"gain_30d_growth_rate":0.004118616144975288,"gain_30d_complete":false,"gain_30d_observed_days":5,"first_snapshot":false,"first_snapshot_date":"2026-06-16","latest_success":"2026-06-21T08:22:22-04:00","latest_snapshot_date":"2026-06-21","insight_reach_latest":null,"insight_views_total_value":null,"insight_profile_views_total_value":null,"insight_website_clicks_total_value":null,"insight_accounts_engaged_total_value":null,"insight_total_interactions_total_value":null,"insight_likes_total_value":null,"insight_comments_total_value":null,"insight_shares_total_value":null,"insight_saves_total_value":null,"insight_page_post_engagements_latest":null,"insight_page_post_engagements_sum":null,"insight_page_views_total_latest":null,"insight_page_views_total_sum":null,"insight_page_follows_latest":null,"insight_page_follows_sum":null}],"daily_history":[{"snapshot_id":12,"account_id":"girlfriend-instagram","platform":"instagram","account_label":"Instagram","account_handle":"officialladysublime","external_id":"17841434948962018","follower_count":92939,"following_count":293,"post_count":28,"like_count":null,"view_count":null,"profile_url":"https://www.instagram.com/officialladysublime/","source_url":"https://graph.facebook.com/v25.0/17841434948962018","collected_at":"2026-06-14T22:44:22-04:00","snapshot_date":"2026-06-14","daily_gain":null},{"snapshot_id":31,"account_id":"girlfriend-instagram","platform":"instagram","account_label":"Instagram","account_handle":"officialladysublime","external_id":"17841434948962018","follower_count":92956,"following_count":293,"post_count":28,"like_count":null,"view_count":null,"profile_url":"https://www.instagram.com/officialladysublime/","source_url":"https://graph.facebook.com/v25.0/17841434948962018","collected_at":"2026-06-15T19:05:44-04:00","snapshot_date":"2026-06-15","daily_gain":17},{"snapshot_id":47,"account_id":"girlfriend-instagram","platform":"instagram","account_label":"Instagram","account_handle":"officialladysublime","external_id":"17841434948962018","follower_count":92963,"following_count":292,"post_count":28,"like_count":null,"view_count":null,"profile_url":"https://www.instagram.com/officialladysublime/","source_url":"https://graph.facebook.com/v25.0/17841434948962018","collected_at":"2026-06-16T22:30:45-04:00","snapshot_date":"2026-06-16","daily_gain":7},{"snapshot_id":54,"account_id":"girlfriend-instagram","platform":"instagram","account_label":"Instagram","account_handle":"officialladysublime","external_id":"17841434948962018","follower_count":92991,"following_count":292,"post_count":28,"like_count":null,"view_count":null,"profile_url":"https://www.instagram.com/officialladysublime/","source_url":"https://graph.facebook.com/v25.0/17841434948962018","collected_at":"2026-06-17T08:01:44-04:00","snapshot_date":"2026-06-17","daily_gain":28},{"snapshot_id":61,"account_id":"girlfriend-instagram","platform":"instagram","account_label":"Instagram","account_handle":"officialladysublime","external_id":"17841434948962018","follower_count":92992,"following_count":291,"post_count":28,"like_count":null,"view_count":null,"profile_url":"https://www.instagram.com/officialladysublime/","source_url":"https://graph.facebook.com/v25.0/17841434948962018","collected_at":"2026-06-19T08:02:37-04:00","snapshot_date":"2026-06-19","daily_gain":1},{"snapshot_id":68,"account_id":"girlfriend-instagram","platform":"instagram","account_label":"Instagram","account_handle":"officialladysublime","external_id":"17841434948962018","follower_count":93042,"following_count":292,"post_count":28,"like_count":null,"view_count":null,"profile_url":"https://www.instagram.com/officialladysublime/","source_url":"https://graph.facebook.com/v25.0/17841434948962018","collected_at":"2026-06-20T10:26:48-04:00","snapshot_date":"2026-06-20","daily_gain":50},{"snapshot_id":75,"account_id":"girlfriend-instagram","platform":"instagram","account_label":"Instagram","account_handle":"officialladysublime","external_id":"17841434948962018","follower_count":93091,"following_count":290,"post_count":28,"like_count":null,"view_count":null,"profile_url":"https://www.instagram.com/officialladysublime/","source_url":"https://graph.facebook.com/v25.0/17841434948962018","collected_at":"2026-06-21T08:22:15-04:00","snapshot_date":"2026-06-21","daily_gain":49},{"snapshot_id":33,"account_id":"girlfriend-tiktok","platform":"tiktok","account_label":"TikTok","account_handle":"ladysublimessbbw","external_id":"-000KB6K7MtqniW8y5ioykhozUepaIXQIK2z","follower_count":3131,"following_count":8,"post_count":7,"like_count":9088,"view_count":null,"profile_url":null,"source_url":"https://open.tiktokapis.com/v2/user/info/","collected_at":"2026-06-15T19:05:49-04:00","snapshot_date":"2026-06-15","daily_gain":null},{"snapshot_id":49,"account_id":"girlfriend-tiktok","platform":"tiktok","account_label":"TikTok","account_handle":"ladysublimessbbw","external_id":"-000KB6K7MtqniW8y5ioykhozUepaIXQIK2z","follower_count":3131,"following_count":8,"post_count":7,"like_count":9095,"view_count":null,"profile_url":null,"source_url":"https://open.tiktokapis.com/v2/user/info/","collected_at":"2026-06-16T22:30:48-04:00","snapshot_date":"2026-06-16","daily_gain":0},{"snapshot_id":56,"account_id":"girlfriend-tiktok","platform":"tiktok","account_label":"TikTok","account_handle":"ladysublimessbbw","external_id":"-000KB6K7MtqniW8y5ioykhozUepaIXQIK2z","follower_count":3131,"following_count":8,"post_count":7,"like_count":9097,"view_count":null,"profile_url":null,"source_url":"https://open.tiktokapis.com/v2/user/info/","collected_at":"2026-06-17T08:01:52-04:00","snapshot_date":"2026-06-17","daily_gain":0},{"snapshot_id":63,"account_id":"girlfriend-tiktok","platform":"tiktok","account_label":"TikTok","account_handle":"ladysublimessbbw","external_id":"-000KB6K7MtqniW8y5ioykhozUepaIXQIK2z","follower_count":3134,"following_count":8,"post_count":7,"like_count":9122,"view_count":null,"profile_url":null,"source_url":"https://open.tiktokapis.com/v2/user/info/","collected_at":"2026-06-19T08:02:41-04:00","snapshot_date":"2026-06-19","daily_gain":3},{"snapshot_id":70,"account_id":"girlfriend-tiktok","platform":"tiktok","account_label":"TikTok","account_handle":"ladysublimessbbw","external_id":"-000KB6K7MtqniW8y5ioykhozUepaIXQIK2z","follower_count":3134,"following_count":8,"post_count":7,"like_count":9125,"view_count":null,"profile_url":null,"source_url":"https://open.tiktokapis.com/v2/user/info/","collected_at":"2026-06-20T10:26:53-04:00","snapshot_date":"2026-06-20","daily_gain":0},{"snapshot_id":77,"account_id":"girlfriend-tiktok","platform":"tiktok","account_label":"TikTok","account_handle":"ladysublimessbbw","external_id":"-000KB6K7MtqniW8y5ioykhozUepaIXQIK2z","follower_count":3134,"following_count":8,"post_count":7,"like_count":9128,"view_count":null,"profile_url":null,"source_url":"https://open.tiktokapis.com/v2/user/info/","collected_at":"2026-06-21T08:22:21-04:00","snapshot_date":"2026-06-21","daily_gain":0},{"snapshot_id":35,"account_id":"girlfriend-x","platform":"x","account_label":"X","account_handle":"LadySublimeBBW","external_id":"3072318458","follower_count":30717,"following_count":473,"post_count":1255,"like_count":null,"view_count":null,"profile_url":null,"source_url":"https://api.x.com/2/users/by/username/ladysublimebbw","collected_at":"2026-06-15T19:05:50-04:00","snapshot_date":"2026-06-15","daily_gain":null},{"snapshot_id":51,"account_id":"girlfriend-x","platform":"x","account_label":"X","account_handle":"LadySublimeBBW","external_id":"3072318458","follower_count":30711,"following_count":473,"post_count":1259,"like_count":null,"view_count":null,"profile_url":null,"source_url":"https://api.x.com/2/users/by/username/ladysublimebbw","collected_at":"2026-06-16T22:30:48-04:00","snapshot_date":"2026-06-16","daily_gain":-6},{"snapshot_id":58,"account_id":"girlfriend-x","platform":"x","account_label":"X","account_handle":"LadySublimeBBW","external_id":"3072318458","follower_count":30719,"following_count":473,"post_count":1260,"like_count":null,"view_count":null,"profile_url":null,"source_url":"https://api.x.com/2/users/by/username/ladysublimebbw","collected_at":"2026-06-17T08:01:53-04:00","snapshot_date":"2026-06-17","daily_gain":8},{"snapshot_id":65,"account_id":"girlfriend-x","platform":"x","account_label":"X","account_handle":"LadySublimeBBW","external_id":"3072318458","follower_count":30895,"following_count":473,"post_count":1263,"like_count":null,"view_count":null,"profile_url":null,"source_url":"https://api.x.com/2/users/by/username/ladysublimebbw","collected_at":"2026-06-19T08:02:42-04:00","snapshot_date":"2026-06-19","daily_gain":176},{"snapshot_id":72,"account_id":"girlfriend-x","platform":"x","account_label":"X","account_handle":"LadySublimeBBW","external_id":"3072318458","follower_count":30930,"following_count":471,"post_count":1245,"like_count":null,"view_count":null,"profile_url":null,"source_url":"https://api.x.com/2/users/by/username/ladysublimebbw","collected_at":"2026-06-20T10:26:53-04:00","snapshot_date":"2026-06-20","daily_gain":35},{"snapshot_id":79,"account_id":"girlfriend-x","platform":"x","account_label":"X","account_handle":"LadySublimeBBW","external_id":"3072318458","follower_count":30931,"following_count":471,"post_count":1245,"like_count":null,"view_count":null,"profile_url":null,"source_url":"https://api.x.com/2/users/by/username/ladysublimebbw","collected_at":"2026-06-21T08:22:22-04:00","snapshot_date":"2026-06-21","daily_gain":1},{"snapshot_id":14,"account_id":"girlfriend-youtube","platform":"youtube","account_label":"YouTube","account_handle":"@ladysublimessbbw","external_id":"UCgjoVIzGoVuzLWIkvjOKpRw","follower_count":3090,"following_count":null,"post_count":5,"like_count":null,"view_count":522603,"profile_url":null,"source_url":"https://www.googleapis.com/youtube/v3/channels","collected_at":"2026-06-14T22:44:25-04:00","snapshot_date":"2026-06-14","daily_gain":null},{"snapshot_id":34,"account_id":"girlfriend-youtube","platform":"youtube","account_label":"YouTube","account_handle":"@ladysublimessbbw","external_id":"UCgjoVIzGoVuzLWIkvjOKpRw","follower_count":3090,"following_count":null,"post_count":5,"like_count":null,"view_count":523893,"profile_url":null,"source_url":"https://www.googleapis.com/youtube/v3/channels","collected_at":"2026-06-15T19:05:50-04:00","snapshot_date":"2026-06-15","daily_gain":0},{"snapshot_id":50,"account_id":"girlfriend-youtube","platform":"youtube","account_label":"YouTube","account_handle":"@ladysublimessbbw","external_id":"UCgjoVIzGoVuzLWIkvjOKpRw","follower_count":3090,"following_count":null,"post_count":5,"like_count":null,"view_count":525283,"profile_url":null,"source_url":"https://www.googleapis.com/youtube/v3/channels","collected_at":"2026-06-16T22:30:48-04:00","snapshot_date":"2026-06-16","daily_gain":0},{"snapshot_id":57,"account_id":"girlfriend-youtube","platform":"youtube","account_label":"YouTube","account_handle":"@ladysublimessbbw","external_id":"UCgjoVIzGoVuzLWIkvjOKpRw","follower_count":3100,"following_count":null,"post_count":5,"like_count":null,"view_count":525943,"profile_url":null,"source_url":"https://www.googleapis.com/youtube/v3/channels","collected_at":"2026-06-17T08:01:53-04:00","snapshot_date":"2026-06-17","daily_gain":10},{"snapshot_id":64,"account_id":"girlfriend-youtube","platform":"youtube","account_label":"YouTube","account_handle":"@ladysublimessbbw","external_id":"UCgjoVIzGoVuzLWIkvjOKpRw","follower_count":3100,"following_count":null,"post_count":5,"like_count":null,"view_count":528829,"profile_url":null,"source_url":"https://www.googleapis.com/youtube/v3/channels","collected_at":"2026-06-19T08:02:42-04:00","snapshot_date":"2026-06-19","daily_gain":0},{"snapshot_id":71,"account_id":"girlfriend-youtube","platform":"youtube","account_label":"YouTube","account_handle":"@ladysublimessbbw","external_id":"UCgjoVIzGoVuzLWIkvjOKpRw","follower_count":3100,"following_count":null,"post_count":5,"like_count":null,"view_count":530054,"profile_url":null,"source_url":"https://www.googleapis.com/youtube/v3/channels","collected_at":"2026-06-20T10:26:53-04:00","snapshot_date":"2026-06-20","daily_gain":0},{"snapshot_id":78,"account_id":"girlfriend-youtube","platform":"youtube","account_label":"YouTube","account_handle":"@ladysublimessbbw","external_id":"UCgjoVIzGoVuzLWIkvjOKpRw","follower_count":3110,"following_count":null,"post_count":5,"like_count":null,"view_count":531507,"profile_url":null,"source_url":"https://www.googleapis.com/youtube/v3/channels","collected_at":"2026-06-21T08:22:22-04:00","snapshot_date":"2026-06-21","daily_gain":10},{"snapshot_id":52,"account_id":"lady-sublime-clips4sale","platform":"clips4sale","account_label":"Clips4Sale","account_handle":"Lady Sublime SSBBW","external_id":"163455","follower_count":1214,"following_count":null,"post_count":196,"like_count":null,"view_count":null,"profile_url":"https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw","source_url":"https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw","collected_at":"2026-06-16T22:30:49-04:00","snapshot_date":"2026-06-16","daily_gain":null},{"snapshot_id":59,"account_id":"lady-sublime-clips4sale","platform":"clips4sale","account_label":"Clips4Sale","account_handle":"Lady Sublime SSBBW","external_id":"163455","follower_count":1214,"following_count":null,"post_count":196,"like_count":null,"view_count":null,"profile_url":"https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw","source_url":"https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw","collected_at":"2026-06-17T08:01:53-04:00","snapshot_date":"2026-06-17","daily_gain":0},{"snapshot_id":66,"account_id":"lady-sublime-clips4sale","platform":"clips4sale","account_label":"Clips4Sale","account_handle":"Lady Sublime SSBBW","external_id":"163455","follower_count":1218,"following_count":null,"post_count":196,"like_count":null,"view_count":null,"profile_url":"https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw","source_url":"https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw","collected_at":"2026-06-19T08:02:42-04:00","snapshot_date":"2026-06-19","daily_gain":4},{"snapshot_id":73,"account_id":"lady-sublime-clips4sale","platform":"clips4sale","account_label":"Clips4Sale","account_handle":"Lady Sublime SSBBW","external_id":"163455","follower_count":1219,"following_count":null,"post_count":196,"like_count":null,"view_count":null,"profile_url":"https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw","source_url":"https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw","collected_at":"2026-06-20T10:26:54-04:00","snapshot_date":"2026-06-20","daily_gain":1},{"snapshot_id":80,"account_id":"lady-sublime-clips4sale","platform":"clips4sale","account_label":"Clips4Sale","account_handle":"Lady Sublime SSBBW","external_id":"163455","follower_count":1219,"following_count":null,"post_count":196,"like_count":null,"view_count":null,"profile_url":"https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw","source_url":"https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw","collected_at":"2026-06-21T08:22:22-04:00","snapshot_date":"2026-06-21","daily_gain":0},{"snapshot_id":13,"account_id":"lady-sublime-facebook-page","platform":"facebook","account_label":"Facebook Page","account_handle":"Lady Sublime","external_id":"107579258704403","follower_count":15052,"following_count":null,"post_count":null,"like_count":15052,"view_count":null,"profile_url":"https://www.facebook.com/107579258704403","source_url":"https://graph.facebook.com/v25.0/107579258704403","collected_at":"2026-06-14T22:44:24-04:00","snapshot_date":"2026-06-14","daily_gain":null},{"snapshot_id":32,"account_id":"lady-sublime-facebook-page","platform":"facebook","account_label":"Facebook Page","account_handle":"Lady Sublime","external_id":"107579258704403","follower_count":15043,"following_count":null,"post_count":null,"like_count":15043,"view_count":null,"profile_url":"https://www.facebook.com/107579258704403","source_url":"https://graph.facebook.com/v25.0/107579258704403","collected_at":"2026-06-15T19:05:47-04:00","snapshot_date":"2026-06-15","daily_gain":-9},{"snapshot_id":48,"account_id":"lady-sublime-facebook-page","platform":"facebook","account_label":"Facebook Page","account_handle":"Lady Sublime","external_id":"107579258704403","follower_count":15041,"following_count":null,"post_count":null,"like_count":15041,"view_count":null,"profile_url":"https://www.facebook.com/107579258704403","source_url":"https://graph.facebook.com/v25.0/107579258704403","collected_at":"2026-06-16T22:30:46-04:00","snapshot_date":"2026-06-16","daily_gain":-2},{"snapshot_id":55,"account_id":"lady-sublime-facebook-page","platform":"facebook","account_label":"Facebook Page","account_handle":"Lady Sublime","external_id":"107579258704403","follower_count":15042,"following_count":null,"post_count":null,"like_count":15042,"view_count":null,"profile_url":"https://www.facebook.com/107579258704403","source_url":"https://graph.facebook.com/v25.0/107579258704403","collected_at":"2026-06-17T08:01:48-04:00","snapshot_date":"2026-06-17","daily_gain":1},{"snapshot_id":62,"account_id":"lady-sublime-facebook-page","platform":"facebook","account_label":"Facebook Page","account_handle":"Lady Sublime","external_id":"107579258704403","follower_count":15031,"following_count":null,"post_count":null,"like_count":15031,"view_count":null,"profile_url":"https://www.facebook.com/107579258704403","source_url":"https://graph.facebook.com/v25.0/107579258704403","collected_at":"2026-06-19T08:02:39-04:00","snapshot_date":"2026-06-19","daily_gain":-11},{"snapshot_id":69,"account_id":"lady-sublime-facebook-page","platform":"facebook","account_label":"Facebook Page","account_handle":"Lady Sublime","external_id":"107579258704403","follower_count":15027,"following_count":null,"post_count":null,"like_count":15027,"view_count":null,"profile_url":"https://www.facebook.com/107579258704403","source_url":"https://graph.facebook.com/v25.0/107579258704403","collected_at":"2026-06-20T10:26:51-04:00","snapshot_date":"2026-06-20","daily_gain":-4},{"snapshot_id":76,"account_id":"lady-sublime-facebook-page","platform":"facebook","account_label":"Facebook Page","account_handle":"Lady Sublime","external_id":"107579258704403","follower_count":15025,"following_count":null,"post_count":null,"like_count":15025,"view_count":null,"profile_url":"https://www.facebook.com/107579258704403","source_url":"https://graph.facebook.com/v25.0/107579258704403","collected_at":"2026-06-21T08:22:18-04:00","snapshot_date":"2026-06-21","daily_gain":-2},{"snapshot_id":53,"account_id":"lady-sublime-manyvids","platform":"manyvids","account_label":"ManyVids","account_handle":"LadySublimeSSBBW","external_id":"1003456685","follower_count":2320,"following_count":17,"post_count":235,"like_count":null,"view_count":null,"profile_url":"https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos","source_url":"https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos","collected_at":"2026-06-16T22:30:49-04:00","snapshot_date":"2026-06-16","daily_gain":null},{"snapshot_id":60,"account_id":"lady-sublime-manyvids","platform":"manyvids","account_label":"ManyVids","account_handle":"LadySublimeSSBBW","external_id":"1003456685","follower_count":2320,"following_count":17,"post_count":235,"like_count":null,"view_count":null,"profile_url":"https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos","source_url":"https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos","collected_at":"2026-06-17T08:01:54-04:00","snapshot_date":"2026-06-17","daily_gain":0},{"snapshot_id":67,"account_id":"lady-sublime-manyvids","platform":"manyvids","account_label":"ManyVids","account_handle":"LadySublimeSSBBW","external_id":"1003456685","follower_count":2321,"following_count":17,"post_count":235,"like_count":null,"view_count":null,"profile_url":"https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos","source_url":"https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos","collected_at":"2026-06-19T08:02:44-04:00","snapshot_date":"2026-06-19","daily_gain":1},{"snapshot_id":74,"account_id":"lady-sublime-manyvids","platform":"manyvids","account_label":"ManyVids","account_handle":"LadySublimeSSBBW","external_id":"1003456685","follower_count":2322,"following_count":17,"post_count":235,"like_count":null,"view_count":null,"profile_url":"https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos","source_url":"https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos","collected_at":"2026-06-20T10:26:55-04:00","snapshot_date":"2026-06-20","daily_gain":1},{"snapshot_id":81,"account_id":"lady-sublime-manyvids","platform":"manyvids","account_label":"ManyVids","account_handle":"LadySublimeSSBBW","external_id":"1003456685","follower_count":2322,"following_count":17,"post_count":235,"like_count":null,"view_count":null,"profile_url":"https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos","source_url":"https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos","collected_at":"2026-06-21T08:22:23-04:00","snapshot_date":"2026-06-21","daily_gain":0}],"total_history":[{"snapshot_date":"2026-06-14","follower_count":111081,"daily_gain":null,"organic_gain":null,"newly_tracked_audience":0},{"snapshot_date":"2026-06-15","follower_count":144937,"daily_gain":33856,"organic_gain":8,"newly_tracked_audience":33848},{"snapshot_date":"2026-06-16","follower_count":148470,"daily_gain":3533,"organic_gain":-1,"newly_tracked_audience":3534},{"snapshot_date":"2026-06-17","follower_count":148517,"daily_gain":47,"organic_gain":47,"newly_tracked_audience":0},{"snapshot_date":"2026-06-19","follower_count":148691,"daily_gain":174,"organic_gain":174,"newly_tracked_audience":0},{"snapshot_date":"2026-06-20","follower_count":148774,"daily_gain":83,"organic_gain":83,"newly_tracked_audience":0},{"snapshot_date":"2026-06-21","follower_count":148832,"daily_gain":58,"organic_gain":58,"newly_tracked_audience":0}],"data_quality":[{"level":"warning","issue":"Partial 7-day history","detail":"Only 3/7 accounts have a full 7-day baseline. The longest observed history is 7 days."},{"level":"warning","issue":"Partial 30-day history","detail":"Only 0/7 accounts have a full 30-day baseline. The longest observed history is 7 days."},{"level":"warning","issue":"Stale content sample","detail":"Instagram (sample from Mar 6, 107 days old), Facebook Page (sample from Mar 6, 107 days old) use older owned-post samples. Current content recommendations are suppressed until newer media data is available."},{"level":"warning","issue":"Facebook follows context","detail":"Meta returned both a latest page-follows value (15,026) and a summed value across returned rows. The dashboard displays the latest value to avoid double-counting."}],"recommendations":[{"label":"Review what drove growth on Instagram","text":"Instagram gained +49 followers since the last update. Look at what was posted or promoted around that change and reuse the strongest pattern."},{"label":"Watch Facebook Page until the weekly trend is ready","text":"It changed -2 since the last update. One-day movement can be noisy, so treat it as a watch item."},{"label":"Keep your Instagram link steady","text":"49 of 835 profile views clicked through (5.87%). Keep the link and bio offer stable this week so the next update is comparable."}],"freshness":[{"platform":"Instagram","handle":"officialladysublime","latest_success":"2026-06-21T08:22:15-04:00","latest_attempt":"2026-06-21T08:22:15-04:00","status":"ok","error_message":null},{"platform":"X","handle":"LadySublimeBBW","latest_success":"2026-06-21T08:22:22-04:00","latest_attempt":"2026-06-21T08:22:22-04:00","status":"ok","error_message":null},{"platform":"Facebook Page","handle":"Lady Sublime","latest_success":"2026-06-21T08:22:18-04:00","latest_attempt":"2026-06-21T08:22:18-04:00","status":"ok","error_message":null},{"platform":"TikTok","handle":"ladysublimessbbw","latest_success":"2026-06-21T08:22:21-04:00","latest_attempt":"2026-06-21T08:22:21-04:00","status":"ok","error_message":null},{"platform":"YouTube","handle":"@ladysublimessbbw","latest_success":"2026-06-21T08:22:22-04:00","latest_attempt":"2026-06-21T08:22:22-04:00","status":"ok","error_message":null},{"platform":"ManyVids","handle":"LadySublimeSSBBW","latest_success":"2026-06-21T08:22:23-04:00","latest_attempt":"2026-06-21T08:22:23-04:00","status":"ok","error_message":null},{"platform":"Clips4Sale","handle":"Lady Sublime SSBBW","latest_success":"2026-06-21T08:22:22-04:00","latest_attempt":"2026-06-21T08:22:22-04:00","status":"ok","error_message":null}],"sources":[{"platform":"Instagram","url":"https://developers.facebook.com/docs/instagram-platform/instagram-graph-api/reference/ig-user/","note":"Profile counts and owned-account media metrics require Instagram Graph API access for professional accounts."},{"platform":"Instagram Insights","url":"https://developers.facebook.com/docs/instagram-platform/api-reference/instagram-user/insights/","note":"Account insights are optional and require additional insights permissions."},{"platform":"Facebook Page","url":"https://developers.facebook.com/docs/graph-api/reference/page/","note":"Page follower, like, rating, and talking-about counts come from the Page node."},{"platform":"Facebook Page Insights","url":"https://developers.facebook.com/docs/graph-api/reference/page/insights/","note":"Page insights are optional, Page-token based, and may return empty data depending on metric availability."},{"platform":"TikTok","url":"https://developers.tiktok.com/doc/tiktok-api-v2-get-user-info","note":"follower_count is returned from /v2/user/info/ with user.info.stats authorization."},{"platform":"YouTube","url":"https://developers.google.com/youtube/v3/docs/channels/list","note":"Subscriber counts come from channels.list statistics when public."},{"platform":"X","url":"https://docs.x.com/x-api/users/get-user-by-username","note":"followers_count is available in public_metrics on user lookup responses."},{"platform":"Clips4Sale","url":"https://www.clips4sale.com/clips/page/studios","note":"Public store pages expose store-level Followers and Clips counts; this is public-page collection, not an official API feed."},{"platform":"ManyVids","url":"https://help.manyvids.com/hc/en-ca/articles/44004825450515-How-do-I-hide-my-followers","note":"Public profile pages can expose Followers when the creator's follower visibility is public; this is public-page collection, not an official API feed."}]}</script>
+  <script>
+	    (() => {
+	      const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+	      const reduceTransparency = window.matchMedia('(prefers-reduced-transparency: reduce)').matches;
+	      const root = document.documentElement;
+	      const liquids = Array.from(document.querySelectorAll('[data-liquid]'));
+	      const clamp = (value, min, max) => Math.max(min, Math.min(max, value));
+	      function setLiquidVars(el, clientX, clientY) {
+	        const rect = el.getBoundingClientRect();
+	        if (!rect.width || !rect.height) return;
+	        const xUnit = clamp((clientX - rect.left) / rect.width, 0, 1);
+	        const yUnit = clamp((clientY - rect.top) / rect.height, 0, 1);
+	        const x = xUnit * 100;
+	        const y = yUnit * 100;
+	        el.style.setProperty('--glass-highlight-x', `${x.toFixed(2)}%`);
+	        el.style.setProperty('--glass-highlight-y', `${y.toFixed(2)}%`);
+	        el.style.setProperty('--glass-x-num', xUnit.toFixed(4));
+	        el.style.setProperty('--glass-y-num', yUnit.toFixed(4));
+	        if (!reduceMotion && !reduceTransparency) {
+	          const primarySurface = el.classList.contains('top-nav') || el.classList.contains('rail') || el.classList.contains('bottom-tabs');
+	          const controlSurface = el.classList.contains('liquid-control') || el.classList.contains('search-pill') || el.classList.contains('top-status');
+	          if (!primarySurface && !controlSurface) return;
+	          const tiltScale = primarySurface ? 1 : 0.5;
+	          el.style.setProperty('--tilt-x', `${((xUnit - 0.5) * 5 * tiltScale).toFixed(2)}deg`);
+	          el.style.setProperty('--tilt-y', `${((0.5 - yUnit) * 4 * tiltScale).toFixed(2)}deg`);
+	        }
+	      }
+	      function updatePointer(clientX, clientY) {
+	        const sceneX = (clientX / window.innerWidth) * 100;
+	        const sceneY = (clientY / window.innerHeight) * 100;
+	        root.style.setProperty('--scene-x', `${sceneX.toFixed(2)}%`);
+	        root.style.setProperty('--scene-y', `${sceneY.toFixed(2)}%`);
+	        if (reduceTransparency) return;
+	        liquids.forEach((el) => setLiquidVars(el, clientX, clientY));
+	      }
+	      let pointerFrame = null;
+	      function queuePointer(event) {
+	        const point = event.touches ? event.touches[0] : event;
+	        if (!point) return;
+	        if (pointerFrame) window.cancelAnimationFrame(pointerFrame);
+	        pointerFrame = window.requestAnimationFrame(() => updatePointer(point.clientX, point.clientY));
+	      }
+	      document.addEventListener('pointermove', queuePointer, { passive: true });
+	      document.addEventListener('touchmove', queuePointer, { passive: true });
+	      updatePointer(window.innerWidth * 0.68, 96);
+	      const searches = Array.from(document.querySelectorAll('[data-dashboard-search]'));
+	      if (searches.length) {
+	        const searchableNodes = Array.from(document.querySelectorAll('.platform-row, .data-table tbody tr, .recommendations li, .insight'));
+	        const updateSearchState = () => {
+	          const active = searches.some((input) => document.activeElement === input || input.value.trim().length > 0);
+	          document.body.classList.toggle('search-active', active);
+	        };
+	        const applySearch = (source) => {
+	          const value = source.value;
+	          searches.forEach((input) => {
+	            if (input !== source && input.value !== value) {
+	              input.value = value;
+	            }
+	          });
+	          const query = value.trim().toLowerCase();
+	          searchableNodes.forEach((node) => {
+	            const match = !query || node.textContent.toLowerCase().includes(query);
+	            node.classList.toggle('search-filter-hidden', !match);
+	          });
+	          updateSearchState();
+	        };
+	        searches.forEach((input) => {
+	          input.addEventListener('input', () => applySearch(input));
+	          input.addEventListener('focus', updateSearchState);
+	          input.addEventListener('blur', updateSearchState);
+	        });
+	      }
+	      const tabLinks = Array.from(document.querySelectorAll('.bottom-tabs .tab-item'));
+	      const navTargets = tabLinks
+	        .map((link) => {
+	          const targetId = link.dataset.target;
+	          const target = targetId ? document.getElementById(targetId) : null;
+	          return target ? { link, target } : null;
+	        })
+	        .filter(Boolean);
+	      function setActiveTab(activeLink) {
+	        tabLinks.forEach((link) => {
+	          if (link === activeLink) {
+	            link.setAttribute('aria-current', 'page');
+	          } else {
+	            link.removeAttribute('aria-current');
+	          }
+	        });
+	      }
+	      function controlTarget(control) {
+	        const targetId = control?.dataset?.target;
+	        return targetId ? document.getElementById(targetId) : null;
+	      }
+	      function stickyOffset() {
+	        const nav = document.querySelector('.top-nav-wrap');
+	        if (!nav) return 18;
+	        const rect = nav.getBoundingClientRect();
+	        return Math.max(18, Math.round(rect.height + 22));
+	      }
+	      function scrollToSection(target) {
+	        const top = target.getBoundingClientRect().top + window.scrollY - stickyOffset();
+	        window.scrollTo({
+	          top: Math.max(0, top),
+	          behavior: reduceMotion ? 'auto' : 'smooth',
+	        });
+	      }
+	      document.addEventListener('click', (event) => {
+	        const control = event.target.closest('[data-target]');
+	        if (!control) return;
+	        const target = controlTarget(control);
+	        if (!target) return;
+	        event.preventDefault();
+	        if (control.classList.contains('tab-item')) setActiveTab(control);
+	        scrollToSection(target);
+	      });
+	      if ('IntersectionObserver' in window && navTargets.length) {
+	        const observer = new IntersectionObserver((entries) => {
+	          const visible = entries
+	            .filter((entry) => entry.isIntersecting)
+	            .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+	          if (!visible) return;
+	          const match = navTargets.find((item) => item.target === visible.target);
+	          if (match) setActiveTab(match.link);
+	        }, { rootMargin: '-20% 0px -58% 0px', threshold: [0.08, 0.22, 0.4] });
+	        navTargets.forEach((item) => observer.observe(item.target));
+	      }
+	      const payloadScript = document.getElementById('dashboard-payload');
+      let embeddedPayload;
+      function getEmbeddedPayload() {
+        if (embeddedPayload) return embeddedPayload;
+        if (!payloadScript) return null;
+        try {
+          embeddedPayload = JSON.parse(payloadScript.textContent || '{}');
+        } catch (error) {
+          embeddedPayload = null;
+        }
+        return embeddedPayload;
+      }
+      function csvValue(value) {
+        const text = value === null || value === undefined
+          ? ''
+          : (typeof value === 'object' ? JSON.stringify(value) : String(value));
+        return /[",\n]/.test(text) ? `"${text.replaceAll('"', '""')}"` : text;
+      }
+      function rowsToCsv(rows) {
+        if (!rows || !rows.length) return '';
+        const fields = Object.keys(rows[0]);
+        return [
+          fields.map(csvValue).join(','),
+          ...rows.map((row) => fields.map((field) => csvValue(row[field])).join(',')),
+        ].join('\n') + '\n';
+      }
+      function downloadText(filename, mimeType, text) {
+        const blob = new Blob([text], { type: mimeType });
+        const url = URL.createObjectURL(blob);
+        const link = document.createElement('a');
+        link.href = url;
+        link.download = filename;
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
+        setTimeout(() => URL.revokeObjectURL(url), 1000);
+      }
+      const jsonDownload = document.getElementById('download-dashboard-json');
+      if (jsonDownload) {
+        jsonDownload.addEventListener('click', (event) => {
+          const payload = getEmbeddedPayload();
+          if (!payload) return;
+          event.preventDefault();
+          downloadText('dashboard_payload.json', 'application/json', JSON.stringify(payload, null, 2));
+        });
+      }
+      const csvDownload = document.getElementById('download-platform-csv');
+      if (csvDownload) {
+        csvDownload.addEventListener('click', (event) => {
+          const payload = getEmbeddedPayload();
+          const rows = payload && Array.isArray(payload.accounts) ? payload.accounts : null;
+          if (!rows) return;
+          event.preventDefault();
+          downloadText('platform_summary.csv', 'text/csv', rowsToCsv(rows));
+        });
+      }
+    })();
+    </script>
+</body>
+</html>
