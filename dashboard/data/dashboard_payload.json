@@ -1,17 +1,17 @@
 {
   "title": "Social Media Growth Dashboard",
-  "generated_at": "2026-06-28T08:02:37-04:00",
+  "generated_at": "2026-06-28T15:23:47-04:00",
   "kpis": {
-    "total_followers": 149111,
-    "previous_snapshot_gain": 70,
+    "total_followers": 156561,
+    "previous_snapshot_gain": 7520,
     "organic_previous_snapshot_gain": 70,
-    "newly_tracked_audience": 0,
+    "newly_tracked_audience": 7450,
     "gain_7d": 279,
     "gain_30d": 0,
-    "gain_7d_status": "complete",
+    "gain_7d_status": "partial",
     "gain_30d_status": "partial",
-    "healthy_sources": 7,
-    "tracked_accounts": 7,
+    "healthy_sources": 8,
+    "tracked_accounts": 8,
     "previous_snapshot_sources": 7,
     "full_7d_sources": 7,
     "full_30d_sources": 0
@@ -29,7 +29,7 @@
     "previous_snapshot_sources": 7,
     "full_7d_sources": 7,
     "full_30d_sources": 0,
-    "tracked_accounts": 7
+    "tracked_accounts": 8
   },
   "accounts": [
     {
@@ -217,6 +217,68 @@
       "insight_page_views_total_sum": 73,
       "insight_page_follows_latest": 15008,
       "insight_page_follows_sum": 30017
+    },
+    {
+      "account_id": "lady-sublime-curvage",
+      "platform": "curvage",
+      "label": "Curvage",
+      "handle": "LadySublimeSSBBW",
+      "follower_count": 7450,
+      "following_count": null,
+      "post_count": null,
+      "like_count": null,
+      "view_count": null,
+      "profile_url": "https://curvage.org/forum/index.php?/profile/212446-ladysublimessbbw/",
+      "category": null,
+      "page_likes": null,
+      "talking_about_count": null,
+      "checkins": null,
+      "were_here_count": null,
+      "rating_count": null,
+      "overall_star_rating": null,
+      "display_name": null,
+      "website": null,
+      "recent_content_status": null,
+      "recent_content_count": null,
+      "recent_content_reactions": null,
+      "recent_content_comments": null,
+      "recent_content_shares": null,
+      "recent_content_engagements": null,
+      "recent_content_avg_engagements": null,
+      "recent_best_content_engagements": null,
+      "recent_best_content_url": null,
+      "recent_latest_content_at": null,
+      "insights_status": null,
+      "previous_snapshot_gain": null,
+      "previous_snapshot_growth_rate": null,
+      "gain_7d": 0,
+      "gain_7d_growth_rate": 0.0,
+      "gain_7d_complete": false,
+      "gain_7d_observed_days": 0,
+      "gain_30d": 0,
+      "gain_30d_growth_rate": 0.0,
+      "gain_30d_complete": false,
+      "gain_30d_observed_days": 0,
+      "first_snapshot": true,
+      "first_snapshot_date": "2026-06-28",
+      "latest_success": "2026-06-28T15:23:47-04:00",
+      "latest_snapshot_date": "2026-06-28",
+      "insight_reach_latest": null,
+      "insight_views_total_value": null,
+      "insight_profile_views_total_value": null,
+      "insight_website_clicks_total_value": null,
+      "insight_accounts_engaged_total_value": null,
+      "insight_total_interactions_total_value": null,
+      "insight_likes_total_value": null,
+      "insight_comments_total_value": null,
+      "insight_shares_total_value": null,
+      "insight_saves_total_value": null,
+      "insight_page_post_engagements_latest": null,
+      "insight_page_post_engagements_sum": null,
+      "insight_page_views_total_latest": null,
+      "insight_page_views_total_sum": null,
+      "insight_page_follows_latest": null,
+      "insight_page_follows_sum": null
     },
     {
       "account_id": "girlfriend-youtube",
@@ -1567,6 +1629,24 @@
       "daily_gain": 2
     },
     {
+      "snapshot_id": 131,
+      "account_id": "lady-sublime-curvage",
+      "platform": "curvage",
+      "account_label": "Curvage",
+      "account_handle": "LadySublimeSSBBW",
+      "external_id": "212446",
+      "follower_count": 7450,
+      "following_count": null,
+      "post_count": null,
+      "like_count": null,
+      "view_count": null,
+      "profile_url": "https://curvage.org/forum/index.php?/profile/212446-ladysublimessbbw/",
+      "source_url": "https://curvage.org/forum/index.php?/profile/212446-ladysublimessbbw/",
+      "collected_at": "2026-06-28T15:23:47-04:00",
+      "snapshot_date": "2026-06-28",
+      "daily_gain": null
+    },
+    {
       "snapshot_id": 13,
       "account_id": "lady-sublime-facebook-page",
       "platform": "facebook",
@@ -2086,17 +2166,32 @@
     },
     {
       "snapshot_date": "2026-06-28",
-      "follower_count": 149111,
-      "daily_gain": 70,
+      "follower_count": 156561,
+      "daily_gain": 7520,
       "organic_gain": 70,
-      "newly_tracked_audience": 0
+      "newly_tracked_audience": 7450
     }
   ],
   "data_quality": [
     {
       "level": "warning",
+      "issue": "Newly tracked audience",
+      "detail": "Curvage have first snapshots only, so their current audience is excluded from organic growth and counted as newly tracked coverage."
+    },
+    {
+      "level": "warning",
+      "issue": "Total change is not organic growth",
+      "detail": "7,450 followers are from newly tracked platforms; organic change from accounts with history is +70."
+    },
+    {
+      "level": "warning",
+      "issue": "Partial 7-day history",
+      "detail": "Only 7/8 accounts have a full 7-day baseline. The longest observed history is 14 days."
+    },
+    {
+      "level": "warning",
       "issue": "Partial 30-day history",
-      "detail": "Only 0/7 accounts have a full 30-day baseline. The longest observed history is 14 days."
+      "detail": "Only 0/8 accounts have a full 30-day baseline. The longest observed history is 14 days."
     },
     {
       "level": "warning",
@@ -2121,6 +2216,10 @@
     {
       "label": "Keep your Instagram link steady",
       "text": "38 of 867 profile views clicked through (4.38%). Keep the link and bio offer stable this week so the next update is comparable."
+    },
+    {
+      "label": "Treat new tracking coverage separately",
+      "text": "7,450 followers came from newly connected tracking coverage. Use since-last-update change for day-to-day movement."
     }
   ],
   "freshness": [
@@ -2145,6 +2244,14 @@
       "handle": "Lady Sublime",
       "latest_success": "2026-06-28T08:02:29-04:00",
       "latest_attempt": "2026-06-28T08:02:29-04:00",
+      "status": "ok",
+      "error_message": null
+    },
+    {
+      "platform": "Curvage",
+      "handle": "LadySublimeSSBBW",
+      "latest_success": "2026-06-28T15:23:47-04:00",
+      "latest_attempt": "2026-06-28T15:23:47-04:00",
       "status": "ok",
       "error_message": null
     },
@@ -2226,6 +2333,11 @@
       "platform": "ManyVids",
       "url": "https://help.manyvids.com/hc/en-ca/articles/44004825450515-How-do-I-hide-my-followers",
       "note": "Public profile pages can expose Followers when the creator's follower visibility is public; this is public-page collection, not an official API feed."
+    },
+    {
+      "platform": "Curvage",
+      "url": "https://curvage.org/",
+      "note": "Public profile pages can expose Followers when visible; this is public-page collection, not an official API feed."
     }
   ]
 }
