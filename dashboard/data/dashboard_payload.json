@@ -1,17 +1,17 @@
 {
   "title": "Social Media Growth Dashboard",
-  "generated_at": "2026-06-29T11:21:49-04:00",
+  "generated_at": "2026-06-29T14:37:33-04:00",
   "kpis": {
-    "total_followers": 156594,
-    "previous_snapshot_gain": 39,
+    "total_followers": 162803,
+    "previous_snapshot_gain": 6248,
     "organic_previous_snapshot_gain": 39,
-    "newly_tracked_audience": 0,
+    "newly_tracked_audience": 6209,
     "gain_7d": 265,
     "gain_30d": 0,
     "gain_7d_status": "partial",
     "gain_30d_status": "partial",
-    "healthy_sources": 8,
-    "tracked_accounts": 8,
+    "healthy_sources": 9,
+    "tracked_accounts": 9,
     "previous_snapshot_sources": 8,
     "full_7d_sources": 7,
     "full_30d_sources": 0
@@ -29,7 +29,7 @@
     "previous_snapshot_sources": 8,
     "full_7d_sources": 7,
     "full_30d_sources": 0,
-    "tracked_accounts": 8
+    "tracked_accounts": 9
   },
   "accounts": [
     {
@@ -262,6 +262,68 @@
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-28",
       "latest_success": "2026-06-29T11:21:41-04:00",
+      "latest_snapshot_date": "2026-06-29",
+      "insight_reach_latest": null,
+      "insight_views_total_value": null,
+      "insight_profile_views_total_value": null,
+      "insight_website_clicks_total_value": null,
+      "insight_accounts_engaged_total_value": null,
+      "insight_total_interactions_total_value": null,
+      "insight_likes_total_value": null,
+      "insight_comments_total_value": null,
+      "insight_shares_total_value": null,
+      "insight_saves_total_value": null,
+      "insight_page_post_engagements_latest": null,
+      "insight_page_post_engagements_sum": null,
+      "insight_page_views_total_latest": null,
+      "insight_page_views_total_sum": null,
+      "insight_page_follows_latest": null,
+      "insight_page_follows_sum": null
+    },
+    {
+      "account_id": "lady-sublime-reddit-profile",
+      "platform": "reddit",
+      "label": "Reddit Profile",
+      "handle": "u/LadySublimeSSBBW",
+      "follower_count": 6209,
+      "following_count": null,
+      "post_count": null,
+      "like_count": null,
+      "view_count": null,
+      "profile_url": "https://www.reddit.com/user/LadySublimeSSBBW/",
+      "category": null,
+      "page_likes": null,
+      "talking_about_count": null,
+      "checkins": null,
+      "were_here_count": null,
+      "rating_count": null,
+      "overall_star_rating": null,
+      "display_name": null,
+      "website": null,
+      "recent_content_status": null,
+      "recent_content_count": null,
+      "recent_content_reactions": null,
+      "recent_content_comments": null,
+      "recent_content_shares": null,
+      "recent_content_engagements": null,
+      "recent_content_avg_engagements": null,
+      "recent_best_content_engagements": null,
+      "recent_best_content_url": null,
+      "recent_latest_content_at": null,
+      "insights_status": null,
+      "previous_snapshot_gain": null,
+      "previous_snapshot_growth_rate": null,
+      "gain_7d": 0,
+      "gain_7d_growth_rate": 0.0,
+      "gain_7d_complete": false,
+      "gain_7d_observed_days": 0,
+      "gain_30d": 0,
+      "gain_30d_growth_rate": 0.0,
+      "gain_30d_complete": false,
+      "gain_30d_observed_days": 0,
+      "first_snapshot": true,
+      "first_snapshot_date": "2026-06-29",
+      "latest_success": "2026-06-29T14:37:33-04:00",
       "latest_snapshot_date": "2026-06-29",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
@@ -2221,6 +2283,24 @@
       "collected_at": "2026-06-29T08:02:16-04:00",
       "snapshot_date": "2026-06-29",
       "daily_gain": 0
+    },
+    {
+      "snapshot_id": 148,
+      "account_id": "lady-sublime-reddit-profile",
+      "platform": "reddit",
+      "account_label": "Reddit Profile",
+      "account_handle": "u/LadySublimeSSBBW",
+      "external_id": null,
+      "follower_count": 6209,
+      "following_count": null,
+      "post_count": null,
+      "like_count": null,
+      "view_count": null,
+      "profile_url": "https://www.reddit.com/user/LadySublimeSSBBW/",
+      "source_url": "https://www.reddit.com/user/LadySublimeSSBBW/",
+      "collected_at": "2026-06-29T14:37:33-04:00",
+      "snapshot_date": "2026-06-29",
+      "daily_gain": null
     }
   ],
   "total_history": [
@@ -2317,22 +2397,32 @@
     },
     {
       "snapshot_date": "2026-06-29",
-      "follower_count": 156594,
-      "daily_gain": 39,
+      "follower_count": 162803,
+      "daily_gain": 6248,
       "organic_gain": 39,
-      "newly_tracked_audience": 0
+      "newly_tracked_audience": 6209
     }
   ],
   "data_quality": [
     {
       "level": "warning",
+      "issue": "Newly tracked audience",
+      "detail": "Reddit Profile have first snapshots only, so their current audience is excluded from organic growth and counted as newly tracked coverage."
+    },
+    {
+      "level": "warning",
+      "issue": "Total change is not organic growth",
+      "detail": "6,209 followers are from newly tracked platforms; organic change from accounts with history is +39."
+    },
+    {
+      "level": "warning",
       "issue": "Partial 7-day history",
-      "detail": "Only 7/8 accounts have a full 7-day baseline. The longest observed history is 15 days."
+      "detail": "Only 7/9 accounts have a full 7-day baseline. The longest observed history is 15 days."
     },
     {
       "level": "warning",
       "issue": "Partial 30-day history",
-      "detail": "Only 0/8 accounts have a full 30-day baseline. The longest observed history is 15 days."
+      "detail": "Only 0/9 accounts have a full 30-day baseline. The longest observed history is 15 days."
     },
     {
       "level": "warning",
@@ -2361,6 +2451,10 @@
     {
       "label": "Keep your Instagram link steady",
       "text": "177 of 2,735 profile views clicked through (6.47%). Keep the link and bio offer stable this week so the next update is comparable."
+    },
+    {
+      "label": "Treat new tracking coverage separately",
+      "text": "6,209 followers came from newly connected tracking coverage. Use since-last-update change for day-to-day movement."
     }
   ],
   "freshness": [
@@ -2393,6 +2487,14 @@
       "handle": "LadySublimeSSBBW",
       "latest_success": "2026-06-29T11:21:41-04:00",
       "latest_attempt": "2026-06-29T11:21:41-04:00",
+      "status": "ok",
+      "error_message": null
+    },
+    {
+      "platform": "Reddit Profile",
+      "handle": "u/LadySublimeSSBBW",
+      "latest_success": "2026-06-29T14:37:33-04:00",
+      "latest_attempt": "2026-06-29T14:37:33-04:00",
       "status": "ok",
       "error_message": null
     },
