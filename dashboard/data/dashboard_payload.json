@@ -1,6 +1,6 @@
 {
   "title": "Social Media Growth Dashboard",
-  "generated_at": "2026-07-01T11:49:02-04:00",
+  "generated_at": "2026-07-01T11:52:58-04:00",
   "kpis": {
     "total_followers": 171444,
     "previous_snapshot_gain": 98,
@@ -509,7 +509,7 @@
       "gain_30d_observed_days": 17,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-14",
-      "latest_success": "2026-07-01T08:01:52-04:00",
+      "latest_success": "2026-07-01T11:52:49-04:00",
       "latest_snapshot_date": "2026-07-01",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
@@ -571,7 +571,7 @@
       "gain_30d_observed_days": 15,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-16",
-      "latest_success": "2026-07-01T08:01:54-04:00",
+      "latest_success": "2026-07-01T11:52:49-04:00",
       "latest_snapshot_date": "2026-07-01",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
@@ -1815,7 +1815,7 @@
       "daily_gain": 0
     },
     {
-      "snapshot_id": 162,
+      "snapshot_id": 170,
       "account_id": "girlfriend-youtube",
       "platform": "youtube",
       "account_label": "YouTube",
@@ -1828,7 +1828,7 @@
       "view_count": 544405,
       "profile_url": null,
       "source_url": "https://www.googleapis.com/youtube/v3/channels",
-      "collected_at": "2026-07-01T08:01:52-04:00",
+      "collected_at": "2026-07-01T11:52:49-04:00",
       "snapshot_date": "2026-07-01",
       "daily_gain": 0
     },
@@ -2715,7 +2715,7 @@
       "daily_gain": 0
     },
     {
-      "snapshot_id": 165,
+      "snapshot_id": 171,
       "account_id": "lady-sublime-manyvids",
       "platform": "manyvids",
       "account_label": "ManyVids",
@@ -2728,7 +2728,7 @@
       "view_count": null,
       "profile_url": "https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos",
       "source_url": "https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos",
-      "collected_at": "2026-07-01T08:01:54-04:00",
+      "collected_at": "2026-07-01T11:52:49-04:00",
       "snapshot_date": "2026-07-01",
       "daily_gain": 0
     },
@@ -3019,16 +3019,16 @@
     {
       "platform": "YouTube",
       "handle": "@ladysublimessbbw",
-      "latest_success": "2026-07-01T08:01:52-04:00",
-      "latest_attempt": "2026-07-01T08:01:52-04:00",
+      "latest_success": "2026-07-01T11:52:49-04:00",
+      "latest_attempt": "2026-07-01T11:52:49-04:00",
       "status": "ok",
       "error_message": null
     },
     {
       "platform": "ManyVids",
       "handle": "LadySublimeSSBBW",
-      "latest_success": "2026-07-01T08:01:54-04:00",
-      "latest_attempt": "2026-07-01T08:01:54-04:00",
+      "latest_success": "2026-07-01T11:52:49-04:00",
+      "latest_attempt": "2026-07-01T11:52:49-04:00",
       "status": "ok",
       "error_message": null
     },
