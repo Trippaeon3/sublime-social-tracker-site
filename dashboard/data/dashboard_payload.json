@@ -1,18 +1,18 @@
 {
   "title": "Social Media Growth Dashboard",
-  "generated_at": "2026-07-01T11:45:01-04:00",
+  "generated_at": "2026-07-01T11:49:02-04:00",
   "kpis": {
-    "total_followers": 171423,
-    "previous_snapshot_gain": 7753,
-    "organic_previous_snapshot_gain": 77,
-    "newly_tracked_audience": 7676,
+    "total_followers": 171444,
+    "previous_snapshot_gain": 98,
+    "organic_previous_snapshot_gain": 98,
+    "newly_tracked_audience": 0,
     "gain_7d": 342,
     "gain_30d": 0,
     "gain_7d_status": "partial",
     "gain_30d_status": "partial",
     "healthy_sources": 11,
     "tracked_accounts": 11,
-    "previous_snapshot_sources": 10,
+    "previous_snapshot_sources": 11,
     "full_7d_sources": 7,
     "full_30d_sources": 0
   },
@@ -26,7 +26,7 @@
     "seven_day_label": "7D ready",
     "thirty_day_label": "30D available Jul 14",
     "all_label": "All available history",
-    "previous_snapshot_sources": 10,
+    "previous_snapshot_sources": 11,
     "full_7d_sources": 7,
     "full_30d_sources": 0,
     "tracked_accounts": 11
@@ -223,7 +223,7 @@
       "platform": "onlyfans",
       "label": "OnlyFans",
       "handle": "LadySublimeSSBBW",
-      "follower_count": 7676,
+      "follower_count": 7697,
       "following_count": null,
       "post_count": null,
       "like_count": null,
@@ -249,20 +249,20 @@
       "recent_best_content_url": null,
       "recent_latest_content_at": null,
       "insights_status": null,
-      "previous_snapshot_gain": null,
-      "previous_snapshot_growth_rate": null,
-      "gain_7d": 0,
-      "gain_7d_growth_rate": 0.0,
+      "previous_snapshot_gain": 21,
+      "previous_snapshot_growth_rate": 0.0027357998957790518,
+      "gain_7d": 21,
+      "gain_7d_growth_rate": 0.0027357998957790518,
       "gain_7d_complete": false,
-      "gain_7d_observed_days": 0,
-      "gain_30d": 0,
-      "gain_30d_growth_rate": 0.0,
+      "gain_7d_observed_days": 2,
+      "gain_30d": 21,
+      "gain_30d_growth_rate": 0.0027357998957790518,
       "gain_30d_complete": false,
-      "gain_30d_observed_days": 0,
-      "first_snapshot": true,
+      "gain_30d_observed_days": 2,
+      "first_snapshot": false,
       "first_snapshot_date": "2026-06-29",
-      "latest_success": "2026-06-29T15:38:40-04:00",
-      "latest_snapshot_date": "2026-06-29",
+      "latest_success": "2026-07-01T11:48:55-04:00",
+      "latest_snapshot_date": "2026-07-01",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
       "insight_profile_views_total_value": null,
@@ -2751,6 +2751,24 @@
       "daily_gain": null
     },
     {
+      "snapshot_id": 169,
+      "account_id": "lady-sublime-onlyfans",
+      "platform": "onlyfans",
+      "account_label": "OnlyFans",
+      "account_handle": "LadySublimeSSBBW",
+      "external_id": null,
+      "follower_count": 7697,
+      "following_count": null,
+      "post_count": null,
+      "like_count": null,
+      "view_count": null,
+      "profile_url": null,
+      "source_url": null,
+      "collected_at": "2026-07-01T11:48:55-04:00",
+      "snapshot_date": "2026-07-01",
+      "daily_gain": 21
+    },
+    {
       "snapshot_id": 148,
       "account_id": "lady-sublime-reddit-profile",
       "platform": "reddit",
@@ -2895,23 +2913,13 @@
     },
     {
       "snapshot_date": "2026-07-01",
-      "follower_count": 171423,
-      "daily_gain": 77,
-      "organic_gain": 77,
+      "follower_count": 171444,
+      "daily_gain": 98,
+      "organic_gain": 98,
       "newly_tracked_audience": 0
     }
   ],
   "data_quality": [
-    {
-      "level": "warning",
-      "issue": "Newly tracked audience",
-      "detail": "OnlyFans have first snapshots only, so their current audience is excluded from organic growth and counted as newly tracked coverage."
-    },
-    {
-      "level": "warning",
-      "issue": "Total change is not organic growth",
-      "detail": "7,676 followers are from newly tracked platforms; organic change from accounts with history is +77."
-    },
     {
       "level": "warning",
       "issue": "Partial 7-day history",
@@ -2949,10 +2957,6 @@
     {
       "label": "Keep your Instagram link steady",
       "text": "89 of 1,619 profile views clicked through (5.50%). Keep the link and bio offer stable this week so the next update is comparable."
-    },
-    {
-      "label": "Treat new tracking coverage separately",
-      "text": "7,676 followers came from newly connected tracking coverage. Use since-last-update change for day-to-day movement."
     }
   ],
   "freshness": [
@@ -2983,8 +2987,8 @@
     {
       "platform": "OnlyFans",
       "handle": "LadySublimeSSBBW",
-      "latest_success": "2026-06-29T15:38:40-04:00",
-      "latest_attempt": "2026-06-29T15:38:40-04:00",
+      "latest_success": "2026-07-01T11:48:55-04:00",
+      "latest_attempt": "2026-07-01T11:48:55-04:00",
       "status": "ok",
       "error_message": null
     },
