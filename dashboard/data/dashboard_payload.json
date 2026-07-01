@@ -1,16 +1,16 @@
 {
   "title": "Social Media Growth Dashboard",
-  "generated_at": "2026-07-01T08:01:55-04:00",
+  "generated_at": "2026-07-01T11:39:08-04:00",
   "kpis": {
-    "total_followers": 171400,
-    "previous_snapshot_gain": 14696,
-    "organic_previous_snapshot_gain": 70,
+    "total_followers": 171409,
+    "previous_snapshot_gain": 14689,
+    "organic_previous_snapshot_gain": 63,
     "newly_tracked_audience": 14626,
     "gain_7d": 342,
     "gain_30d": 0,
     "gain_7d_status": "partial",
     "gain_30d_status": "partial",
-    "healthy_sources": 10,
+    "healthy_sources": 11,
     "tracked_accounts": 11,
     "previous_snapshot_sources": 8,
     "full_7d_sources": 7,
@@ -285,7 +285,7 @@
       "platform": "curvage",
       "label": "Curvage",
       "handle": "LadySublimeSSBBW",
-      "follower_count": 7480,
+      "follower_count": 7489,
       "following_count": null,
       "post_count": null,
       "like_count": null,
@@ -311,20 +311,20 @@
       "recent_best_content_url": null,
       "recent_latest_content_at": null,
       "insights_status": null,
-      "previous_snapshot_gain": 16,
-      "previous_snapshot_growth_rate": 0.0021436227224008574,
-      "gain_7d": 20,
-      "gain_7d_growth_rate": 0.002680965147453083,
+      "previous_snapshot_gain": 9,
+      "previous_snapshot_growth_rate": 0.0012032085561497327,
+      "gain_7d": 29,
+      "gain_7d_growth_rate": 0.0038873994638069704,
       "gain_7d_complete": false,
-      "gain_7d_observed_days": 2,
-      "gain_30d": 20,
-      "gain_30d_growth_rate": 0.002680965147453083,
+      "gain_7d_observed_days": 3,
+      "gain_30d": 29,
+      "gain_30d_growth_rate": 0.0038873994638069704,
       "gain_30d_complete": false,
-      "gain_30d_observed_days": 2,
+      "gain_30d_observed_days": 3,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-28",
-      "latest_success": "2026-06-30T11:25:15-04:00",
-      "latest_snapshot_date": "2026-06-30",
+      "latest_success": "2026-07-01T11:38:54-04:00",
+      "latest_snapshot_date": "2026-07-01",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
       "insight_profile_views_total_value": null,
@@ -2139,6 +2139,24 @@
       "daily_gain": 16
     },
     {
+      "snapshot_id": 166,
+      "account_id": "lady-sublime-curvage",
+      "platform": "curvage",
+      "account_label": "Curvage",
+      "account_handle": "LadySublimeSSBBW",
+      "external_id": "212446",
+      "follower_count": 7489,
+      "following_count": null,
+      "post_count": null,
+      "like_count": null,
+      "view_count": null,
+      "profile_url": "https://curvage.org/forum/index.php?/profile/212446-ladysublimessbbw/",
+      "source_url": "https://curvage.org/forum/index.php?/profile/212446-ladysublimessbbw/",
+      "collected_at": "2026-07-01T11:38:54-04:00",
+      "snapshot_date": "2026-07-01",
+      "daily_gain": 9
+    },
+    {
       "snapshot_id": 13,
       "account_id": "lady-sublime-facebook-page",
       "platform": "facebook",
@@ -2841,9 +2859,9 @@
     },
     {
       "snapshot_date": "2026-07-01",
-      "follower_count": 171400,
-      "daily_gain": 54,
-      "organic_gain": 54,
+      "follower_count": 171409,
+      "daily_gain": 63,
+      "organic_gain": 63,
       "newly_tracked_audience": 0
     }
   ],
@@ -2856,7 +2874,7 @@
     {
       "level": "warning",
       "issue": "Total change is not organic growth",
-      "detail": "14,626 followers are from newly tracked platforms; organic change from accounts with history is +70."
+      "detail": "14,626 followers are from newly tracked platforms; organic change from accounts with history is +63."
     },
     {
       "level": "warning",
@@ -2877,11 +2895,6 @@
       "level": "warning",
       "issue": "Facebook follows context",
       "detail": "Meta returned both a latest page-follows value (14,990) and a summed value across returned rows. The dashboard displays the latest value to avoid double-counting."
-    },
-    {
-      "level": "error",
-      "issue": "Curvage source issue",
-      "detail": "Curvage returned a Cloudflare challenge instead of the public profile. Open the profile in a browser or set CURVAGE_COOKIE to a valid Curvage browser cookie before running this collector."
     }
   ],
   "recommendations": [
@@ -2942,10 +2955,10 @@
     {
       "platform": "Curvage",
       "handle": "LadySublimeSSBBW",
-      "latest_success": "2026-06-30T11:25:15-04:00",
-      "latest_attempt": "2026-07-01T08:01:55-04:00",
-      "status": "error",
-      "error_message": "Curvage returned a Cloudflare challenge instead of the public profile. Open the profile in a browser or set CURVAGE_COOKIE to a valid Curvage browser cookie before running this collector."
+      "latest_success": "2026-07-01T11:38:54-04:00",
+      "latest_attempt": "2026-07-01T11:38:54-04:00",
+      "status": "ok",
+      "error_message": null
     },
     {
       "platform": "Reddit Profile",
