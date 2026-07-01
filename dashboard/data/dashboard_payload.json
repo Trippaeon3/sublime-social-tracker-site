@@ -1,18 +1,18 @@
 {
   "title": "Social Media Growth Dashboard",
-  "generated_at": "2026-07-01T11:41:40-04:00",
+  "generated_at": "2026-07-01T11:45:01-04:00",
   "kpis": {
-    "total_followers": 171417,
-    "previous_snapshot_gain": 8488,
-    "organic_previous_snapshot_gain": 71,
-    "newly_tracked_audience": 8417,
+    "total_followers": 171423,
+    "previous_snapshot_gain": 7753,
+    "organic_previous_snapshot_gain": 77,
+    "newly_tracked_audience": 7676,
     "gain_7d": 342,
     "gain_30d": 0,
     "gain_7d_status": "partial",
     "gain_30d_status": "partial",
     "healthy_sources": 11,
     "tracked_accounts": 11,
-    "previous_snapshot_sources": 9,
+    "previous_snapshot_sources": 10,
     "full_7d_sources": 7,
     "full_30d_sources": 0
   },
@@ -26,7 +26,7 @@
     "seven_day_label": "7D ready",
     "thirty_day_label": "30D available Jul 14",
     "all_label": "All available history",
-    "previous_snapshot_sources": 9,
+    "previous_snapshot_sources": 10,
     "full_7d_sources": 7,
     "full_30d_sources": 0,
     "tracked_accounts": 11
@@ -657,7 +657,7 @@
       "platform": "feabie",
       "label": "Feabie",
       "handle": "LadySublimeSSBBW",
-      "follower_count": 741,
+      "follower_count": 747,
       "following_count": null,
       "post_count": null,
       "like_count": null,
@@ -683,20 +683,20 @@
       "recent_best_content_url": null,
       "recent_latest_content_at": null,
       "insights_status": null,
-      "previous_snapshot_gain": null,
-      "previous_snapshot_growth_rate": null,
-      "gain_7d": 0,
-      "gain_7d_growth_rate": 0.0,
+      "previous_snapshot_gain": 6,
+      "previous_snapshot_growth_rate": 0.008097165991902834,
+      "gain_7d": 6,
+      "gain_7d_growth_rate": 0.008097165991902834,
       "gain_7d_complete": false,
-      "gain_7d_observed_days": 0,
-      "gain_30d": 0,
-      "gain_30d_growth_rate": 0.0,
+      "gain_7d_observed_days": 2,
+      "gain_30d": 6,
+      "gain_30d_growth_rate": 0.008097165991902834,
       "gain_30d_complete": false,
-      "gain_30d_observed_days": 0,
-      "first_snapshot": true,
+      "gain_30d_observed_days": 2,
+      "first_snapshot": false,
       "first_snapshot_date": "2026-06-29",
-      "latest_success": "2026-06-29T15:29:47-04:00",
-      "latest_snapshot_date": "2026-06-29",
+      "latest_success": "2026-07-01T11:44:55-04:00",
+      "latest_snapshot_date": "2026-07-01",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
       "insight_profile_views_total_value": null,
@@ -2463,6 +2463,24 @@
       "daily_gain": null
     },
     {
+      "snapshot_id": 168,
+      "account_id": "lady-sublime-feabie",
+      "platform": "feabie",
+      "account_label": "Feabie",
+      "account_handle": "LadySublimeSSBBW",
+      "external_id": null,
+      "follower_count": 747,
+      "following_count": null,
+      "post_count": null,
+      "like_count": null,
+      "view_count": null,
+      "profile_url": null,
+      "source_url": null,
+      "collected_at": "2026-07-01T11:44:55-04:00",
+      "snapshot_date": "2026-07-01",
+      "daily_gain": 6
+    },
+    {
       "snapshot_id": 53,
       "account_id": "lady-sublime-manyvids",
       "platform": "manyvids",
@@ -2877,9 +2895,9 @@
     },
     {
       "snapshot_date": "2026-07-01",
-      "follower_count": 171417,
-      "daily_gain": 71,
-      "organic_gain": 71,
+      "follower_count": 171423,
+      "daily_gain": 77,
+      "organic_gain": 77,
       "newly_tracked_audience": 0
     }
   ],
@@ -2887,12 +2905,12 @@
     {
       "level": "warning",
       "issue": "Newly tracked audience",
-      "detail": "OnlyFans and Feabie have first snapshots only, so their current audience is excluded from organic growth and counted as newly tracked coverage."
+      "detail": "OnlyFans have first snapshots only, so their current audience is excluded from organic growth and counted as newly tracked coverage."
     },
     {
       "level": "warning",
       "issue": "Total change is not organic growth",
-      "detail": "8,417 followers are from newly tracked platforms; organic change from accounts with history is +71."
+      "detail": "7,676 followers are from newly tracked platforms; organic change from accounts with history is +77."
     },
     {
       "level": "warning",
@@ -2934,7 +2952,7 @@
     },
     {
       "label": "Treat new tracking coverage separately",
-      "text": "8,417 followers came from newly connected tracking coverage. Use since-last-update change for day-to-day movement."
+      "text": "7,676 followers came from newly connected tracking coverage. Use since-last-update change for day-to-day movement."
     }
   ],
   "freshness": [
@@ -3021,8 +3039,8 @@
     {
       "platform": "Feabie",
       "handle": "LadySublimeSSBBW",
-      "latest_success": "2026-06-29T15:29:47-04:00",
-      "latest_attempt": "2026-06-29T15:29:47-04:00",
+      "latest_success": "2026-07-01T11:44:55-04:00",
+      "latest_attempt": "2026-07-01T11:44:55-04:00",
       "status": "ok",
       "error_message": null
     }
