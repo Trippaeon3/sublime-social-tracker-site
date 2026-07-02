@@ -1,17 +1,17 @@
 {
   "title": "Social Media Growth Dashboard",
-  "generated_at": "2026-07-02T15:35:48-04:00",
+  "generated_at": "2026-07-02T15:43:26-04:00",
   "kpis": {
-    "total_followers": 171563,
-    "previous_snapshot_gain": 119,
+    "total_followers": 181523,
+    "previous_snapshot_gain": 10079,
     "organic_previous_snapshot_gain": 119,
-    "newly_tracked_audience": 0,
+    "newly_tracked_audience": 9960,
     "gain_7d": 441,
     "gain_30d": 0,
     "gain_7d_status": "partial",
     "gain_30d_status": "partial",
-    "healthy_sources": 11,
-    "tracked_accounts": 11,
+    "healthy_sources": 13,
+    "tracked_accounts": 13,
     "previous_snapshot_sources": 11,
     "full_7d_sources": 7,
     "full_30d_sources": 0
@@ -29,7 +29,7 @@
     "previous_snapshot_sources": 11,
     "full_7d_sources": 7,
     "full_30d_sources": 0,
-    "tracked_accounts": 11
+    "tracked_accounts": 13
   },
   "accounts": [
     {
@@ -54,10 +54,10 @@
       "website": null,
       "recent_content_status": "ok",
       "recent_content_count": 25,
-      "recent_content_reactions": 142695,
+      "recent_content_reactions": 142696,
       "recent_content_comments": 5187,
       "recent_content_shares": null,
-      "recent_content_engagements": 147882,
+      "recent_content_engagements": 147883,
       "recent_content_avg_engagements": 5915.3,
       "recent_best_content_engagements": 16455,
       "recent_best_content_url": "https://www.instagram.com/reel/DIKTt55hK92/",
@@ -75,15 +75,15 @@
       "gain_30d_observed_days": 18,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-14",
-      "latest_success": "2026-07-02T15:35:34-04:00",
+      "latest_success": "2026-07-02T15:43:17-04:00",
       "latest_snapshot_date": "2026-07-02",
-      "insight_reach_latest": 495,
-      "insight_views_total_value": 7254,
-      "insight_profile_views_total_value": 1630,
+      "insight_reach_latest": 502,
+      "insight_views_total_value": 7275,
+      "insight_profile_views_total_value": 1632,
       "insight_website_clicks_total_value": 90,
-      "insight_accounts_engaged_total_value": 236,
-      "insight_total_interactions_total_value": 372,
-      "insight_likes_total_value": 242,
+      "insight_accounts_engaged_total_value": 238,
+      "insight_total_interactions_total_value": 373,
+      "insight_likes_total_value": 243,
       "insight_comments_total_value": 3,
       "insight_shares_total_value": 8,
       "insight_saves_total_value": 108,
@@ -137,7 +137,7 @@
       "gain_30d_observed_days": 17,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-15",
-      "latest_success": "2026-07-02T15:35:44-04:00",
+      "latest_success": "2026-07-02T15:43:25-04:00",
       "latest_snapshot_date": "2026-07-02",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
@@ -199,7 +199,7 @@
       "gain_30d_observed_days": 18,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-14",
-      "latest_success": "2026-07-02T15:35:37-04:00",
+      "latest_success": "2026-07-02T15:43:22-04:00",
       "latest_snapshot_date": "2026-07-02",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
@@ -217,6 +217,68 @@
       "insight_page_views_total_sum": 137,
       "insight_page_follows_latest": 14989,
       "insight_page_follows_sum": 29978
+    },
+    {
+      "account_id": "lady-sublime-threads",
+      "platform": "threads",
+      "label": "Threads",
+      "handle": "ladysublimessbbw",
+      "follower_count": 9816,
+      "following_count": null,
+      "post_count": null,
+      "like_count": null,
+      "view_count": null,
+      "profile_url": "https://www.threads.com/@officialladysublime",
+      "category": null,
+      "page_likes": null,
+      "talking_about_count": null,
+      "checkins": null,
+      "were_here_count": null,
+      "rating_count": null,
+      "overall_star_rating": null,
+      "display_name": null,
+      "website": null,
+      "recent_content_status": null,
+      "recent_content_count": null,
+      "recent_content_reactions": null,
+      "recent_content_comments": null,
+      "recent_content_shares": null,
+      "recent_content_engagements": null,
+      "recent_content_avg_engagements": null,
+      "recent_best_content_engagements": null,
+      "recent_best_content_url": null,
+      "recent_latest_content_at": null,
+      "insights_status": null,
+      "previous_snapshot_gain": null,
+      "previous_snapshot_growth_rate": null,
+      "gain_7d": 0,
+      "gain_7d_growth_rate": 0.0,
+      "gain_7d_complete": false,
+      "gain_7d_observed_days": 0,
+      "gain_30d": 0,
+      "gain_30d_growth_rate": 0.0,
+      "gain_30d_complete": false,
+      "gain_30d_observed_days": 0,
+      "first_snapshot": true,
+      "first_snapshot_date": "2026-07-02",
+      "latest_success": "2026-07-02T15:43:07-04:00",
+      "latest_snapshot_date": "2026-07-02",
+      "insight_reach_latest": null,
+      "insight_views_total_value": null,
+      "insight_profile_views_total_value": null,
+      "insight_website_clicks_total_value": null,
+      "insight_accounts_engaged_total_value": null,
+      "insight_total_interactions_total_value": null,
+      "insight_likes_total_value": null,
+      "insight_comments_total_value": null,
+      "insight_shares_total_value": null,
+      "insight_saves_total_value": null,
+      "insight_page_post_engagements_latest": null,
+      "insight_page_post_engagements_sum": null,
+      "insight_page_views_total_latest": null,
+      "insight_page_views_total_sum": null,
+      "insight_page_follows_latest": null,
+      "insight_page_follows_sum": null
     },
     {
       "account_id": "lady-sublime-onlyfans",
@@ -447,7 +509,7 @@
       "gain_30d_observed_days": 17,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-15",
-      "latest_success": "2026-07-02T15:35:42-04:00",
+      "latest_success": "2026-07-02T15:43:24-04:00",
       "latest_snapshot_date": "2026-07-02",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
@@ -509,7 +571,7 @@
       "gain_30d_observed_days": 18,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-14",
-      "latest_success": "2026-07-02T15:35:44-04:00",
+      "latest_success": "2026-07-02T15:43:24-04:00",
       "latest_snapshot_date": "2026-07-02",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
@@ -571,7 +633,7 @@
       "gain_30d_observed_days": 16,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-16",
-      "latest_success": "2026-07-02T15:35:46-04:00",
+      "latest_success": "2026-07-02T15:43:26-04:00",
       "latest_snapshot_date": "2026-07-02",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
@@ -633,7 +695,7 @@
       "gain_30d_observed_days": 16,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-16",
-      "latest_success": "2026-07-02T15:35:45-04:00",
+      "latest_success": "2026-07-02T15:43:25-04:00",
       "latest_snapshot_date": "2026-07-02",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
@@ -696,6 +758,68 @@
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-29",
       "latest_success": "2026-07-02T15:19:47-04:00",
+      "latest_snapshot_date": "2026-07-02",
+      "insight_reach_latest": null,
+      "insight_views_total_value": null,
+      "insight_profile_views_total_value": null,
+      "insight_website_clicks_total_value": null,
+      "insight_accounts_engaged_total_value": null,
+      "insight_total_interactions_total_value": null,
+      "insight_likes_total_value": null,
+      "insight_comments_total_value": null,
+      "insight_shares_total_value": null,
+      "insight_saves_total_value": null,
+      "insight_page_post_engagements_latest": null,
+      "insight_page_post_engagements_sum": null,
+      "insight_page_views_total_latest": null,
+      "insight_page_views_total_sum": null,
+      "insight_page_follows_latest": null,
+      "insight_page_follows_sum": null
+    },
+    {
+      "account_id": "lady-sublime-bluesky",
+      "platform": "bluesky",
+      "label": "Bluesky",
+      "handle": "ladysublimessbbw.bsky.social",
+      "follower_count": 144,
+      "following_count": 21,
+      "post_count": 9,
+      "like_count": null,
+      "view_count": null,
+      "profile_url": "https://bsky.app/profile/ladysublimessbbw.bsky.social",
+      "category": null,
+      "page_likes": null,
+      "talking_about_count": null,
+      "checkins": null,
+      "were_here_count": null,
+      "rating_count": null,
+      "overall_star_rating": null,
+      "display_name": "Lady Sublime",
+      "website": null,
+      "recent_content_status": null,
+      "recent_content_count": null,
+      "recent_content_reactions": null,
+      "recent_content_comments": null,
+      "recent_content_shares": null,
+      "recent_content_engagements": null,
+      "recent_content_avg_engagements": null,
+      "recent_best_content_engagements": null,
+      "recent_best_content_url": null,
+      "recent_latest_content_at": null,
+      "insights_status": null,
+      "previous_snapshot_gain": null,
+      "previous_snapshot_growth_rate": null,
+      "gain_7d": 0,
+      "gain_7d_growth_rate": 0.0,
+      "gain_7d_complete": false,
+      "gain_7d_observed_days": 0,
+      "gain_30d": 0,
+      "gain_30d_growth_rate": 0.0,
+      "gain_30d_complete": false,
+      "gain_30d_observed_days": 0,
+      "first_snapshot": true,
+      "first_snapshot_date": "2026-07-02",
+      "latest_success": "2026-07-02T15:43:25-04:00",
       "latest_snapshot_date": "2026-07-02",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
@@ -1005,7 +1129,7 @@
       "daily_gain": 43
     },
     {
-      "snapshot_id": 197,
+      "snapshot_id": 205,
       "account_id": "girlfriend-instagram",
       "platform": "instagram",
       "account_label": "Instagram",
@@ -1018,7 +1142,7 @@
       "view_count": null,
       "profile_url": "https://www.instagram.com/officialladysublime/",
       "source_url": "https://graph.facebook.com/v25.0/17841434948962018",
-      "collected_at": "2026-07-02T15:35:34-04:00",
+      "collected_at": "2026-07-02T15:43:17-04:00",
       "snapshot_date": "2026-07-02",
       "daily_gain": 77
     },
@@ -1293,7 +1417,7 @@
       "daily_gain": 8
     },
     {
-      "snapshot_id": 199,
+      "snapshot_id": 207,
       "account_id": "girlfriend-tiktok",
       "platform": "tiktok",
       "account_label": "TikTok",
@@ -1306,7 +1430,7 @@
       "view_count": null,
       "profile_url": null,
       "source_url": "https://open.tiktokapis.com/v2/user/info/",
-      "collected_at": "2026-07-02T15:35:42-04:00",
+      "collected_at": "2026-07-02T15:43:24-04:00",
       "snapshot_date": "2026-07-02",
       "daily_gain": 9
     },
@@ -1581,7 +1705,7 @@
       "daily_gain": 10
     },
     {
-      "snapshot_id": 201,
+      "snapshot_id": 209,
       "account_id": "girlfriend-x",
       "platform": "x",
       "account_label": "X",
@@ -1594,7 +1718,7 @@
       "view_count": null,
       "profile_url": null,
       "source_url": "https://api.x.com/2/users/by/username/ladysublimebbw",
-      "collected_at": "2026-07-02T15:35:44-04:00",
+      "collected_at": "2026-07-02T15:43:25-04:00",
       "snapshot_date": "2026-07-02",
       "daily_gain": 8
     },
@@ -1887,7 +2011,7 @@
       "daily_gain": 0
     },
     {
-      "snapshot_id": 200,
+      "snapshot_id": 208,
       "account_id": "girlfriend-youtube",
       "platform": "youtube",
       "account_label": "YouTube",
@@ -1900,9 +2024,27 @@
       "view_count": 546707,
       "profile_url": null,
       "source_url": "https://www.googleapis.com/youtube/v3/channels",
-      "collected_at": "2026-07-02T15:35:44-04:00",
+      "collected_at": "2026-07-02T15:43:24-04:00",
       "snapshot_date": "2026-07-02",
       "daily_gain": 0
+    },
+    {
+      "snapshot_id": 210,
+      "account_id": "lady-sublime-bluesky",
+      "platform": "bluesky",
+      "account_label": "Bluesky",
+      "account_handle": "ladysublimessbbw.bsky.social",
+      "external_id": "did:plc:vh6czm2k5vblqaul2fqz757g",
+      "follower_count": 144,
+      "following_count": 21,
+      "post_count": 9,
+      "like_count": null,
+      "view_count": null,
+      "profile_url": "https://bsky.app/profile/ladysublimessbbw.bsky.social",
+      "source_url": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile",
+      "collected_at": "2026-07-02T15:43:25-04:00",
+      "snapshot_date": "2026-07-02",
+      "daily_gain": null
     },
     {
       "snapshot_id": 52,
@@ -2157,7 +2299,7 @@
       "daily_gain": 3
     },
     {
-      "snapshot_id": 202,
+      "snapshot_id": 211,
       "account_id": "lady-sublime-clips4sale",
       "platform": "clips4sale",
       "account_label": "Clips4Sale",
@@ -2170,7 +2312,7 @@
       "view_count": null,
       "profile_url": "https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw",
       "source_url": "https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw",
-      "collected_at": "2026-07-02T15:35:45-04:00",
+      "collected_at": "2026-07-02T15:43:25-04:00",
       "snapshot_date": "2026-07-02",
       "daily_gain": 1
     },
@@ -2553,7 +2695,7 @@
       "daily_gain": -10
     },
     {
-      "snapshot_id": 198,
+      "snapshot_id": 206,
       "account_id": "lady-sublime-facebook-page",
       "platform": "facebook",
       "account_label": "Facebook Page",
@@ -2566,7 +2708,7 @@
       "view_count": null,
       "profile_url": "https://www.facebook.com/107579258704403",
       "source_url": "https://graph.facebook.com/v25.0/107579258704403",
-      "collected_at": "2026-07-02T15:35:37-04:00",
+      "collected_at": "2026-07-02T15:43:22-04:00",
       "snapshot_date": "2026-07-02",
       "daily_gain": 4
     },
@@ -2877,7 +3019,7 @@
       "daily_gain": 0
     },
     {
-      "snapshot_id": 203,
+      "snapshot_id": 212,
       "account_id": "lady-sublime-manyvids",
       "platform": "manyvids",
       "account_label": "ManyVids",
@@ -2890,7 +3032,7 @@
       "view_count": null,
       "profile_url": "https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos",
       "source_url": "https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos",
-      "collected_at": "2026-07-02T15:35:46-04:00",
+      "collected_at": "2026-07-02T15:43:26-04:00",
       "snapshot_date": "2026-07-02",
       "daily_gain": 0
     },
@@ -3001,6 +3143,24 @@
       "collected_at": "2026-07-02T15:29:10-04:00",
       "snapshot_date": "2026-07-02",
       "daily_gain": 3
+    },
+    {
+      "snapshot_id": 204,
+      "account_id": "lady-sublime-threads",
+      "platform": "threads",
+      "account_label": "Threads",
+      "account_handle": "ladysublimessbbw",
+      "external_id": null,
+      "follower_count": 9816,
+      "following_count": null,
+      "post_count": null,
+      "like_count": null,
+      "view_count": null,
+      "profile_url": "https://www.threads.com/@officialladysublime",
+      "source_url": "https://www.threads.com/@officialladysublime",
+      "collected_at": "2026-07-02T15:43:07-04:00",
+      "snapshot_date": "2026-07-02",
+      "daily_gain": null
     }
   ],
   "total_history": [
@@ -3118,22 +3278,32 @@
     },
     {
       "snapshot_date": "2026-07-02",
-      "follower_count": 171563,
-      "daily_gain": 119,
+      "follower_count": 181523,
+      "daily_gain": 10079,
       "organic_gain": 119,
-      "newly_tracked_audience": 0
+      "newly_tracked_audience": 9960
     }
   ],
   "data_quality": [
     {
       "level": "warning",
+      "issue": "Newly tracked audience",
+      "detail": "Threads and Bluesky have first snapshots only, so their current audience is excluded from organic growth and counted as newly tracked coverage."
+    },
+    {
+      "level": "warning",
+      "issue": "Total change is not organic growth",
+      "detail": "9,960 followers are from newly tracked platforms; organic change from accounts with history is +119."
+    },
+    {
+      "level": "warning",
       "issue": "Partial 7-day history",
-      "detail": "Only 7/11 accounts have a full 7-day baseline. The longest observed history is 18 days."
+      "detail": "Only 7/13 accounts have a full 7-day baseline. The longest observed history is 18 days."
     },
     {
       "level": "warning",
       "issue": "Partial 30-day history",
-      "detail": "Only 0/11 accounts have a full 30-day baseline. The longest observed history is 18 days."
+      "detail": "Only 0/13 accounts have a full 30-day baseline. The longest observed history is 18 days."
     },
     {
       "level": "warning",
@@ -3153,35 +3323,47 @@
     },
     {
       "label": "Review what worked on Instagram",
-      "text": "The latest usable sample has 147,882 engagements across 25 items. Reuse the strongest format before changing the offer."
+      "text": "The latest usable sample has 147,883 engagements across 25 items. Reuse the strongest format before changing the offer."
     },
     {
       "label": "Keep your Instagram link steady",
-      "text": "90 of 1,630 profile views clicked through (5.52%). Keep the link and bio offer stable this week so the next update is comparable."
+      "text": "90 of 1,632 profile views clicked through (5.51%). Keep the link and bio offer stable this week so the next update is comparable."
+    },
+    {
+      "label": "Treat new tracking coverage separately",
+      "text": "9,960 followers came from newly connected tracking coverage. Use since-last-update change for day-to-day movement."
     }
   ],
   "freshness": [
     {
       "platform": "Instagram",
       "handle": "officialladysublime",
-      "latest_success": "2026-07-02T15:35:34-04:00",
-      "latest_attempt": "2026-07-02T15:35:34-04:00",
+      "latest_success": "2026-07-02T15:43:17-04:00",
+      "latest_attempt": "2026-07-02T15:43:17-04:00",
       "status": "ok",
       "error_message": null
     },
     {
       "platform": "X",
       "handle": "LadySublimeBBW",
-      "latest_success": "2026-07-02T15:35:44-04:00",
-      "latest_attempt": "2026-07-02T15:35:44-04:00",
+      "latest_success": "2026-07-02T15:43:25-04:00",
+      "latest_attempt": "2026-07-02T15:43:25-04:00",
       "status": "ok",
       "error_message": null
     },
     {
       "platform": "Facebook Page",
       "handle": "Lady Sublime",
-      "latest_success": "2026-07-02T15:35:37-04:00",
-      "latest_attempt": "2026-07-02T15:35:37-04:00",
+      "latest_success": "2026-07-02T15:43:22-04:00",
+      "latest_attempt": "2026-07-02T15:43:22-04:00",
+      "status": "ok",
+      "error_message": null
+    },
+    {
+      "platform": "Threads",
+      "handle": "ladysublimessbbw",
+      "latest_success": "2026-07-02T15:43:07-04:00",
+      "latest_attempt": "2026-07-02T15:43:07-04:00",
       "status": "ok",
       "error_message": null
     },
@@ -3212,32 +3394,32 @@
     {
       "platform": "TikTok",
       "handle": "ladysublimessbbw",
-      "latest_success": "2026-07-02T15:35:42-04:00",
-      "latest_attempt": "2026-07-02T15:35:42-04:00",
+      "latest_success": "2026-07-02T15:43:24-04:00",
+      "latest_attempt": "2026-07-02T15:43:24-04:00",
       "status": "ok",
       "error_message": null
     },
     {
       "platform": "YouTube",
       "handle": "@ladysublimessbbw",
-      "latest_success": "2026-07-02T15:35:44-04:00",
-      "latest_attempt": "2026-07-02T15:35:44-04:00",
+      "latest_success": "2026-07-02T15:43:24-04:00",
+      "latest_attempt": "2026-07-02T15:43:24-04:00",
       "status": "ok",
       "error_message": null
     },
     {
       "platform": "ManyVids",
       "handle": "LadySublimeSSBBW",
-      "latest_success": "2026-07-02T15:35:46-04:00",
-      "latest_attempt": "2026-07-02T15:35:46-04:00",
+      "latest_success": "2026-07-02T15:43:26-04:00",
+      "latest_attempt": "2026-07-02T15:43:26-04:00",
       "status": "ok",
       "error_message": null
     },
     {
       "platform": "Clips4Sale",
       "handle": "Lady Sublime SSBBW",
-      "latest_success": "2026-07-02T15:35:45-04:00",
-      "latest_attempt": "2026-07-02T15:35:45-04:00",
+      "latest_success": "2026-07-02T15:43:25-04:00",
+      "latest_attempt": "2026-07-02T15:43:25-04:00",
       "status": "ok",
       "error_message": null
     },
@@ -3246,6 +3428,14 @@
       "handle": "LadySublimeSSBBW",
       "latest_success": "2026-07-02T15:19:47-04:00",
       "latest_attempt": "2026-07-02T15:19:47-04:00",
+      "status": "ok",
+      "error_message": null
+    },
+    {
+      "platform": "Bluesky",
+      "handle": "ladysublimessbbw.bsky.social",
+      "latest_success": "2026-07-02T15:43:25-04:00",
+      "latest_attempt": "2026-07-02T15:43:25-04:00",
       "status": "ok",
       "error_message": null
     }
@@ -3310,6 +3500,16 @@
       "platform": "OnlyFans",
       "url": "https://onlyfans.com/",
       "note": "Fan count is currently tracked from user-visible subscriber totals as a manual snapshot until authenticated live collection is tested."
+    },
+    {
+      "platform": "Bluesky",
+      "url": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile",
+      "note": "Follower counts come from Bluesky's public AT Protocol profile endpoint."
+    },
+    {
+      "platform": "Threads",
+      "url": "https://www.threads.com/",
+      "note": "Follower counts are tracked from a logged-in browser-visible profile page."
     }
   ]
 }
