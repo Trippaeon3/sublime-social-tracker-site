@@ -1,6 +1,6 @@
 {
   "title": "Social Media Growth Dashboard",
-  "generated_at": "2026-07-04T14:39:57-04:00",
+  "generated_at": "2026-07-04T14:49:30-04:00",
   "kpis": {
     "total_followers": 181676,
     "previous_snapshot_gain": 91,
@@ -4058,7 +4058,12 @@
           "key_events": 0.0,
           "screen_page_views": 14,
           "sessions": 25,
-          "source_medium": "(not set)"
+          "source_medium": "(not set)",
+          "raw_source_medium": "(not set)",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Unattributed traffic",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "GA4 did not receive referrer or UTM campaign details."
         },
         {
           "active_users": 9,
@@ -4067,7 +4072,12 @@
           "key_events": 0.0,
           "screen_page_views": 12,
           "sessions": 10,
-          "source_medium": "ig / social"
+          "source_medium": "ig / social",
+          "raw_source_medium": "ig / social",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Instagram social",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Social-platform click; campaign detail depends on UTM tagging."
         },
         {
           "active_users": 8,
@@ -4076,7 +4086,12 @@
           "key_events": 0.0,
           "screen_page_views": 11,
           "sessions": 8,
-          "source_medium": "(data not available)"
+          "source_medium": "(data not available)",
+          "raw_source_medium": "(data not available)",
+          "raw_campaign": "(cross-network)",
+          "source_medium_label": "Google modeled traffic",
+          "campaign_label": "Cross-network traffic",
+          "traffic_note": "GA4 grouped this as modeled or cross-network traffic without a source."
         },
         {
           "active_users": 6,
@@ -4085,7 +4100,12 @@
           "key_events": 0.0,
           "screen_page_views": 7,
           "sessions": 7,
-          "source_medium": "(direct) / (none)"
+          "source_medium": "(direct) / (none)",
+          "raw_source_medium": "(direct) / (none)",
+          "raw_campaign": "(direct)",
+          "source_medium_label": "Direct or saved link",
+          "campaign_label": "Direct traffic",
+          "traffic_note": "Typed URL, saved link, app handoff, or privacy-filtered referral."
         },
         {
           "active_users": 4,
@@ -4094,7 +4114,12 @@
           "key_events": 0.0,
           "screen_page_views": 4,
           "sessions": 4,
-          "source_medium": "t.co / referral"
+          "source_medium": "t.co / referral",
+          "raw_source_medium": "t.co / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "X / Twitter referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 1,
@@ -4103,7 +4128,12 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "google / organic"
+          "source_medium": "google / organic",
+          "raw_source_medium": "google / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Google organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 1,
@@ -4112,7 +4142,12 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "ig / social"
+          "source_medium": "ig / social",
+          "raw_source_medium": "ig / social",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Instagram social",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "Social-platform click; campaign detail depends on UTM tagging."
         },
         {
           "active_users": 1,
@@ -4121,7 +4156,12 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "l.instagram.com / referral"
+          "source_medium": "l.instagram.com / referral",
+          "raw_source_medium": "l.instagram.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Instagram referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 1,
@@ -4130,7 +4170,12 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "onlyfans.com / referral"
+          "source_medium": "onlyfans.com / referral",
+          "raw_source_medium": "onlyfans.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "OnlyFans referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 1,
@@ -4139,7 +4184,12 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "reddit.com / referral"
+          "source_medium": "reddit.com / referral",
+          "raw_source_medium": "reddit.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Reddit referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 1,
@@ -4148,49 +4198,62 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "yandex.ru / referral"
+          "source_medium": "yandex.ru / referral",
+          "raw_source_medium": "yandex.ru / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Yandex referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         }
       ],
       "outbound_clicks": [
         {
           "active_users": 8,
           "clicks": 10,
-          "url": "https://twitter.com/ladysublimebbw"
+          "url": "https://twitter.com/ladysublimebbw",
+          "destination_label": "X / Twitter"
         },
         {
           "active_users": 6,
           "clicks": 10,
-          "url": "https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos/Creator-View?utm_campaign="
+          "url": "https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos/Creator-View?utm_campaign=",
+          "destination_label": "ManyVids"
         },
         {
           "active_users": 5,
           "clicks": 8,
-          "url": "http://ladysublime.com/?utm_campaign=Lady%20Sublime%20Official%20Website&utm_medium=link_in_bio&utm_"
+          "url": "http://ladysublime.com/?utm_campaign=Lady%20Sublime%20Official%20Website&utm_medium=link_in_bio&utm_",
+          "destination_label": "Lady Sublime site"
         },
         {
           "active_users": 6,
           "clicks": 8,
-          "url": "https://onlyfans.com/ladysublimessbbw?utm_campaign=OnlyFans&utm_medium=link_in_bio&utm_source=beacon"
+          "url": "https://onlyfans.com/ladysublimessbbw?utm_campaign=OnlyFans&utm_medium=link_in_bio&utm_source=beacon",
+          "destination_label": "OnlyFans"
         },
         {
           "active_users": 4,
           "clicks": 6,
-          "url": "https://curvage.org/forum/index.php?/profile/212446-ladysublimessbbw/&utm_campaign=Curvage&utm_mediu"
+          "url": "https://curvage.org/forum/index.php?/profile/212446-ladysublimessbbw/&utm_campaign=Curvage&utm_mediu",
+          "destination_label": "Curvage"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw?utm_campaign=Clips4sale&utm_medium=link_"
+          "url": "https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw?utm_campaign=Clips4sale&utm_medium=link_",
+          "destination_label": "Clips4Sale"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://www.jotform.com/form/253026005926047?utm_campaign=Custom%20Videos&utm_medium=link_in_bio&utm"
+          "url": "https://www.jotform.com/form/253026005926047?utm_campaign=Custom%20Videos&utm_medium=link_in_bio&utm",
+          "destination_label": "https://www.jotform.com/form/253026005926047?utm_campaign=Custom%20Vi..."
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://youpay.me/LadySublime?utm_campaign=Gifts%2FPayment&utm_medium=link_in_bio&utm_source=beacons"
+          "url": "https://youpay.me/LadySublime?utm_campaign=Gifts%2FPayment&utm_medium=link_in_bio&utm_source=beacons",
+          "destination_label": "YouPay"
         }
       ],
       "events": [
@@ -4231,6 +4294,9 @@
           "key_events": 0.0
         }
       ],
+      "top_source_label": "Unattributed traffic (25 sessions)",
+      "top_source_note": "GA4 did not receive referrer or UTM campaign details.",
+      "top_outbound_label": "X / Twitter (10 clicks)",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
       "collected_at": "2026-07-04T08:01:23-04:00",
       "snapshot_date": "2026-07-04",
@@ -4272,7 +4338,12 @@
           "key_events": 65.0,
           "screen_page_views": 8173,
           "sessions": 1822,
-          "source_medium": "(direct) / (none)"
+          "source_medium": "(direct) / (none)",
+          "raw_source_medium": "(direct) / (none)",
+          "raw_campaign": "(direct)",
+          "source_medium_label": "Direct or saved link",
+          "campaign_label": "Direct traffic",
+          "traffic_note": "Typed URL, saved link, app handoff, or privacy-filtered referral."
         },
         {
           "active_users": 754,
@@ -4281,7 +4352,12 @@
           "key_events": 5.0,
           "screen_page_views": 5998,
           "sessions": 902,
-          "source_medium": "google / organic"
+          "source_medium": "google / organic",
+          "raw_source_medium": "google / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Google organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 219,
@@ -4290,7 +4366,12 @@
           "key_events": 1.0,
           "screen_page_views": 1107,
           "sessions": 230,
-          "source_medium": "(not set)"
+          "source_medium": "(not set)",
+          "raw_source_medium": "(not set)",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Unattributed traffic",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "GA4 did not receive referrer or UTM campaign details."
         },
         {
           "active_users": 100,
@@ -4299,7 +4380,12 @@
           "key_events": 0.0,
           "screen_page_views": 278,
           "sessions": 111,
-          "source_medium": "ladysublime.me / referral"
+          "source_medium": "ladysublime.me / referral",
+          "raw_source_medium": "ladysublime.me / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Lady Sublime link-in-bio referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 90,
@@ -4308,7 +4394,12 @@
           "key_events": 0.0,
           "screen_page_views": 316,
           "sessions": 103,
-          "source_medium": "x / autopost"
+          "source_medium": "x / autopost",
+          "raw_source_medium": "x / autopost",
+          "raw_campaign": "new-sale",
+          "source_medium_label": "X / Twitter autopost",
+          "campaign_label": "New sale autopost",
+          "traffic_note": "Tagged traffic from an automated promo post."
         },
         {
           "active_users": 64,
@@ -4317,7 +4408,12 @@
           "key_events": 0.0,
           "screen_page_views": 590,
           "sessions": 79,
-          "source_medium": "bbw.wiki / referral"
+          "source_medium": "bbw.wiki / referral",
+          "raw_source_medium": "bbw.wiki / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "BBW Wiki referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 40,
@@ -4326,7 +4422,12 @@
           "key_events": 1.0,
           "screen_page_views": 471,
           "sessions": 58,
-          "source_medium": "bing / organic"
+          "source_medium": "bing / organic",
+          "raw_source_medium": "bing / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Bing organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 39,
@@ -4335,7 +4436,12 @@
           "key_events": 2.0,
           "screen_page_views": 444,
           "sessions": 54,
-          "source_medium": "t.co / referral"
+          "source_medium": "t.co / referral",
+          "raw_source_medium": "t.co / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "X / Twitter referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 52,
@@ -4344,7 +4450,12 @@
           "key_events": 0.0,
           "screen_page_views": 270,
           "sessions": 53,
-          "source_medium": "(data not available)"
+          "source_medium": "(data not available)",
+          "raw_source_medium": "(data not available)",
+          "raw_campaign": "(cross-network)",
+          "source_medium_label": "Google modeled traffic",
+          "campaign_label": "Cross-network traffic",
+          "traffic_note": "GA4 grouped this as modeled or cross-network traffic without a source."
         },
         {
           "active_users": 27,
@@ -4353,7 +4464,12 @@
           "key_events": 0.0,
           "screen_page_views": 204,
           "sessions": 42,
-          "source_medium": "mail / mail"
+          "source_medium": "mail / mail",
+          "raw_source_medium": "mail / mail",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Email email",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "Source is known, but the link did not include a campaign tag."
         },
         {
           "active_users": 30,
@@ -4362,7 +4478,12 @@
           "key_events": 1.0,
           "screen_page_views": 408,
           "sessions": 32,
-          "source_medium": "accounts.google.com / referral"
+          "source_medium": "accounts.google.com / referral",
+          "raw_source_medium": "accounts.google.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Google account referral referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 11,
@@ -4371,7 +4492,12 @@
           "key_events": 0.0,
           "screen_page_views": 146,
           "sessions": 16,
-          "source_medium": "yahoo / organic"
+          "source_medium": "yahoo / organic",
+          "raw_source_medium": "yahoo / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Yahoo organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 12,
@@ -4380,7 +4506,12 @@
           "key_events": 0.0,
           "screen_page_views": 51,
           "sessions": 12,
-          "source_medium": "duckduckgo / organic"
+          "source_medium": "duckduckgo / organic",
+          "raw_source_medium": "duckduckgo / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "DuckDuckGo organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 8,
@@ -4389,7 +4520,12 @@
           "key_events": 2.0,
           "screen_page_views": 51,
           "sessions": 10,
-          "source_medium": "allmylinks.com / referral"
+          "source_medium": "allmylinks.com / referral",
+          "raw_source_medium": "allmylinks.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "AllMyLinks referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 8,
@@ -4398,7 +4534,12 @@
           "key_events": 0.0,
           "screen_page_views": 25,
           "sessions": 9,
-          "source_medium": "beacons.ai / referral"
+          "source_medium": "beacons.ai / referral",
+          "raw_source_medium": "beacons.ai / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Beacons referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 7,
@@ -4407,7 +4548,12 @@
           "key_events": 0.0,
           "screen_page_views": 14,
           "sessions": 9,
-          "source_medium": "x / autopost"
+          "source_medium": "x / autopost",
+          "raw_source_medium": "x / autopost",
+          "raw_campaign": "new-clip",
+          "source_medium_label": "X / Twitter autopost",
+          "campaign_label": "New clip autopost",
+          "traffic_note": "Tagged traffic from an automated promo post."
         },
         {
           "active_users": 7,
@@ -4416,7 +4562,12 @@
           "key_events": 0.0,
           "screen_page_views": 82,
           "sessions": 8,
-          "source_medium": "linktr.ee / referral"
+          "source_medium": "linktr.ee / referral",
+          "raw_source_medium": "linktr.ee / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Linktree referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 7,
@@ -4425,7 +4576,12 @@
           "key_events": 0.0,
           "screen_page_views": 35,
           "sessions": 8,
-          "source_medium": "onlyfans.com / referral"
+          "source_medium": "onlyfans.com / referral",
+          "raw_source_medium": "onlyfans.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "OnlyFans referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 6,
@@ -4434,7 +4590,12 @@
           "key_events": 0.0,
           "screen_page_views": 145,
           "sessions": 8,
-          "source_medium": "x.com / referral"
+          "source_medium": "x.com / referral",
+          "raw_source_medium": "x.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "X / Twitter referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 3,
@@ -4443,7 +4604,12 @@
           "key_events": 0.0,
           "screen_page_views": 31,
           "sessions": 6,
-          "source_medium": "ntp.msn.com / referral"
+          "source_medium": "ntp.msn.com / referral",
+          "raw_source_medium": "ntp.msn.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Microsoft Start referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 2,
@@ -4452,7 +4618,12 @@
           "key_events": 0.0,
           "screen_page_views": 32,
           "sessions": 6,
-          "source_medium": "yandex / organic"
+          "source_medium": "yandex / organic",
+          "raw_source_medium": "yandex / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Yandex organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 3,
@@ -4461,7 +4632,12 @@
           "key_events": 0.0,
           "screen_page_views": 52,
           "sessions": 4,
-          "source_medium": "l.instagram.com / referral"
+          "source_medium": "l.instagram.com / referral",
+          "raw_source_medium": "l.instagram.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Instagram referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 3,
@@ -4470,7 +4646,12 @@
           "key_events": 0.0,
           "screen_page_views": 24,
           "sessions": 3,
-          "source_medium": "ecosia.org / organic"
+          "source_medium": "ecosia.org / organic",
+          "raw_source_medium": "ecosia.org / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Ecosia organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 2,
@@ -4479,7 +4660,12 @@
           "key_events": 0.0,
           "screen_page_views": 5,
           "sessions": 3,
-          "source_medium": "mail / mail"
+          "source_medium": "mail / mail",
+          "raw_source_medium": "mail / mail",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Email email",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Campaign tag is present; use it to connect traffic to a promo."
         },
         {
           "active_users": 1,
@@ -4488,54 +4674,68 @@
           "key_events": 0.0,
           "screen_page_views": 75,
           "sessions": 3,
-          "source_medium": "e.mail.ru / referral"
+          "source_medium": "e.mail.ru / referral",
+          "raw_source_medium": "e.mail.ru / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Email referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         }
       ],
       "outbound_clicks": [
         {
           "active_users": 9,
           "clicks": 9,
-          "url": "https://google.com/"
+          "url": "https://google.com/",
+          "destination_label": "Google"
         },
         {
           "active_users": 5,
           "clicks": 6,
-          "url": "https://ladysublime.com/"
+          "url": "https://ladysublime.com/",
+          "destination_label": "Lady Sublime site"
         },
         {
           "active_users": 3,
           "clicks": 3,
-          "url": "https://x.com/ladysublimebbw"
+          "url": "https://x.com/ladysublimebbw",
+          "destination_label": "X / Twitter"
         },
         {
           "active_users": 2,
           "clicks": 2,
-          "url": "https://www.instagram.com/ladysublimessbbw"
+          "url": "https://www.instagram.com/ladysublimessbbw",
+          "destination_label": "https://www.instagram.com/ladysublimessbbw"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://twitter.com/bbw__layla"
+          "url": "https://twitter.com/bbw__layla",
+          "destination_label": "X / Twitter"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://wanktimelive.com/"
+          "url": "https://wanktimelive.com/",
+          "destination_label": "https://wanktimelive.com/"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://www.instagram.com/alanaxxbaby"
+          "url": "https://www.instagram.com/alanaxxbaby",
+          "destination_label": "https://www.instagram.com/alanaxxbaby"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://x.com/SSBBW_Summer"
+          "url": "https://x.com/SSBBW_Summer",
+          "destination_label": "X / Twitter"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://x.com/alanaxxbaby"
+          "url": "https://x.com/alanaxxbaby",
+          "destination_label": "X / Twitter"
         }
       ],
       "events": [
@@ -4594,6 +4794,9 @@
           "key_events": 0.0
         }
       ],
+      "top_source_label": "Direct or saved link / Direct traffic (1,822 sessions)",
+      "top_source_note": "Typed URL, saved link, app handoff, or privacy-filtered referral.",
+      "top_outbound_label": "Google (9 clicks)",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
       "collected_at": "2026-07-04T08:01:27-04:00",
       "snapshot_date": "2026-07-04",
@@ -4635,7 +4838,12 @@
           "key_events": 0.0,
           "screen_page_views": 127,
           "sessions": 44,
-          "source_medium": "(not set)"
+          "source_medium": "(not set)",
+          "raw_source_medium": "(not set)",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Unattributed traffic",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "GA4 did not receive referrer or UTM campaign details."
         },
         {
           "active_users": 27,
@@ -4644,7 +4852,12 @@
           "key_events": 0.0,
           "screen_page_views": 48,
           "sessions": 29,
-          "source_medium": "(direct) / (none)"
+          "source_medium": "(direct) / (none)",
+          "raw_source_medium": "(direct) / (none)",
+          "raw_campaign": "(direct)",
+          "source_medium_label": "Direct or saved link",
+          "campaign_label": "Direct traffic",
+          "traffic_note": "Typed URL, saved link, app handoff, or privacy-filtered referral."
         },
         {
           "active_users": 16,
@@ -4653,7 +4866,12 @@
           "key_events": 0.0,
           "screen_page_views": 39,
           "sessions": 16,
-          "source_medium": "google / organic"
+          "source_medium": "google / organic",
+          "raw_source_medium": "google / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Google organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 9,
@@ -4662,7 +4880,12 @@
           "key_events": 0.0,
           "screen_page_views": 14,
           "sessions": 9,
-          "source_medium": "(data not available)"
+          "source_medium": "(data not available)",
+          "raw_source_medium": "(data not available)",
+          "raw_campaign": "(cross-network)",
+          "source_medium_label": "Google modeled traffic",
+          "campaign_label": "Cross-network traffic",
+          "traffic_note": "GA4 grouped this as modeled or cross-network traffic without a source."
         },
         {
           "active_users": 1,
@@ -4671,7 +4894,12 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "it.pornhub.com / referral"
+          "source_medium": "it.pornhub.com / referral",
+          "raw_source_medium": "it.pornhub.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "it.pornhub.com referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 1,
@@ -4680,14 +4908,20 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "yandex.ru / referral"
+          "source_medium": "yandex.ru / referral",
+          "raw_source_medium": "yandex.ru / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Yandex referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         }
       ],
       "outbound_clicks": [
         {
           "active_users": 2,
           "clicks": 2,
-          "url": "https://google.com/"
+          "url": "https://google.com/",
+          "destination_label": "Google"
         }
       ],
       "events": [
@@ -4734,6 +4968,9 @@
           "key_events": 0.0
         }
       ],
+      "top_source_label": "Unattributed traffic (44 sessions)",
+      "top_source_note": "GA4 did not receive referrer or UTM campaign details.",
+      "top_outbound_label": "Google (2 clicks)",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
       "collected_at": "2026-07-04T08:01:31-04:00",
       "snapshot_date": "2026-07-04",
@@ -4770,6 +5007,9 @@
       "source_medium": [],
       "outbound_clicks": [],
       "events": [],
+      "top_source_label": "",
+      "top_source_note": "",
+      "top_outbound_label": "",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
       "collected_at": "2026-07-04T08:01:33-04:00",
       "snapshot_date": "2026-07-04",
@@ -4813,7 +5053,12 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 9,
-          "source_medium": "(not set)"
+          "source_medium": "(not set)",
+          "raw_source_medium": "(not set)",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Unattributed traffic",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "GA4 did not receive referrer or UTM campaign details."
         },
         {
           "active_users": 3,
@@ -4822,7 +5067,12 @@
           "key_events": 0.0,
           "screen_page_views": 3,
           "sessions": 3,
-          "source_medium": "(direct) / (none)"
+          "source_medium": "(direct) / (none)",
+          "raw_source_medium": "(direct) / (none)",
+          "raw_campaign": "(direct)",
+          "source_medium_label": "Direct or saved link",
+          "campaign_label": "Direct traffic",
+          "traffic_note": "Typed URL, saved link, app handoff, or privacy-filtered referral."
         },
         {
           "active_users": 2,
@@ -4831,7 +5081,12 @@
           "key_events": 0.0,
           "screen_page_views": 3,
           "sessions": 2,
-          "source_medium": "(data not available)"
+          "source_medium": "(data not available)",
+          "raw_source_medium": "(data not available)",
+          "raw_campaign": "(cross-network)",
+          "source_medium_label": "Google modeled traffic",
+          "campaign_label": "Cross-network traffic",
+          "traffic_note": "GA4 grouped this as modeled or cross-network traffic without a source."
         },
         {
           "active_users": 2,
@@ -4840,7 +5095,12 @@
           "key_events": 0.0,
           "screen_page_views": 2,
           "sessions": 2,
-          "source_medium": "ig / social"
+          "source_medium": "ig / social",
+          "raw_source_medium": "ig / social",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Instagram social",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Social-platform click; campaign detail depends on UTM tagging."
         },
         {
           "active_users": 1,
@@ -4849,7 +5109,12 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "ig / social"
+          "source_medium": "ig / social",
+          "raw_source_medium": "ig / social",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Instagram social",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "Social-platform click; campaign detail depends on UTM tagging."
         },
         {
           "active_users": 1,
@@ -4858,34 +5123,44 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "t.co / referral"
+          "source_medium": "t.co / referral",
+          "raw_source_medium": "t.co / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "X / Twitter referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         }
       ],
       "outbound_clicks": [
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://curvage.org/forum/index.php?/profile/212446-ladysublimessbbw/&utm_campaign=Curvage&utm_mediu"
+          "url": "https://curvage.org/forum/index.php?/profile/212446-ladysublimessbbw/&utm_campaign=Curvage&utm_mediu",
+          "destination_label": "Curvage"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://onlyfans.com/ladysublimessbbw?utm_campaign=OnlyFans&utm_medium=link_in_bio&utm_source=beacon"
+          "url": "https://onlyfans.com/ladysublimessbbw?utm_campaign=OnlyFans&utm_medium=link_in_bio&utm_source=beacon",
+          "destination_label": "OnlyFans"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://twitter.com/ladysublimebbw"
+          "url": "https://twitter.com/ladysublimebbw",
+          "destination_label": "X / Twitter"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw?utm_campaign=Clips4sale&utm_medium=link_"
+          "url": "https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw?utm_campaign=Clips4sale&utm_medium=link_",
+          "destination_label": "Clips4Sale"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos/Creator-View?utm_campaign="
+          "url": "https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos/Creator-View?utm_campaign=",
+          "destination_label": "ManyVids"
         }
       ],
       "events": [
@@ -4926,6 +5201,9 @@
           "key_events": 0.0
         }
       ],
+      "top_source_label": "Unattributed traffic (9 sessions)",
+      "top_source_note": "GA4 did not receive referrer or UTM campaign details.",
+      "top_outbound_label": "Curvage (1 clicks)",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
       "collected_at": "2026-07-03T22:43:35-04:00",
       "snapshot_date": "2026-07-03",
@@ -4963,7 +5241,12 @@
           "key_events": 66.0,
           "screen_page_views": 8587,
           "sessions": 1854,
-          "source_medium": "(direct) / (none)"
+          "source_medium": "(direct) / (none)",
+          "raw_source_medium": "(direct) / (none)",
+          "raw_campaign": "(direct)",
+          "source_medium_label": "Direct or saved link",
+          "campaign_label": "Direct traffic",
+          "traffic_note": "Typed URL, saved link, app handoff, or privacy-filtered referral."
         },
         {
           "active_users": 791,
@@ -4972,7 +5255,12 @@
           "key_events": 5.0,
           "screen_page_views": 6366,
           "sessions": 943,
-          "source_medium": "google / organic"
+          "source_medium": "google / organic",
+          "raw_source_medium": "google / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Google organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 168,
@@ -4981,7 +5269,12 @@
           "key_events": 0.0,
           "screen_page_views": 805,
           "sessions": 174,
-          "source_medium": "(not set)"
+          "source_medium": "(not set)",
+          "raw_source_medium": "(not set)",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Unattributed traffic",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "GA4 did not receive referrer or UTM campaign details."
         },
         {
           "active_users": 110,
@@ -4990,7 +5283,12 @@
           "key_events": 0.0,
           "screen_page_views": 307,
           "sessions": 122,
-          "source_medium": "ladysublime.me / referral"
+          "source_medium": "ladysublime.me / referral",
+          "raw_source_medium": "ladysublime.me / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Lady Sublime link-in-bio referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 98,
@@ -4999,7 +5297,12 @@
           "key_events": 0.0,
           "screen_page_views": 333,
           "sessions": 112,
-          "source_medium": "x / autopost"
+          "source_medium": "x / autopost",
+          "raw_source_medium": "x / autopost",
+          "raw_campaign": "new-sale",
+          "source_medium_label": "X / Twitter autopost",
+          "campaign_label": "New sale autopost",
+          "traffic_note": "Tagged traffic from an automated promo post."
         },
         {
           "active_users": 74,
@@ -5008,7 +5311,12 @@
           "key_events": 0.0,
           "screen_page_views": 651,
           "sessions": 89,
-          "source_medium": "bbw.wiki / referral"
+          "source_medium": "bbw.wiki / referral",
+          "raw_source_medium": "bbw.wiki / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "BBW Wiki referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 43,
@@ -5017,7 +5325,12 @@
           "key_events": 1.0,
           "screen_page_views": 482,
           "sessions": 60,
-          "source_medium": "bing / organic"
+          "source_medium": "bing / organic",
+          "raw_source_medium": "bing / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Bing organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 40,
@@ -5026,7 +5339,12 @@
           "key_events": 2.0,
           "screen_page_views": 446,
           "sessions": 55,
-          "source_medium": "t.co / referral"
+          "source_medium": "t.co / referral",
+          "raw_source_medium": "t.co / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "X / Twitter referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 47,
@@ -5035,7 +5353,12 @@
           "key_events": 0.0,
           "screen_page_views": 224,
           "sessions": 48,
-          "source_medium": "(data not available)"
+          "source_medium": "(data not available)",
+          "raw_source_medium": "(data not available)",
+          "raw_campaign": "(cross-network)",
+          "source_medium_label": "Google modeled traffic",
+          "campaign_label": "Cross-network traffic",
+          "traffic_note": "GA4 grouped this as modeled or cross-network traffic without a source."
         },
         {
           "active_users": 27,
@@ -5044,7 +5367,12 @@
           "key_events": 0.0,
           "screen_page_views": 204,
           "sessions": 42,
-          "source_medium": "mail / mail"
+          "source_medium": "mail / mail",
+          "raw_source_medium": "mail / mail",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Email email",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "Source is known, but the link did not include a campaign tag."
         },
         {
           "active_users": 31,
@@ -5053,7 +5381,12 @@
           "key_events": 1.0,
           "screen_page_views": 456,
           "sessions": 35,
-          "source_medium": "accounts.google.com / referral"
+          "source_medium": "accounts.google.com / referral",
+          "raw_source_medium": "accounts.google.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Google account referral referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 15,
@@ -5062,7 +5395,12 @@
           "key_events": 0.0,
           "screen_page_views": 80,
           "sessions": 15,
-          "source_medium": "duckduckgo / organic"
+          "source_medium": "duckduckgo / organic",
+          "raw_source_medium": "duckduckgo / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "DuckDuckGo organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 9,
@@ -5071,7 +5409,12 @@
           "key_events": 2.0,
           "screen_page_views": 65,
           "sessions": 11,
-          "source_medium": "allmylinks.com / referral"
+          "source_medium": "allmylinks.com / referral",
+          "raw_source_medium": "allmylinks.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "AllMyLinks referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 7,
@@ -5080,7 +5423,12 @@
           "key_events": 0.0,
           "screen_page_views": 133,
           "sessions": 11,
-          "source_medium": "yahoo / organic"
+          "source_medium": "yahoo / organic",
+          "raw_source_medium": "yahoo / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Yahoo organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 8,
@@ -5089,7 +5437,12 @@
           "key_events": 0.0,
           "screen_page_views": 97,
           "sessions": 10,
-          "source_medium": "linktr.ee / referral"
+          "source_medium": "linktr.ee / referral",
+          "raw_source_medium": "linktr.ee / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Linktree referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 8,
@@ -5098,7 +5451,12 @@
           "key_events": 0.0,
           "screen_page_views": 25,
           "sessions": 9,
-          "source_medium": "beacons.ai / referral"
+          "source_medium": "beacons.ai / referral",
+          "raw_source_medium": "beacons.ai / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Beacons referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 7,
@@ -5107,7 +5465,12 @@
           "key_events": 0.0,
           "screen_page_views": 14,
           "sessions": 9,
-          "source_medium": "x / autopost"
+          "source_medium": "x / autopost",
+          "raw_source_medium": "x / autopost",
+          "raw_campaign": "new-clip",
+          "source_medium_label": "X / Twitter autopost",
+          "campaign_label": "New clip autopost",
+          "traffic_note": "Tagged traffic from an automated promo post."
         },
         {
           "active_users": 7,
@@ -5116,7 +5479,12 @@
           "key_events": 0.0,
           "screen_page_views": 35,
           "sessions": 8,
-          "source_medium": "onlyfans.com / referral"
+          "source_medium": "onlyfans.com / referral",
+          "raw_source_medium": "onlyfans.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "OnlyFans referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 6,
@@ -5125,7 +5493,12 @@
           "key_events": 0.0,
           "screen_page_views": 168,
           "sessions": 8,
-          "source_medium": "x.com / referral"
+          "source_medium": "x.com / referral",
+          "raw_source_medium": "x.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "X / Twitter referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 3,
@@ -5134,7 +5507,12 @@
           "key_events": 0.0,
           "screen_page_views": 37,
           "sessions": 7,
-          "source_medium": "yandex / organic"
+          "source_medium": "yandex / organic",
+          "raw_source_medium": "yandex / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Yandex organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 3,
@@ -5143,7 +5521,12 @@
           "key_events": 0.0,
           "screen_page_views": 31,
           "sessions": 6,
-          "source_medium": "ntp.msn.com / referral"
+          "source_medium": "ntp.msn.com / referral",
+          "raw_source_medium": "ntp.msn.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Microsoft Start referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 4,
@@ -5152,7 +5535,12 @@
           "key_events": 0.0,
           "screen_page_views": 34,
           "sessions": 4,
-          "source_medium": "ecosia.org / organic"
+          "source_medium": "ecosia.org / organic",
+          "raw_source_medium": "ecosia.org / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Ecosia organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 3,
@@ -5161,7 +5549,12 @@
           "key_events": 0.0,
           "screen_page_views": 52,
           "sessions": 4,
-          "source_medium": "l.instagram.com / referral"
+          "source_medium": "l.instagram.com / referral",
+          "raw_source_medium": "l.instagram.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Instagram referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 2,
@@ -5170,7 +5563,12 @@
           "key_events": 0.0,
           "screen_page_views": 5,
           "sessions": 3,
-          "source_medium": "mail / mail"
+          "source_medium": "mail / mail",
+          "raw_source_medium": "mail / mail",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Email email",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Campaign tag is present; use it to connect traffic to a promo."
         },
         {
           "active_users": 1,
@@ -5179,69 +5577,86 @@
           "key_events": 0.0,
           "screen_page_views": 75,
           "sessions": 3,
-          "source_medium": "e.mail.ru / referral"
+          "source_medium": "e.mail.ru / referral",
+          "raw_source_medium": "e.mail.ru / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Email referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         }
       ],
       "outbound_clicks": [
         {
           "active_users": 9,
           "clicks": 9,
-          "url": "https://google.com/"
+          "url": "https://google.com/",
+          "destination_label": "Google"
         },
         {
           "active_users": 6,
           "clicks": 8,
-          "url": "https://ladysublime.com/"
+          "url": "https://ladysublime.com/",
+          "destination_label": "Lady Sublime site"
         },
         {
           "active_users": 3,
           "clicks": 3,
-          "url": "https://x.com/ladysublimebbw"
+          "url": "https://x.com/ladysublimebbw",
+          "destination_label": "X / Twitter"
         },
         {
           "active_users": 2,
           "clicks": 2,
-          "url": "https://www.instagram.com/ladysublimessbbw"
+          "url": "https://www.instagram.com/ladysublimessbbw",
+          "destination_label": "https://www.instagram.com/ladysublimessbbw"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://missmilarose.com/"
+          "url": "https://missmilarose.com/",
+          "destination_label": "https://missmilarose.com/"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://twitter.com/bbw__layla"
+          "url": "https://twitter.com/bbw__layla",
+          "destination_label": "X / Twitter"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://wanktimelive.com/"
+          "url": "https://wanktimelive.com/",
+          "destination_label": "https://wanktimelive.com/"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://www.instagram.com/alanaxxbaby"
+          "url": "https://www.instagram.com/alanaxxbaby",
+          "destination_label": "https://www.instagram.com/alanaxxbaby"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://www.instagram.com/missmilarose_"
+          "url": "https://www.instagram.com/missmilarose_",
+          "destination_label": "https://www.instagram.com/missmilarose_"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://x.com/Miss_MilaRose"
+          "url": "https://x.com/Miss_MilaRose",
+          "destination_label": "X / Twitter"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://x.com/SSBBW_Summer"
+          "url": "https://x.com/SSBBW_Summer",
+          "destination_label": "X / Twitter"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://x.com/alanaxxbaby"
+          "url": "https://x.com/alanaxxbaby",
+          "destination_label": "X / Twitter"
         }
       ],
       "events": [
@@ -5300,6 +5715,9 @@
           "key_events": 0.0
         }
       ],
+      "top_source_label": "Direct or saved link / Direct traffic (1,854 sessions)",
+      "top_source_note": "Typed URL, saved link, app handoff, or privacy-filtered referral.",
+      "top_outbound_label": "Google (9 clicks)",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
       "collected_at": "2026-07-03T22:43:38-04:00",
       "snapshot_date": "2026-07-03",
@@ -5337,7 +5755,12 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 9,
-          "source_medium": "(not set)"
+          "source_medium": "(not set)",
+          "raw_source_medium": "(not set)",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Unattributed traffic",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "GA4 did not receive referrer or UTM campaign details."
         },
         {
           "active_users": 3,
@@ -5346,7 +5769,12 @@
           "key_events": 0.0,
           "screen_page_views": 3,
           "sessions": 3,
-          "source_medium": "(direct) / (none)"
+          "source_medium": "(direct) / (none)",
+          "raw_source_medium": "(direct) / (none)",
+          "raw_campaign": "(direct)",
+          "source_medium_label": "Direct or saved link",
+          "campaign_label": "Direct traffic",
+          "traffic_note": "Typed URL, saved link, app handoff, or privacy-filtered referral."
         },
         {
           "active_users": 2,
@@ -5355,7 +5783,12 @@
           "key_events": 0.0,
           "screen_page_views": 4,
           "sessions": 2,
-          "source_medium": "(data not available)"
+          "source_medium": "(data not available)",
+          "raw_source_medium": "(data not available)",
+          "raw_campaign": "(cross-network)",
+          "source_medium_label": "Google modeled traffic",
+          "campaign_label": "Cross-network traffic",
+          "traffic_note": "GA4 grouped this as modeled or cross-network traffic without a source."
         },
         {
           "active_users": 2,
@@ -5364,7 +5797,12 @@
           "key_events": 0.0,
           "screen_page_views": 2,
           "sessions": 2,
-          "source_medium": "ig / social"
+          "source_medium": "ig / social",
+          "raw_source_medium": "ig / social",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Instagram social",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Social-platform click; campaign detail depends on UTM tagging."
         },
         {
           "active_users": 1,
@@ -5373,7 +5811,12 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "google / organic"
+          "source_medium": "google / organic",
+          "raw_source_medium": "google / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Google organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 1,
@@ -5382,7 +5825,12 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "ig / social"
+          "source_medium": "ig / social",
+          "raw_source_medium": "ig / social",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Instagram social",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "Social-platform click; campaign detail depends on UTM tagging."
         },
         {
           "active_users": 1,
@@ -5391,39 +5839,50 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "t.co / referral"
+          "source_medium": "t.co / referral",
+          "raw_source_medium": "t.co / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "X / Twitter referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         }
       ],
       "outbound_clicks": [
         {
           "active_users": 1,
           "clicks": 4,
-          "url": "http://ladysublime.com/?utm_campaign=Lady%20Sublime%20Official%20Website&utm_medium=link_in_bio&utm_"
+          "url": "http://ladysublime.com/?utm_campaign=Lady%20Sublime%20Official%20Website&utm_medium=link_in_bio&utm_",
+          "destination_label": "Lady Sublime site"
         },
         {
           "active_users": 2,
           "clicks": 3,
-          "url": "https://curvage.org/forum/index.php?/profile/212446-ladysublimessbbw/&utm_campaign=Curvage&utm_mediu"
+          "url": "https://curvage.org/forum/index.php?/profile/212446-ladysublimessbbw/&utm_campaign=Curvage&utm_mediu",
+          "destination_label": "Curvage"
         },
         {
           "active_users": 2,
           "clicks": 3,
-          "url": "https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos/Creator-View?utm_campaign="
+          "url": "https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos/Creator-View?utm_campaign=",
+          "destination_label": "ManyVids"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://onlyfans.com/ladysublimessbbw?utm_campaign=OnlyFans&utm_medium=link_in_bio&utm_source=beacon"
+          "url": "https://onlyfans.com/ladysublimessbbw?utm_campaign=OnlyFans&utm_medium=link_in_bio&utm_source=beacon",
+          "destination_label": "OnlyFans"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://twitter.com/ladysublimebbw"
+          "url": "https://twitter.com/ladysublimebbw",
+          "destination_label": "X / Twitter"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw?utm_campaign=Clips4sale&utm_medium=link_"
+          "url": "https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw?utm_campaign=Clips4sale&utm_medium=link_",
+          "destination_label": "Clips4Sale"
         }
       ],
       "events": [
@@ -5464,6 +5923,9 @@
           "key_events": 0.0
         }
       ],
+      "top_source_label": "Unattributed traffic (9 sessions)",
+      "top_source_note": "GA4 did not receive referrer or UTM campaign details.",
+      "top_outbound_label": "Lady Sublime site (4 clicks)",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
       "collected_at": "2026-07-03T23:00:02-04:00",
       "snapshot_date": "2026-07-03",
@@ -5501,7 +5963,12 @@
           "key_events": 66.0,
           "screen_page_views": 8602,
           "sessions": 1860,
-          "source_medium": "(direct) / (none)"
+          "source_medium": "(direct) / (none)",
+          "raw_source_medium": "(direct) / (none)",
+          "raw_campaign": "(direct)",
+          "source_medium_label": "Direct or saved link",
+          "campaign_label": "Direct traffic",
+          "traffic_note": "Typed URL, saved link, app handoff, or privacy-filtered referral."
         },
         {
           "active_users": 791,
@@ -5510,7 +5977,12 @@
           "key_events": 5.0,
           "screen_page_views": 6367,
           "sessions": 943,
-          "source_medium": "google / organic"
+          "source_medium": "google / organic",
+          "raw_source_medium": "google / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Google organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 170,
@@ -5519,7 +5991,12 @@
           "key_events": 0.0,
           "screen_page_views": 812,
           "sessions": 177,
-          "source_medium": "(not set)"
+          "source_medium": "(not set)",
+          "raw_source_medium": "(not set)",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Unattributed traffic",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "GA4 did not receive referrer or UTM campaign details."
         },
         {
           "active_users": 110,
@@ -5528,7 +6005,12 @@
           "key_events": 0.0,
           "screen_page_views": 307,
           "sessions": 122,
-          "source_medium": "ladysublime.me / referral"
+          "source_medium": "ladysublime.me / referral",
+          "raw_source_medium": "ladysublime.me / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Lady Sublime link-in-bio referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 98,
@@ -5537,7 +6019,12 @@
           "key_events": 0.0,
           "screen_page_views": 333,
           "sessions": 112,
-          "source_medium": "x / autopost"
+          "source_medium": "x / autopost",
+          "raw_source_medium": "x / autopost",
+          "raw_campaign": "new-sale",
+          "source_medium_label": "X / Twitter autopost",
+          "campaign_label": "New sale autopost",
+          "traffic_note": "Tagged traffic from an automated promo post."
         },
         {
           "active_users": 74,
@@ -5546,7 +6033,12 @@
           "key_events": 0.0,
           "screen_page_views": 651,
           "sessions": 89,
-          "source_medium": "bbw.wiki / referral"
+          "source_medium": "bbw.wiki / referral",
+          "raw_source_medium": "bbw.wiki / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "BBW Wiki referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 43,
@@ -5555,7 +6047,12 @@
           "key_events": 1.0,
           "screen_page_views": 482,
           "sessions": 60,
-          "source_medium": "bing / organic"
+          "source_medium": "bing / organic",
+          "raw_source_medium": "bing / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Bing organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 40,
@@ -5564,7 +6061,12 @@
           "key_events": 2.0,
           "screen_page_views": 446,
           "sessions": 55,
-          "source_medium": "t.co / referral"
+          "source_medium": "t.co / referral",
+          "raw_source_medium": "t.co / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "X / Twitter referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 47,
@@ -5573,7 +6075,12 @@
           "key_events": 0.0,
           "screen_page_views": 225,
           "sessions": 48,
-          "source_medium": "(data not available)"
+          "source_medium": "(data not available)",
+          "raw_source_medium": "(data not available)",
+          "raw_campaign": "(cross-network)",
+          "source_medium_label": "Google modeled traffic",
+          "campaign_label": "Cross-network traffic",
+          "traffic_note": "GA4 grouped this as modeled or cross-network traffic without a source."
         },
         {
           "active_users": 27,
@@ -5582,7 +6089,12 @@
           "key_events": 0.0,
           "screen_page_views": 204,
           "sessions": 42,
-          "source_medium": "mail / mail"
+          "source_medium": "mail / mail",
+          "raw_source_medium": "mail / mail",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Email email",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "Source is known, but the link did not include a campaign tag."
         },
         {
           "active_users": 31,
@@ -5591,7 +6103,12 @@
           "key_events": 1.0,
           "screen_page_views": 456,
           "sessions": 35,
-          "source_medium": "accounts.google.com / referral"
+          "source_medium": "accounts.google.com / referral",
+          "raw_source_medium": "accounts.google.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Google account referral referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 15,
@@ -5600,7 +6117,12 @@
           "key_events": 0.0,
           "screen_page_views": 80,
           "sessions": 15,
-          "source_medium": "duckduckgo / organic"
+          "source_medium": "duckduckgo / organic",
+          "raw_source_medium": "duckduckgo / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "DuckDuckGo organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 9,
@@ -5609,7 +6131,12 @@
           "key_events": 2.0,
           "screen_page_views": 65,
           "sessions": 11,
-          "source_medium": "allmylinks.com / referral"
+          "source_medium": "allmylinks.com / referral",
+          "raw_source_medium": "allmylinks.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "AllMyLinks referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 7,
@@ -5618,7 +6145,12 @@
           "key_events": 0.0,
           "screen_page_views": 133,
           "sessions": 11,
-          "source_medium": "yahoo / organic"
+          "source_medium": "yahoo / organic",
+          "raw_source_medium": "yahoo / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Yahoo organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 8,
@@ -5627,7 +6159,12 @@
           "key_events": 0.0,
           "screen_page_views": 97,
           "sessions": 10,
-          "source_medium": "linktr.ee / referral"
+          "source_medium": "linktr.ee / referral",
+          "raw_source_medium": "linktr.ee / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Linktree referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 8,
@@ -5636,7 +6173,12 @@
           "key_events": 0.0,
           "screen_page_views": 25,
           "sessions": 9,
-          "source_medium": "beacons.ai / referral"
+          "source_medium": "beacons.ai / referral",
+          "raw_source_medium": "beacons.ai / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Beacons referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 7,
@@ -5645,7 +6187,12 @@
           "key_events": 0.0,
           "screen_page_views": 14,
           "sessions": 9,
-          "source_medium": "x / autopost"
+          "source_medium": "x / autopost",
+          "raw_source_medium": "x / autopost",
+          "raw_campaign": "new-clip",
+          "source_medium_label": "X / Twitter autopost",
+          "campaign_label": "New clip autopost",
+          "traffic_note": "Tagged traffic from an automated promo post."
         },
         {
           "active_users": 7,
@@ -5654,7 +6201,12 @@
           "key_events": 0.0,
           "screen_page_views": 211,
           "sessions": 9,
-          "source_medium": "x.com / referral"
+          "source_medium": "x.com / referral",
+          "raw_source_medium": "x.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "X / Twitter referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 7,
@@ -5663,7 +6215,12 @@
           "key_events": 0.0,
           "screen_page_views": 35,
           "sessions": 8,
-          "source_medium": "onlyfans.com / referral"
+          "source_medium": "onlyfans.com / referral",
+          "raw_source_medium": "onlyfans.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "OnlyFans referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 3,
@@ -5672,7 +6229,12 @@
           "key_events": 0.0,
           "screen_page_views": 37,
           "sessions": 7,
-          "source_medium": "yandex / organic"
+          "source_medium": "yandex / organic",
+          "raw_source_medium": "yandex / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Yandex organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 3,
@@ -5681,7 +6243,12 @@
           "key_events": 0.0,
           "screen_page_views": 31,
           "sessions": 6,
-          "source_medium": "ntp.msn.com / referral"
+          "source_medium": "ntp.msn.com / referral",
+          "raw_source_medium": "ntp.msn.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Microsoft Start referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 4,
@@ -5690,7 +6257,12 @@
           "key_events": 0.0,
           "screen_page_views": 34,
           "sessions": 4,
-          "source_medium": "ecosia.org / organic"
+          "source_medium": "ecosia.org / organic",
+          "raw_source_medium": "ecosia.org / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Ecosia organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 3,
@@ -5699,7 +6271,12 @@
           "key_events": 0.0,
           "screen_page_views": 52,
           "sessions": 4,
-          "source_medium": "l.instagram.com / referral"
+          "source_medium": "l.instagram.com / referral",
+          "raw_source_medium": "l.instagram.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Instagram referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 2,
@@ -5708,7 +6285,12 @@
           "key_events": 0.0,
           "screen_page_views": 5,
           "sessions": 3,
-          "source_medium": "mail / mail"
+          "source_medium": "mail / mail",
+          "raw_source_medium": "mail / mail",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Email email",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Campaign tag is present; use it to connect traffic to a promo."
         },
         {
           "active_users": 1,
@@ -5717,69 +6299,86 @@
           "key_events": 0.0,
           "screen_page_views": 75,
           "sessions": 3,
-          "source_medium": "e.mail.ru / referral"
+          "source_medium": "e.mail.ru / referral",
+          "raw_source_medium": "e.mail.ru / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Email referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         }
       ],
       "outbound_clicks": [
         {
           "active_users": 9,
           "clicks": 9,
-          "url": "https://google.com/"
+          "url": "https://google.com/",
+          "destination_label": "Google"
         },
         {
           "active_users": 6,
           "clicks": 8,
-          "url": "https://ladysublime.com/"
+          "url": "https://ladysublime.com/",
+          "destination_label": "Lady Sublime site"
         },
         {
           "active_users": 3,
           "clicks": 3,
-          "url": "https://x.com/ladysublimebbw"
+          "url": "https://x.com/ladysublimebbw",
+          "destination_label": "X / Twitter"
         },
         {
           "active_users": 2,
           "clicks": 2,
-          "url": "https://www.instagram.com/ladysublimessbbw"
+          "url": "https://www.instagram.com/ladysublimessbbw",
+          "destination_label": "https://www.instagram.com/ladysublimessbbw"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://missmilarose.com/"
+          "url": "https://missmilarose.com/",
+          "destination_label": "https://missmilarose.com/"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://twitter.com/bbw__layla"
+          "url": "https://twitter.com/bbw__layla",
+          "destination_label": "X / Twitter"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://wanktimelive.com/"
+          "url": "https://wanktimelive.com/",
+          "destination_label": "https://wanktimelive.com/"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://www.instagram.com/alanaxxbaby"
+          "url": "https://www.instagram.com/alanaxxbaby",
+          "destination_label": "https://www.instagram.com/alanaxxbaby"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://www.instagram.com/missmilarose_"
+          "url": "https://www.instagram.com/missmilarose_",
+          "destination_label": "https://www.instagram.com/missmilarose_"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://x.com/Miss_MilaRose"
+          "url": "https://x.com/Miss_MilaRose",
+          "destination_label": "X / Twitter"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://x.com/SSBBW_Summer"
+          "url": "https://x.com/SSBBW_Summer",
+          "destination_label": "X / Twitter"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://x.com/alanaxxbaby"
+          "url": "https://x.com/alanaxxbaby",
+          "destination_label": "X / Twitter"
         }
       ],
       "events": [
@@ -5838,6 +6437,9 @@
           "key_events": 0.0
         }
       ],
+      "top_source_label": "Direct or saved link / Direct traffic (1,860 sessions)",
+      "top_source_note": "Typed URL, saved link, app handoff, or privacy-filtered referral.",
+      "top_outbound_label": "Google (9 clicks)",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
       "collected_at": "2026-07-03T23:00:05-04:00",
       "snapshot_date": "2026-07-03",
@@ -5870,6 +6472,9 @@
       "source_medium": [],
       "outbound_clicks": [],
       "events": [],
+      "top_source_label": "",
+      "top_source_note": "",
+      "top_outbound_label": "",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
       "collected_at": "2026-07-04T02:12:46-04:00",
       "snapshot_date": "2026-07-04",
@@ -5902,6 +6507,9 @@
       "source_medium": [],
       "outbound_clicks": [],
       "events": [],
+      "top_source_label": "",
+      "top_source_note": "",
+      "top_outbound_label": "",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
       "collected_at": "2026-07-04T02:12:49-04:00",
       "snapshot_date": "2026-07-04",
@@ -5934,6 +6542,9 @@
       "source_medium": [],
       "outbound_clicks": [],
       "events": [],
+      "top_source_label": "",
+      "top_source_note": "",
+      "top_outbound_label": "",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
       "collected_at": "2026-07-04T02:19:37-04:00",
       "snapshot_date": "2026-07-04",
@@ -5966,6 +6577,9 @@
       "source_medium": [],
       "outbound_clicks": [],
       "events": [],
+      "top_source_label": "",
+      "top_source_note": "",
+      "top_outbound_label": "",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
       "collected_at": "2026-07-04T02:27:30-04:00",
       "snapshot_date": "2026-07-04",
@@ -6003,7 +6617,12 @@
           "key_events": 0.0,
           "screen_page_views": 14,
           "sessions": 25,
-          "source_medium": "(not set)"
+          "source_medium": "(not set)",
+          "raw_source_medium": "(not set)",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Unattributed traffic",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "GA4 did not receive referrer or UTM campaign details."
         },
         {
           "active_users": 9,
@@ -6012,7 +6631,12 @@
           "key_events": 0.0,
           "screen_page_views": 12,
           "sessions": 10,
-          "source_medium": "ig / social"
+          "source_medium": "ig / social",
+          "raw_source_medium": "ig / social",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Instagram social",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Social-platform click; campaign detail depends on UTM tagging."
         },
         {
           "active_users": 8,
@@ -6021,7 +6645,12 @@
           "key_events": 0.0,
           "screen_page_views": 11,
           "sessions": 8,
-          "source_medium": "(data not available)"
+          "source_medium": "(data not available)",
+          "raw_source_medium": "(data not available)",
+          "raw_campaign": "(cross-network)",
+          "source_medium_label": "Google modeled traffic",
+          "campaign_label": "Cross-network traffic",
+          "traffic_note": "GA4 grouped this as modeled or cross-network traffic without a source."
         },
         {
           "active_users": 6,
@@ -6030,7 +6659,12 @@
           "key_events": 0.0,
           "screen_page_views": 7,
           "sessions": 7,
-          "source_medium": "(direct) / (none)"
+          "source_medium": "(direct) / (none)",
+          "raw_source_medium": "(direct) / (none)",
+          "raw_campaign": "(direct)",
+          "source_medium_label": "Direct or saved link",
+          "campaign_label": "Direct traffic",
+          "traffic_note": "Typed URL, saved link, app handoff, or privacy-filtered referral."
         },
         {
           "active_users": 4,
@@ -6039,7 +6673,12 @@
           "key_events": 0.0,
           "screen_page_views": 4,
           "sessions": 4,
-          "source_medium": "t.co / referral"
+          "source_medium": "t.co / referral",
+          "raw_source_medium": "t.co / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "X / Twitter referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 1,
@@ -6048,7 +6687,12 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "google / organic"
+          "source_medium": "google / organic",
+          "raw_source_medium": "google / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Google organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 1,
@@ -6057,7 +6701,12 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "ig / social"
+          "source_medium": "ig / social",
+          "raw_source_medium": "ig / social",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Instagram social",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "Social-platform click; campaign detail depends on UTM tagging."
         },
         {
           "active_users": 1,
@@ -6066,7 +6715,12 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "l.instagram.com / referral"
+          "source_medium": "l.instagram.com / referral",
+          "raw_source_medium": "l.instagram.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Instagram referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 1,
@@ -6075,7 +6729,12 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "onlyfans.com / referral"
+          "source_medium": "onlyfans.com / referral",
+          "raw_source_medium": "onlyfans.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "OnlyFans referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 1,
@@ -6084,7 +6743,12 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "reddit.com / referral"
+          "source_medium": "reddit.com / referral",
+          "raw_source_medium": "reddit.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Reddit referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 1,
@@ -6093,49 +6757,62 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "yandex.ru / referral"
+          "source_medium": "yandex.ru / referral",
+          "raw_source_medium": "yandex.ru / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Yandex referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         }
       ],
       "outbound_clicks": [
         {
           "active_users": 8,
           "clicks": 10,
-          "url": "https://twitter.com/ladysublimebbw"
+          "url": "https://twitter.com/ladysublimebbw",
+          "destination_label": "X / Twitter"
         },
         {
           "active_users": 6,
           "clicks": 10,
-          "url": "https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos/Creator-View?utm_campaign="
+          "url": "https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos/Creator-View?utm_campaign=",
+          "destination_label": "ManyVids"
         },
         {
           "active_users": 5,
           "clicks": 8,
-          "url": "http://ladysublime.com/?utm_campaign=Lady%20Sublime%20Official%20Website&utm_medium=link_in_bio&utm_"
+          "url": "http://ladysublime.com/?utm_campaign=Lady%20Sublime%20Official%20Website&utm_medium=link_in_bio&utm_",
+          "destination_label": "Lady Sublime site"
         },
         {
           "active_users": 6,
           "clicks": 8,
-          "url": "https://onlyfans.com/ladysublimessbbw?utm_campaign=OnlyFans&utm_medium=link_in_bio&utm_source=beacon"
+          "url": "https://onlyfans.com/ladysublimessbbw?utm_campaign=OnlyFans&utm_medium=link_in_bio&utm_source=beacon",
+          "destination_label": "OnlyFans"
         },
         {
           "active_users": 4,
           "clicks": 6,
-          "url": "https://curvage.org/forum/index.php?/profile/212446-ladysublimessbbw/&utm_campaign=Curvage&utm_mediu"
+          "url": "https://curvage.org/forum/index.php?/profile/212446-ladysublimessbbw/&utm_campaign=Curvage&utm_mediu",
+          "destination_label": "Curvage"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw?utm_campaign=Clips4sale&utm_medium=link_"
+          "url": "https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw?utm_campaign=Clips4sale&utm_medium=link_",
+          "destination_label": "Clips4Sale"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://www.jotform.com/form/253026005926047?utm_campaign=Custom%20Videos&utm_medium=link_in_bio&utm"
+          "url": "https://www.jotform.com/form/253026005926047?utm_campaign=Custom%20Videos&utm_medium=link_in_bio&utm",
+          "destination_label": "https://www.jotform.com/form/253026005926047?utm_campaign=Custom%20Vi..."
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://youpay.me/LadySublime?utm_campaign=Gifts%2FPayment&utm_medium=link_in_bio&utm_source=beacons"
+          "url": "https://youpay.me/LadySublime?utm_campaign=Gifts%2FPayment&utm_medium=link_in_bio&utm_source=beacons",
+          "destination_label": "YouPay"
         }
       ],
       "events": [
@@ -6176,6 +6853,9 @@
           "key_events": 0.0
         }
       ],
+      "top_source_label": "Unattributed traffic (25 sessions)",
+      "top_source_note": "GA4 did not receive referrer or UTM campaign details.",
+      "top_outbound_label": "X / Twitter (10 clicks)",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
       "collected_at": "2026-07-04T08:01:23-04:00",
       "snapshot_date": "2026-07-04",
@@ -6213,7 +6893,12 @@
           "key_events": 65.0,
           "screen_page_views": 8173,
           "sessions": 1822,
-          "source_medium": "(direct) / (none)"
+          "source_medium": "(direct) / (none)",
+          "raw_source_medium": "(direct) / (none)",
+          "raw_campaign": "(direct)",
+          "source_medium_label": "Direct or saved link",
+          "campaign_label": "Direct traffic",
+          "traffic_note": "Typed URL, saved link, app handoff, or privacy-filtered referral."
         },
         {
           "active_users": 754,
@@ -6222,7 +6907,12 @@
           "key_events": 5.0,
           "screen_page_views": 5998,
           "sessions": 902,
-          "source_medium": "google / organic"
+          "source_medium": "google / organic",
+          "raw_source_medium": "google / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Google organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 219,
@@ -6231,7 +6921,12 @@
           "key_events": 1.0,
           "screen_page_views": 1107,
           "sessions": 230,
-          "source_medium": "(not set)"
+          "source_medium": "(not set)",
+          "raw_source_medium": "(not set)",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Unattributed traffic",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "GA4 did not receive referrer or UTM campaign details."
         },
         {
           "active_users": 100,
@@ -6240,7 +6935,12 @@
           "key_events": 0.0,
           "screen_page_views": 278,
           "sessions": 111,
-          "source_medium": "ladysublime.me / referral"
+          "source_medium": "ladysublime.me / referral",
+          "raw_source_medium": "ladysublime.me / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Lady Sublime link-in-bio referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 90,
@@ -6249,7 +6949,12 @@
           "key_events": 0.0,
           "screen_page_views": 316,
           "sessions": 103,
-          "source_medium": "x / autopost"
+          "source_medium": "x / autopost",
+          "raw_source_medium": "x / autopost",
+          "raw_campaign": "new-sale",
+          "source_medium_label": "X / Twitter autopost",
+          "campaign_label": "New sale autopost",
+          "traffic_note": "Tagged traffic from an automated promo post."
         },
         {
           "active_users": 64,
@@ -6258,7 +6963,12 @@
           "key_events": 0.0,
           "screen_page_views": 590,
           "sessions": 79,
-          "source_medium": "bbw.wiki / referral"
+          "source_medium": "bbw.wiki / referral",
+          "raw_source_medium": "bbw.wiki / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "BBW Wiki referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 40,
@@ -6267,7 +6977,12 @@
           "key_events": 1.0,
           "screen_page_views": 471,
           "sessions": 58,
-          "source_medium": "bing / organic"
+          "source_medium": "bing / organic",
+          "raw_source_medium": "bing / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Bing organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 39,
@@ -6276,7 +6991,12 @@
           "key_events": 2.0,
           "screen_page_views": 444,
           "sessions": 54,
-          "source_medium": "t.co / referral"
+          "source_medium": "t.co / referral",
+          "raw_source_medium": "t.co / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "X / Twitter referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 52,
@@ -6285,7 +7005,12 @@
           "key_events": 0.0,
           "screen_page_views": 270,
           "sessions": 53,
-          "source_medium": "(data not available)"
+          "source_medium": "(data not available)",
+          "raw_source_medium": "(data not available)",
+          "raw_campaign": "(cross-network)",
+          "source_medium_label": "Google modeled traffic",
+          "campaign_label": "Cross-network traffic",
+          "traffic_note": "GA4 grouped this as modeled or cross-network traffic without a source."
         },
         {
           "active_users": 27,
@@ -6294,7 +7019,12 @@
           "key_events": 0.0,
           "screen_page_views": 204,
           "sessions": 42,
-          "source_medium": "mail / mail"
+          "source_medium": "mail / mail",
+          "raw_source_medium": "mail / mail",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Email email",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "Source is known, but the link did not include a campaign tag."
         },
         {
           "active_users": 30,
@@ -6303,7 +7033,12 @@
           "key_events": 1.0,
           "screen_page_views": 408,
           "sessions": 32,
-          "source_medium": "accounts.google.com / referral"
+          "source_medium": "accounts.google.com / referral",
+          "raw_source_medium": "accounts.google.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Google account referral referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 11,
@@ -6312,7 +7047,12 @@
           "key_events": 0.0,
           "screen_page_views": 146,
           "sessions": 16,
-          "source_medium": "yahoo / organic"
+          "source_medium": "yahoo / organic",
+          "raw_source_medium": "yahoo / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Yahoo organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 12,
@@ -6321,7 +7061,12 @@
           "key_events": 0.0,
           "screen_page_views": 51,
           "sessions": 12,
-          "source_medium": "duckduckgo / organic"
+          "source_medium": "duckduckgo / organic",
+          "raw_source_medium": "duckduckgo / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "DuckDuckGo organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 8,
@@ -6330,7 +7075,12 @@
           "key_events": 2.0,
           "screen_page_views": 51,
           "sessions": 10,
-          "source_medium": "allmylinks.com / referral"
+          "source_medium": "allmylinks.com / referral",
+          "raw_source_medium": "allmylinks.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "AllMyLinks referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 8,
@@ -6339,7 +7089,12 @@
           "key_events": 0.0,
           "screen_page_views": 25,
           "sessions": 9,
-          "source_medium": "beacons.ai / referral"
+          "source_medium": "beacons.ai / referral",
+          "raw_source_medium": "beacons.ai / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Beacons referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 7,
@@ -6348,7 +7103,12 @@
           "key_events": 0.0,
           "screen_page_views": 14,
           "sessions": 9,
-          "source_medium": "x / autopost"
+          "source_medium": "x / autopost",
+          "raw_source_medium": "x / autopost",
+          "raw_campaign": "new-clip",
+          "source_medium_label": "X / Twitter autopost",
+          "campaign_label": "New clip autopost",
+          "traffic_note": "Tagged traffic from an automated promo post."
         },
         {
           "active_users": 7,
@@ -6357,7 +7117,12 @@
           "key_events": 0.0,
           "screen_page_views": 82,
           "sessions": 8,
-          "source_medium": "linktr.ee / referral"
+          "source_medium": "linktr.ee / referral",
+          "raw_source_medium": "linktr.ee / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Linktree referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 7,
@@ -6366,7 +7131,12 @@
           "key_events": 0.0,
           "screen_page_views": 35,
           "sessions": 8,
-          "source_medium": "onlyfans.com / referral"
+          "source_medium": "onlyfans.com / referral",
+          "raw_source_medium": "onlyfans.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "OnlyFans referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 6,
@@ -6375,7 +7145,12 @@
           "key_events": 0.0,
           "screen_page_views": 145,
           "sessions": 8,
-          "source_medium": "x.com / referral"
+          "source_medium": "x.com / referral",
+          "raw_source_medium": "x.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "X / Twitter referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 3,
@@ -6384,7 +7159,12 @@
           "key_events": 0.0,
           "screen_page_views": 31,
           "sessions": 6,
-          "source_medium": "ntp.msn.com / referral"
+          "source_medium": "ntp.msn.com / referral",
+          "raw_source_medium": "ntp.msn.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Microsoft Start referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 2,
@@ -6393,7 +7173,12 @@
           "key_events": 0.0,
           "screen_page_views": 32,
           "sessions": 6,
-          "source_medium": "yandex / organic"
+          "source_medium": "yandex / organic",
+          "raw_source_medium": "yandex / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Yandex organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 3,
@@ -6402,7 +7187,12 @@
           "key_events": 0.0,
           "screen_page_views": 52,
           "sessions": 4,
-          "source_medium": "l.instagram.com / referral"
+          "source_medium": "l.instagram.com / referral",
+          "raw_source_medium": "l.instagram.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Instagram referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 3,
@@ -6411,7 +7201,12 @@
           "key_events": 0.0,
           "screen_page_views": 24,
           "sessions": 3,
-          "source_medium": "ecosia.org / organic"
+          "source_medium": "ecosia.org / organic",
+          "raw_source_medium": "ecosia.org / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Ecosia organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 2,
@@ -6420,7 +7215,12 @@
           "key_events": 0.0,
           "screen_page_views": 5,
           "sessions": 3,
-          "source_medium": "mail / mail"
+          "source_medium": "mail / mail",
+          "raw_source_medium": "mail / mail",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Email email",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Campaign tag is present; use it to connect traffic to a promo."
         },
         {
           "active_users": 1,
@@ -6429,54 +7229,68 @@
           "key_events": 0.0,
           "screen_page_views": 75,
           "sessions": 3,
-          "source_medium": "e.mail.ru / referral"
+          "source_medium": "e.mail.ru / referral",
+          "raw_source_medium": "e.mail.ru / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Email referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         }
       ],
       "outbound_clicks": [
         {
           "active_users": 9,
           "clicks": 9,
-          "url": "https://google.com/"
+          "url": "https://google.com/",
+          "destination_label": "Google"
         },
         {
           "active_users": 5,
           "clicks": 6,
-          "url": "https://ladysublime.com/"
+          "url": "https://ladysublime.com/",
+          "destination_label": "Lady Sublime site"
         },
         {
           "active_users": 3,
           "clicks": 3,
-          "url": "https://x.com/ladysublimebbw"
+          "url": "https://x.com/ladysublimebbw",
+          "destination_label": "X / Twitter"
         },
         {
           "active_users": 2,
           "clicks": 2,
-          "url": "https://www.instagram.com/ladysublimessbbw"
+          "url": "https://www.instagram.com/ladysublimessbbw",
+          "destination_label": "https://www.instagram.com/ladysublimessbbw"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://twitter.com/bbw__layla"
+          "url": "https://twitter.com/bbw__layla",
+          "destination_label": "X / Twitter"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://wanktimelive.com/"
+          "url": "https://wanktimelive.com/",
+          "destination_label": "https://wanktimelive.com/"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://www.instagram.com/alanaxxbaby"
+          "url": "https://www.instagram.com/alanaxxbaby",
+          "destination_label": "https://www.instagram.com/alanaxxbaby"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://x.com/SSBBW_Summer"
+          "url": "https://x.com/SSBBW_Summer",
+          "destination_label": "X / Twitter"
         },
         {
           "active_users": 1,
           "clicks": 1,
-          "url": "https://x.com/alanaxxbaby"
+          "url": "https://x.com/alanaxxbaby",
+          "destination_label": "X / Twitter"
         }
       ],
       "events": [
@@ -6535,6 +7349,9 @@
           "key_events": 0.0
         }
       ],
+      "top_source_label": "Direct or saved link / Direct traffic (1,822 sessions)",
+      "top_source_note": "Typed URL, saved link, app handoff, or privacy-filtered referral.",
+      "top_outbound_label": "Google (9 clicks)",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
       "collected_at": "2026-07-04T08:01:27-04:00",
       "snapshot_date": "2026-07-04",
@@ -6572,7 +7389,12 @@
           "key_events": 0.0,
           "screen_page_views": 127,
           "sessions": 44,
-          "source_medium": "(not set)"
+          "source_medium": "(not set)",
+          "raw_source_medium": "(not set)",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Unattributed traffic",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "GA4 did not receive referrer or UTM campaign details."
         },
         {
           "active_users": 27,
@@ -6581,7 +7403,12 @@
           "key_events": 0.0,
           "screen_page_views": 48,
           "sessions": 29,
-          "source_medium": "(direct) / (none)"
+          "source_medium": "(direct) / (none)",
+          "raw_source_medium": "(direct) / (none)",
+          "raw_campaign": "(direct)",
+          "source_medium_label": "Direct or saved link",
+          "campaign_label": "Direct traffic",
+          "traffic_note": "Typed URL, saved link, app handoff, or privacy-filtered referral."
         },
         {
           "active_users": 16,
@@ -6590,7 +7417,12 @@
           "key_events": 0.0,
           "screen_page_views": 39,
           "sessions": 16,
-          "source_medium": "google / organic"
+          "source_medium": "google / organic",
+          "raw_source_medium": "google / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Google organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
         },
         {
           "active_users": 9,
@@ -6599,7 +7431,12 @@
           "key_events": 0.0,
           "screen_page_views": 14,
           "sessions": 9,
-          "source_medium": "(data not available)"
+          "source_medium": "(data not available)",
+          "raw_source_medium": "(data not available)",
+          "raw_campaign": "(cross-network)",
+          "source_medium_label": "Google modeled traffic",
+          "campaign_label": "Cross-network traffic",
+          "traffic_note": "GA4 grouped this as modeled or cross-network traffic without a source."
         },
         {
           "active_users": 1,
@@ -6608,7 +7445,12 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "it.pornhub.com / referral"
+          "source_medium": "it.pornhub.com / referral",
+          "raw_source_medium": "it.pornhub.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "it.pornhub.com referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         },
         {
           "active_users": 1,
@@ -6617,14 +7459,20 @@
           "key_events": 0.0,
           "screen_page_views": 1,
           "sessions": 1,
-          "source_medium": "yandex.ru / referral"
+          "source_medium": "yandex.ru / referral",
+          "raw_source_medium": "yandex.ru / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Yandex referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
         }
       ],
       "outbound_clicks": [
         {
           "active_users": 2,
           "clicks": 2,
-          "url": "https://google.com/"
+          "url": "https://google.com/",
+          "destination_label": "Google"
         }
       ],
       "events": [
@@ -6671,6 +7519,9 @@
           "key_events": 0.0
         }
       ],
+      "top_source_label": "Unattributed traffic (44 sessions)",
+      "top_source_note": "GA4 did not receive referrer or UTM campaign details.",
+      "top_outbound_label": "Google (2 clicks)",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
       "collected_at": "2026-07-04T08:01:31-04:00",
       "snapshot_date": "2026-07-04",
@@ -6703,6 +7554,9 @@
       "source_medium": [],
       "outbound_clicks": [],
       "events": [],
+      "top_source_label": "",
+      "top_source_note": "",
+      "top_outbound_label": "",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
       "collected_at": "2026-07-04T08:01:33-04:00",
       "snapshot_date": "2026-07-04",
