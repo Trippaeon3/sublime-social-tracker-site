@@ -1,0 +1,3 @@
+snapshot_id,account_id,provider,account_label,profile_url,period_label,views,clicks,click_through_rate,subscribers,sales,revenue,top_links,source_url,collected_at,snapshot_date,views_change,clicks_change
+1,lady-sublime-beacons,beacons,Beacons,,Last 7 days,1223,1127,0.922,,,,[],https://account.beacons.ai/account/home/insights,2026-07-03T19:21:36-04:00,2026-07-03,,
+2,lady-sublime-beacons,beacons,Beacons,,Last 7 days,1169,1065,0.9109999999999999,,,,[],https://account.beacons.ai/account/home/insights,2026-07-03T22:59:56-04:00,2026-07-03,-54,-62
