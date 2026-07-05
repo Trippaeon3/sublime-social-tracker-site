@@ -1,6 +1,6 @@
 {
   "title": "Social Media Growth Dashboard",
-  "generated_at": "2026-07-05T15:23:11-04:00",
+  "generated_at": "2026-07-05T15:25:10-04:00",
   "kpis": {
     "total_followers": 182160,
     "previous_snapshot_gain": 490,
@@ -10,7 +10,7 @@
     "gain_30d": 0,
     "gain_7d_status": "partial",
     "gain_30d_status": "partial",
-    "healthy_sources": 13,
+    "healthy_sources": 12,
     "tracked_accounts": 13,
     "previous_snapshot_sources": 13,
     "full_7d_sources": 8,
@@ -4004,6 +4004,11 @@
       "level": "warning",
       "issue": "Facebook follows context",
       "detail": "Meta returned both a latest page-follows value (14,981) and a summed value across returned rows. The dashboard displays the latest value to avoid double-counting."
+    },
+    {
+      "level": "error",
+      "issue": "Feabie source issue",
+      "detail": "Feabie headed browser retry blocked by Cloudflare before a follower count was visible."
     }
   ],
   "recommendations": [
@@ -4129,9 +4134,9 @@
       "platform": "Feabie",
       "handle": "LadySublimeSSBBW",
       "latest_success": "2026-07-04T14:35:31-04:00",
-      "latest_attempt": "2026-07-04T14:35:31-04:00",
-      "status": "ok",
-      "error_message": null
+      "latest_attempt": "2026-07-05T15:24:40-04:00",
+      "status": "error",
+      "error_message": "Feabie headed browser retry blocked by Cloudflare before a follower count was visible."
     },
     {
       "platform": "Bluesky",
