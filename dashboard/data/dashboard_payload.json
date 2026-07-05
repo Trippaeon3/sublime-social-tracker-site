@@ -1,16 +1,16 @@
 {
   "title": "Social Media Growth Dashboard",
-  "generated_at": "2026-07-05T15:25:10-04:00",
+  "generated_at": "2026-07-05T15:26:49-04:00",
   "kpis": {
-    "total_followers": 182160,
-    "previous_snapshot_gain": 490,
-    "organic_previous_snapshot_gain": 490,
+    "total_followers": 182168,
+    "previous_snapshot_gain": 492,
+    "organic_previous_snapshot_gain": 492,
     "newly_tracked_audience": 0,
     "gain_7d": 671,
     "gain_30d": 0,
     "gain_7d_status": "partial",
     "gain_30d_status": "partial",
-    "healthy_sources": 12,
+    "healthy_sources": 13,
     "tracked_accounts": 13,
     "previous_snapshot_sources": 13,
     "full_7d_sources": 8,
@@ -719,7 +719,7 @@
       "platform": "feabie",
       "label": "Feabie",
       "handle": "LadySublimeSSBBW",
-      "follower_count": 762,
+      "follower_count": 770,
       "following_count": null,
       "post_count": null,
       "like_count": null,
@@ -745,20 +745,20 @@
       "recent_best_content_url": null,
       "recent_latest_content_at": null,
       "insights_status": null,
-      "previous_snapshot_gain": 6,
-      "previous_snapshot_growth_rate": 0.007936507936507936,
-      "gain_7d": 21,
-      "gain_7d_growth_rate": 0.02834008097165992,
+      "previous_snapshot_gain": 8,
+      "previous_snapshot_growth_rate": 0.010498687664041995,
+      "gain_7d": 29,
+      "gain_7d_growth_rate": 0.03913630229419703,
       "gain_7d_complete": false,
-      "gain_7d_observed_days": 5,
-      "gain_30d": 21,
-      "gain_30d_growth_rate": 0.02834008097165992,
+      "gain_7d_observed_days": 6,
+      "gain_30d": 29,
+      "gain_30d_growth_rate": 0.03913630229419703,
       "gain_30d_complete": false,
-      "gain_30d_observed_days": 5,
+      "gain_30d_observed_days": 6,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-29",
-      "latest_success": "2026-07-04T14:35:31-04:00",
-      "latest_snapshot_date": "2026-07-04",
+      "latest_success": "2026-07-05T15:26:31-04:00",
+      "latest_snapshot_date": "2026-07-05",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
       "insight_profile_views_total_value": null,
@@ -3235,6 +3235,24 @@
       "daily_gain": 6
     },
     {
+      "snapshot_id": 259,
+      "account_id": "lady-sublime-feabie",
+      "platform": "feabie",
+      "account_label": "Feabie",
+      "account_handle": "LadySublimeSSBBW",
+      "external_id": null,
+      "follower_count": 770,
+      "following_count": null,
+      "post_count": null,
+      "like_count": null,
+      "view_count": null,
+      "profile_url": "https://www.feabie.com/Member/Details/LadySublimeSSBBW",
+      "source_url": "https://www.feabie.com/Member/Details/LadySublimeSSBBW",
+      "collected_at": "2026-07-05T15:26:31-04:00",
+      "snapshot_date": "2026-07-05",
+      "daily_gain": 8
+    },
+    {
       "snapshot_id": 53,
       "account_id": "lady-sublime-manyvids",
       "platform": "manyvids",
@@ -3983,9 +4001,9 @@
     },
     {
       "snapshot_date": "2026-07-05",
-      "follower_count": 182160,
-      "daily_gain": 484,
-      "organic_gain": 484,
+      "follower_count": 182168,
+      "daily_gain": 492,
+      "organic_gain": 492,
       "newly_tracked_audience": 0
     }
   ],
@@ -4004,11 +4022,6 @@
       "level": "warning",
       "issue": "Facebook follows context",
       "detail": "Meta returned both a latest page-follows value (14,981) and a summed value across returned rows. The dashboard displays the latest value to avoid double-counting."
-    },
-    {
-      "level": "error",
-      "issue": "Feabie source issue",
-      "detail": "Feabie headed browser retry blocked by Cloudflare before a follower count was visible."
     }
   ],
   "recommendations": [
@@ -4133,10 +4146,10 @@
     {
       "platform": "Feabie",
       "handle": "LadySublimeSSBBW",
-      "latest_success": "2026-07-04T14:35:31-04:00",
-      "latest_attempt": "2026-07-05T15:24:40-04:00",
-      "status": "error",
-      "error_message": "Feabie headed browser retry blocked by Cloudflare before a follower count was visible."
+      "latest_success": "2026-07-05T15:26:31-04:00",
+      "latest_attempt": "2026-07-05T15:26:31-04:00",
+      "status": "ok",
+      "error_message": null
     },
     {
       "platform": "Bluesky",
