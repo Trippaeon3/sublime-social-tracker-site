@@ -1,2 +1,2 @@
 snapshot_id,account_id,provider,account_label,profile_url,period_label,views,clicks,click_through_rate,subscribers,sales,revenue,top_links,source_url,collected_at,snapshot_date,views_change,clicks_change,latest_success,latest_attempt,status,error_message
-4,lady-sublime-beacons,beacons,Beacons,,Visible Beacons dashboard window,1231,1124,0.9129999999999999,,,,[],https://account.beacons.ai/account/home/insights,2026-07-04T14:36:05-04:00,2026-07-04,61,58,2026-07-04T14:36:05-04:00,2026-07-04T14:36:05-04:00,ok,
+5,lady-sublime-beacons,beacons,Beacons,,Beacons Link in Bio Last 7 days,2429,2185,0.9,,,,[],https://account.beacons.ai/account/home/insights,2026-07-05T15:22:34-04:00,2026-07-05,1198,1061,2026-07-05T15:22:34-04:00,2026-07-05T15:22:34-04:00,ok,
