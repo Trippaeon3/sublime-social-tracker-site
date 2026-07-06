@@ -1,19 +1,19 @@
 {
   "title": "Social Media Growth Dashboard",
-  "generated_at": "2026-07-06T12:20:07-04:00",
+  "generated_at": "2026-07-06T12:21:15-04:00",
   "kpis": {
-    "total_followers": 182697,
-    "previous_snapshot_gain": 604,
-    "organic_previous_snapshot_gain": 604,
+    "total_followers": 182691,
+    "previous_snapshot_gain": 523,
+    "organic_previous_snapshot_gain": 523,
     "newly_tracked_audience": 0,
-    "gain_7d": 1207,
+    "gain_7d": 1325,
     "gain_30d": 0,
     "gain_7d_status": "partial",
     "gain_30d_status": "partial",
-    "healthy_sources": 12,
+    "healthy_sources": 13,
     "tracked_accounts": 13,
     "previous_snapshot_sources": 13,
-    "full_7d_sources": 10,
+    "full_7d_sources": 11,
     "full_30d_sources": 0
   },
   "history": {
@@ -27,7 +27,7 @@
     "thirty_day_label": "30D available Jul 14",
     "all_label": "All available history",
     "previous_snapshot_sources": 13,
-    "full_7d_sources": 10,
+    "full_7d_sources": 11,
     "full_30d_sources": 0,
     "tracked_accounts": 13
   },
@@ -75,7 +75,7 @@
       "gain_30d_observed_days": 22,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-14",
-      "latest_success": "2026-07-06T12:19:57-04:00",
+      "latest_success": "2026-07-06T12:21:09-04:00",
       "latest_snapshot_date": "2026-07-06",
       "insight_reach_latest": 6056,
       "insight_views_total_value": 144704,
@@ -137,7 +137,7 @@
       "gain_30d_observed_days": 21,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-15",
-      "latest_success": "2026-07-06T12:20:05-04:00",
+      "latest_success": "2026-07-06T12:21:14-04:00",
       "latest_snapshot_date": "2026-07-06",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
@@ -199,7 +199,7 @@
       "gain_30d_observed_days": 22,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-14",
-      "latest_success": "2026-07-06T12:20:00-04:00",
+      "latest_success": "2026-07-06T12:21:11-04:00",
       "latest_snapshot_date": "2026-07-06",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
@@ -285,12 +285,12 @@
       "platform": "onlyfans",
       "label": "OnlyFans",
       "handle": "LadySublimeSSBBW",
-      "follower_count": 7800,
+      "follower_count": 7794,
       "following_count": null,
       "post_count": null,
       "like_count": null,
       "view_count": null,
-      "profile_url": "https://onlyfans.com/ladysublimessbbw",
+      "profile_url": "https://onlyfans.com/LadySublimeSSBBW",
       "category": null,
       "page_likes": null,
       "talking_about_count": null,
@@ -311,20 +311,20 @@
       "recent_best_content_url": null,
       "recent_latest_content_at": null,
       "insights_status": null,
-      "previous_snapshot_gain": 75,
-      "previous_snapshot_growth_rate": 0.009708737864077669,
-      "gain_7d": 124,
-      "gain_7d_growth_rate": 0.01615424700364773,
-      "gain_7d_complete": false,
-      "gain_7d_observed_days": 6,
-      "gain_30d": 124,
-      "gain_30d_growth_rate": 0.01615424700364773,
+      "previous_snapshot_gain": -6,
+      "previous_snapshot_growth_rate": -0.0007692307692307692,
+      "gain_7d": 118,
+      "gain_7d_growth_rate": 0.015372589890568004,
+      "gain_7d_complete": true,
+      "gain_7d_observed_days": 7,
+      "gain_30d": 118,
+      "gain_30d_growth_rate": 0.015372589890568004,
       "gain_30d_complete": false,
-      "gain_30d_observed_days": 6,
+      "gain_30d_observed_days": 7,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-29",
-      "latest_success": "2026-07-05T15:17:50-04:00",
-      "latest_snapshot_date": "2026-07-05",
+      "latest_success": "2026-07-06T12:20:58-04:00",
+      "latest_snapshot_date": "2026-07-06",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
       "insight_profile_views_total_value": null,
@@ -509,7 +509,7 @@
       "gain_30d_observed_days": 21,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-15",
-      "latest_success": "2026-07-06T12:20:04-04:00",
+      "latest_success": "2026-07-06T12:21:14-04:00",
       "latest_snapshot_date": "2026-07-06",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
@@ -571,7 +571,7 @@
       "gain_30d_observed_days": 22,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-14",
-      "latest_success": "2026-07-06T12:20:05-04:00",
+      "latest_success": "2026-07-06T12:21:14-04:00",
       "latest_snapshot_date": "2026-07-06",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
@@ -633,7 +633,7 @@
       "gain_30d_observed_days": 20,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-16",
-      "latest_success": "2026-07-06T12:20:06-04:00",
+      "latest_success": "2026-07-06T12:21:15-04:00",
       "latest_snapshot_date": "2026-07-06",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
@@ -695,7 +695,7 @@
       "gain_30d_observed_days": 20,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-16",
-      "latest_success": "2026-07-06T12:20:06-04:00",
+      "latest_success": "2026-07-06T12:21:14-04:00",
       "latest_snapshot_date": "2026-07-06",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
@@ -819,7 +819,7 @@
       "gain_30d_observed_days": 4,
       "first_snapshot": false,
       "first_snapshot_date": "2026-07-02",
-      "latest_success": "2026-07-06T12:20:06-04:00",
+      "latest_success": "2026-07-06T12:21:14-04:00",
       "latest_snapshot_date": "2026-07-06",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
@@ -1201,7 +1201,7 @@
       "daily_gain": 200
     },
     {
-      "snapshot_id": 272,
+      "snapshot_id": 281,
       "account_id": "girlfriend-instagram",
       "platform": "instagram",
       "account_label": "Instagram",
@@ -1214,7 +1214,7 @@
       "view_count": null,
       "profile_url": "https://www.instagram.com/officialladysublime/",
       "source_url": "https://graph.facebook.com/v25.0/17841434948962018",
-      "collected_at": "2026-07-06T12:19:57-04:00",
+      "collected_at": "2026-07-06T12:21:09-04:00",
       "snapshot_date": "2026-07-06",
       "daily_gain": 381
     },
@@ -1561,7 +1561,7 @@
       "daily_gain": 26
     },
     {
-      "snapshot_id": 274,
+      "snapshot_id": 283,
       "account_id": "girlfriend-tiktok",
       "platform": "tiktok",
       "account_label": "TikTok",
@@ -1574,7 +1574,7 @@
       "view_count": null,
       "profile_url": null,
       "source_url": "https://open.tiktokapis.com/v2/user/info/",
-      "collected_at": "2026-07-06T12:20:04-04:00",
+      "collected_at": "2026-07-06T12:21:14-04:00",
       "snapshot_date": "2026-07-06",
       "daily_gain": 22
     },
@@ -1921,7 +1921,7 @@
       "daily_gain": 17
     },
     {
-      "snapshot_id": 276,
+      "snapshot_id": 285,
       "account_id": "girlfriend-x",
       "platform": "x",
       "account_label": "X",
@@ -1934,7 +1934,7 @@
       "view_count": null,
       "profile_url": null,
       "source_url": "https://api.x.com/2/users/by/username/ladysublimebbw",
-      "collected_at": "2026-07-06T12:20:05-04:00",
+      "collected_at": "2026-07-06T12:21:14-04:00",
       "snapshot_date": "2026-07-06",
       "daily_gain": 90
     },
@@ -2299,7 +2299,7 @@
       "daily_gain": 0
     },
     {
-      "snapshot_id": 275,
+      "snapshot_id": 284,
       "account_id": "girlfriend-youtube",
       "platform": "youtube",
       "account_label": "YouTube",
@@ -2312,7 +2312,7 @@
       "view_count": 553215,
       "profile_url": null,
       "source_url": "https://www.googleapis.com/youtube/v3/channels",
-      "collected_at": "2026-07-06T12:20:05-04:00",
+      "collected_at": "2026-07-06T12:21:14-04:00",
       "snapshot_date": "2026-07-06",
       "daily_gain": 20
     },
@@ -2389,7 +2389,7 @@
       "daily_gain": 0
     },
     {
-      "snapshot_id": 277,
+      "snapshot_id": 286,
       "account_id": "lady-sublime-bluesky",
       "platform": "bluesky",
       "account_label": "Bluesky",
@@ -2402,7 +2402,7 @@
       "view_count": null,
       "profile_url": "https://bsky.app/profile/ladysublimessbbw.bsky.social",
       "source_url": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile",
-      "collected_at": "2026-07-06T12:20:06-04:00",
+      "collected_at": "2026-07-06T12:21:14-04:00",
       "snapshot_date": "2026-07-06",
       "daily_gain": 2
     },
@@ -2731,7 +2731,7 @@
       "daily_gain": 1
     },
     {
-      "snapshot_id": 278,
+      "snapshot_id": 287,
       "account_id": "lady-sublime-clips4sale",
       "platform": "clips4sale",
       "account_label": "Clips4Sale",
@@ -2744,7 +2744,7 @@
       "view_count": null,
       "profile_url": "https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw",
       "source_url": "https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw",
-      "collected_at": "2026-07-06T12:20:06-04:00",
+      "collected_at": "2026-07-06T12:21:14-04:00",
       "snapshot_date": "2026-07-06",
       "daily_gain": 1
     },
@@ -3271,7 +3271,7 @@
       "daily_gain": -7
     },
     {
-      "snapshot_id": 273,
+      "snapshot_id": 282,
       "account_id": "lady-sublime-facebook-page",
       "platform": "facebook",
       "account_label": "Facebook Page",
@@ -3284,7 +3284,7 @@
       "view_count": null,
       "profile_url": "https://www.facebook.com/107579258704403",
       "source_url": "https://graph.facebook.com/v25.0/107579258704403",
-      "collected_at": "2026-07-06T12:20:00-04:00",
+      "collected_at": "2026-07-06T12:21:11-04:00",
       "snapshot_date": "2026-07-06",
       "daily_gain": -11
     },
@@ -3739,7 +3739,7 @@
       "daily_gain": 0
     },
     {
-      "snapshot_id": 279,
+      "snapshot_id": 288,
       "account_id": "lady-sublime-manyvids",
       "platform": "manyvids",
       "account_label": "ManyVids",
@@ -3752,7 +3752,7 @@
       "view_count": null,
       "profile_url": "https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos",
       "source_url": "https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos",
-      "collected_at": "2026-07-06T12:20:06-04:00",
+      "collected_at": "2026-07-06T12:21:15-04:00",
       "snapshot_date": "2026-07-06",
       "daily_gain": 2
     },
@@ -3863,6 +3863,24 @@
       "collected_at": "2026-07-05T15:17:50-04:00",
       "snapshot_date": "2026-07-05",
       "daily_gain": 75
+    },
+    {
+      "snapshot_id": 280,
+      "account_id": "lady-sublime-onlyfans",
+      "platform": "onlyfans",
+      "account_label": "OnlyFans",
+      "account_handle": "LadySublimeSSBBW",
+      "external_id": null,
+      "follower_count": 7794,
+      "following_count": null,
+      "post_count": null,
+      "like_count": null,
+      "view_count": null,
+      "profile_url": "https://onlyfans.com/LadySublimeSSBBW",
+      "source_url": "https://onlyfans.com/LadySublimeSSBBW",
+      "collected_at": "2026-07-06T12:20:58-04:00",
+      "snapshot_date": "2026-07-06",
+      "daily_gain": -6
     },
     {
       "snapshot_id": 148,
@@ -4224,9 +4242,9 @@
     },
     {
       "snapshot_date": "2026-07-06",
-      "follower_count": 182697,
-      "daily_gain": 529,
-      "organic_gain": 529,
+      "follower_count": 182691,
+      "daily_gain": 523,
+      "organic_gain": 523,
       "newly_tracked_audience": 0
     }
   ],
@@ -4234,7 +4252,7 @@
     {
       "level": "warning",
       "issue": "Partial 7-day history",
-      "detail": "Only 10/13 accounts have a full 7-day baseline. The longest observed history is 22 days."
+      "detail": "Only 11/13 accounts have a full 7-day baseline. The longest observed history is 22 days."
     },
     {
       "level": "warning",
@@ -4245,11 +4263,6 @@
       "level": "warning",
       "issue": "Facebook follows context",
       "detail": "Meta returned both a latest page-follows value (14,973) and a summed value across returned rows. The dashboard displays the latest value to avoid double-counting."
-    },
-    {
-      "level": "error",
-      "issue": "OnlyFans source issue",
-      "detail": "Could not find a onlyfans follower/fan count on the logged-in page."
     }
   ],
   "recommendations": [
@@ -4275,7 +4288,7 @@
     },
     {
       "label": "Use GA4 to qualify Beacons traffic",
-      "text": "GA4 shows 1,083 active users, 1,140 sessions, and 1,442 page views for the Beacons window. Use source/medium and outbound-click rows to separate promo traffic from passive bio visits."
+      "text": "GA4 shows 1,085 active users, 1,142 sessions, and 1,446 page views for the Beacons window. Use source/medium and outbound-click rows to separate promo traffic from passive bio visits."
     },
     {
       "label": "Use Beacons for cross-platform engagement context",
@@ -4286,24 +4299,24 @@
     {
       "platform": "Instagram",
       "handle": "officialladysublime",
-      "latest_success": "2026-07-06T12:19:57-04:00",
-      "latest_attempt": "2026-07-06T12:19:57-04:00",
+      "latest_success": "2026-07-06T12:21:09-04:00",
+      "latest_attempt": "2026-07-06T12:21:09-04:00",
       "status": "ok",
       "error_message": null
     },
     {
       "platform": "X",
       "handle": "LadySublimeBBW",
-      "latest_success": "2026-07-06T12:20:05-04:00",
-      "latest_attempt": "2026-07-06T12:20:05-04:00",
+      "latest_success": "2026-07-06T12:21:14-04:00",
+      "latest_attempt": "2026-07-06T12:21:14-04:00",
       "status": "ok",
       "error_message": null
     },
     {
       "platform": "Facebook Page",
       "handle": "Lady Sublime",
-      "latest_success": "2026-07-06T12:20:00-04:00",
-      "latest_attempt": "2026-07-06T12:20:00-04:00",
+      "latest_success": "2026-07-06T12:21:11-04:00",
+      "latest_attempt": "2026-07-06T12:21:11-04:00",
       "status": "ok",
       "error_message": null
     },
@@ -4318,10 +4331,10 @@
     {
       "platform": "OnlyFans",
       "handle": "LadySublimeSSBBW",
-      "latest_success": "2026-07-05T15:17:50-04:00",
-      "latest_attempt": "2026-07-06T08:02:11-04:00",
-      "status": "error",
-      "error_message": "Could not find a onlyfans follower/fan count on the logged-in page."
+      "latest_success": "2026-07-06T12:20:58-04:00",
+      "latest_attempt": "2026-07-06T12:20:58-04:00",
+      "status": "ok",
+      "error_message": null
     },
     {
       "platform": "Curvage",
@@ -4342,32 +4355,32 @@
     {
       "platform": "TikTok",
       "handle": "ladysublimessbbw",
-      "latest_success": "2026-07-06T12:20:04-04:00",
-      "latest_attempt": "2026-07-06T12:20:04-04:00",
+      "latest_success": "2026-07-06T12:21:14-04:00",
+      "latest_attempt": "2026-07-06T12:21:14-04:00",
       "status": "ok",
       "error_message": null
     },
     {
       "platform": "YouTube",
       "handle": "@ladysublimessbbw",
-      "latest_success": "2026-07-06T12:20:05-04:00",
-      "latest_attempt": "2026-07-06T12:20:05-04:00",
+      "latest_success": "2026-07-06T12:21:14-04:00",
+      "latest_attempt": "2026-07-06T12:21:14-04:00",
       "status": "ok",
       "error_message": null
     },
     {
       "platform": "ManyVids",
       "handle": "LadySublimeSSBBW",
-      "latest_success": "2026-07-06T12:20:06-04:00",
-      "latest_attempt": "2026-07-06T12:20:06-04:00",
+      "latest_success": "2026-07-06T12:21:15-04:00",
+      "latest_attempt": "2026-07-06T12:21:15-04:00",
       "status": "ok",
       "error_message": null
     },
     {
       "platform": "Clips4Sale",
       "handle": "Lady Sublime SSBBW",
-      "latest_success": "2026-07-06T12:20:06-04:00",
-      "latest_attempt": "2026-07-06T12:20:06-04:00",
+      "latest_success": "2026-07-06T12:21:14-04:00",
+      "latest_attempt": "2026-07-06T12:21:14-04:00",
       "status": "ok",
       "error_message": null
     },
@@ -4382,8 +4395,8 @@
     {
       "platform": "Bluesky",
       "handle": "ladysublimessbbw.bsky.social",
-      "latest_success": "2026-07-06T12:20:06-04:00",
-      "latest_attempt": "2026-07-06T12:20:06-04:00",
+      "latest_success": "2026-07-06T12:21:14-04:00",
+      "latest_attempt": "2026-07-06T12:21:14-04:00",
       "status": "ok",
       "error_message": null
     }
@@ -4518,7 +4531,7 @@
   ],
   "ga4_traffic": [
     {
-      "snapshot_id": 22,
+      "snapshot_id": 26,
       "account_id": "lady-sublime-beacons",
       "provider": "ga4",
       "account_label": "Beacons",
@@ -4530,13 +4543,13 @@
       "period_label": "7daysAgo - today",
       "start_date": "7daysAgo",
       "end_date": "today",
-      "active_users": 1083,
-      "total_users": 1084,
-      "new_users": 1014,
-      "sessions": 1140,
+      "active_users": 1085,
+      "total_users": 1086,
+      "new_users": 1017,
+      "sessions": 1142,
       "engaged_sessions": 138,
-      "screen_page_views": 1442,
-      "event_count": 5771,
+      "screen_page_views": 1446,
+      "event_count": 5781,
       "key_events": 0.0,
       "source_medium": [
         {
@@ -4946,8 +4959,8 @@
       ],
       "events": [
         {
-          "active_users": 1029,
-          "event_count": 1442,
+          "active_users": 1031,
+          "event_count": 1446,
           "event_name": "page_view",
           "key_events": 0.0
         },
@@ -4958,14 +4971,14 @@
           "key_events": 0.0
         },
         {
-          "active_users": 1014,
-          "event_count": 1068,
+          "active_users": 1017,
+          "event_count": 1071,
           "event_name": "session_start",
           "key_events": 0.0
         },
         {
-          "active_users": 1013,
-          "event_count": 1014,
+          "active_users": 1016,
+          "event_count": 1017,
           "event_name": "first_visit",
           "key_events": 0.0
         },
@@ -4992,19 +5005,19 @@
       "top_source_note": "Social-platform click; campaign detail depends on UTM tagging.",
       "top_outbound_label": "X / Twitter (455 clicks)",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
-      "collected_at": "2026-07-06T12:19:46-04:00",
+      "collected_at": "2026-07-06T12:21:03-04:00",
       "snapshot_date": "2026-07-06",
-      "active_users_change": 24,
-      "sessions_change": 28,
-      "screen_page_views_change": 38,
-      "event_count_change": 150,
-      "latest_success": "2026-07-06T12:19:46-04:00",
-      "latest_attempt": "2026-07-06T12:19:46-04:00",
+      "active_users_change": 2,
+      "sessions_change": 2,
+      "screen_page_views_change": 4,
+      "event_count_change": 10,
+      "latest_success": "2026-07-06T12:21:03-04:00",
+      "latest_attempt": "2026-07-06T12:21:03-04:00",
       "status": "ok",
       "error_message": null
     },
     {
-      "snapshot_id": 23,
+      "snapshot_id": 27,
       "account_id": "lady-sublime-clips4sale",
       "provider": "ga4",
       "account_label": "Clips4Sale",
@@ -5016,13 +5029,13 @@
       "period_label": "7daysAgo - today",
       "start_date": "7daysAgo",
       "end_date": "today",
-      "active_users": 2673,
-      "total_users": 2728,
-      "new_users": 2043,
+      "active_users": 2675,
+      "total_users": 2730,
+      "new_users": 2045,
       "sessions": 3242,
-      "engaged_sessions": 1790,
-      "screen_page_views": 18816,
-      "event_count": 27311,
+      "engaged_sessions": 1791,
+      "screen_page_views": 18821,
+      "event_count": 27322,
       "key_events": 54.0,
       "source_medium": [
         {
@@ -5492,19 +5505,19 @@
       "top_source_note": "Typed URL, saved link, app handoff, or privacy-filtered referral.",
       "top_outbound_label": "Google (12 clicks)",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
-      "collected_at": "2026-07-06T12:19:49-04:00",
+      "collected_at": "2026-07-06T12:21:04-04:00",
       "snapshot_date": "2026-07-06",
-      "active_users_change": 43,
-      "sessions_change": 62,
-      "screen_page_views_change": 300,
-      "event_count_change": 455,
-      "latest_success": "2026-07-06T12:19:49-04:00",
-      "latest_attempt": "2026-07-06T12:19:49-04:00",
+      "active_users_change": 2,
+      "sessions_change": 0,
+      "screen_page_views_change": 5,
+      "event_count_change": 11,
+      "latest_success": "2026-07-06T12:21:04-04:00",
+      "latest_attempt": "2026-07-06T12:21:04-04:00",
       "status": "ok",
       "error_message": null
     },
     {
-      "snapshot_id": 24,
+      "snapshot_id": 28,
       "account_id": "lady-sublime-modelcentro",
       "provider": "ga4",
       "account_label": "ModelCentro",
@@ -5516,13 +5529,13 @@
       "period_label": "7daysAgo - today",
       "start_date": "7daysAgo",
       "end_date": "today",
-      "active_users": 862,
-      "total_users": 865,
-      "new_users": 808,
-      "sessions": 1189,
+      "active_users": 863,
+      "total_users": 866,
+      "new_users": 809,
+      "sessions": 1190,
       "engaged_sessions": 331,
-      "screen_page_views": 4807,
-      "event_count": 8962,
+      "screen_page_views": 4815,
+      "event_count": 8976,
       "key_events": 0.0,
       "source_medium": [
         {
@@ -5892,32 +5905,32 @@
       ],
       "events": [
         {
-          "active_users": 843,
-          "event_count": 4807,
+          "active_users": 844,
+          "event_count": 4815,
           "event_name": "page_view",
           "key_events": 0.0
         },
         {
-          "active_users": 768,
-          "event_count": 1307,
+          "active_users": 770,
+          "event_count": 1310,
           "event_name": "scroll",
           "key_events": 0.0
         },
         {
-          "active_users": 807,
-          "event_count": 1109,
+          "active_users": 808,
+          "event_count": 1110,
           "event_name": "session_start",
           "key_events": 0.0
         },
         {
-          "active_users": 506,
-          "event_count": 834,
+          "active_users": 507,
+          "event_count": 835,
           "event_name": "user_engagement",
           "key_events": 0.0
         },
         {
-          "active_users": 805,
-          "event_count": 808,
+          "active_users": 806,
+          "event_count": 809,
           "event_name": "first_visit",
           "key_events": 0.0
         },
@@ -5944,19 +5957,19 @@
       "top_source_note": "GA4 did not receive referrer or UTM campaign details.",
       "top_outbound_label": "Google (12 clicks)",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
-      "collected_at": "2026-07-06T12:19:52-04:00",
+      "collected_at": "2026-07-06T12:21:05-04:00",
       "snapshot_date": "2026-07-06",
-      "active_users_change": 49,
-      "sessions_change": 81,
-      "screen_page_views_change": 324,
-      "event_count_change": 584,
-      "latest_success": "2026-07-06T12:19:52-04:00",
-      "latest_attempt": "2026-07-06T12:19:52-04:00",
+      "active_users_change": 1,
+      "sessions_change": 1,
+      "screen_page_views_change": 8,
+      "event_count_change": 14,
+      "latest_success": "2026-07-06T12:21:05-04:00",
+      "latest_attempt": "2026-07-06T12:21:05-04:00",
       "status": "ok",
       "error_message": null
     },
     {
-      "snapshot_id": 25,
+      "snapshot_id": 29,
       "account_id": "lady-sublime-mymember",
       "provider": "ga4",
       "account_label": "MyMember",
@@ -5983,14 +5996,14 @@
       "top_source_note": "",
       "top_outbound_label": "",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
-      "collected_at": "2026-07-06T12:19:55-04:00",
+      "collected_at": "2026-07-06T12:21:07-04:00",
       "snapshot_date": "2026-07-06",
       "active_users_change": null,
       "sessions_change": null,
       "screen_page_views_change": null,
       "event_count_change": null,
-      "latest_success": "2026-07-06T12:19:55-04:00",
-      "latest_attempt": "2026-07-06T12:19:55-04:00",
+      "latest_success": "2026-07-06T12:21:07-04:00",
+      "latest_attempt": "2026-07-06T12:21:07-04:00",
       "status": "ok",
       "error_message": null
     }
@@ -12756,6 +12769,1467 @@
       "top_outbound_label": "",
       "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
       "collected_at": "2026-07-06T12:19:55-04:00",
+      "snapshot_date": "2026-07-06",
+      "active_users_change": null,
+      "sessions_change": null,
+      "screen_page_views_change": null,
+      "event_count_change": null
+    },
+    {
+      "snapshot_id": 26,
+      "account_id": "lady-sublime-beacons",
+      "provider": "ga4",
+      "account_label": "Beacons",
+      "property_id": "468766561",
+      "measurement_id": "G-94XN7R0CMW",
+      "stream_id": "15196960497",
+      "stream_name": "Lady Sublime Beacons / Link in Bio",
+      "profile_url": "https://ladysublime.me/",
+      "period_label": "7daysAgo - today",
+      "start_date": "7daysAgo",
+      "end_date": "today",
+      "active_users": 1085,
+      "total_users": 1086,
+      "new_users": 1017,
+      "sessions": 1142,
+      "engaged_sessions": 138,
+      "screen_page_views": 1446,
+      "event_count": 5781,
+      "key_events": 0.0,
+      "source_medium": [
+        {
+          "active_users": 850,
+          "campaign": "(referral)",
+          "event_count": 3759,
+          "key_events": 0.0,
+          "screen_page_views": 1029,
+          "sessions": 869,
+          "source_medium": "ig / social",
+          "raw_source_medium": "ig / social",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Instagram social",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Social-platform click; campaign detail depends on UTM tagging."
+        },
+        {
+          "active_users": 503,
+          "campaign": "(not set)",
+          "event_count": 1087,
+          "key_events": 0.0,
+          "screen_page_views": 140,
+          "sessions": 518,
+          "source_medium": "(not set)",
+          "raw_source_medium": "(not set)",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Unattributed traffic",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "GA4 did not receive referrer or UTM campaign details."
+        },
+        {
+          "active_users": 42,
+          "campaign": "(referral)",
+          "event_count": 207,
+          "key_events": 0.0,
+          "screen_page_views": 55,
+          "sessions": 47,
+          "source_medium": "t.co / referral",
+          "raw_source_medium": "t.co / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "X / Twitter referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 19,
+          "campaign": "(direct)",
+          "event_count": 208,
+          "key_events": 0.0,
+          "screen_page_views": 80,
+          "sessions": 37,
+          "source_medium": "(direct) / (none)",
+          "raw_source_medium": "(direct) / (none)",
+          "raw_campaign": "(direct)",
+          "source_medium_label": "Direct or saved link",
+          "campaign_label": "Direct traffic",
+          "traffic_note": "Typed URL, saved link, app handoff, or privacy-filtered referral."
+        },
+        {
+          "active_users": 28,
+          "campaign": "(cross-network)",
+          "event_count": 114,
+          "key_events": 0.0,
+          "screen_page_views": 32,
+          "sessions": 28,
+          "source_medium": "(data not available)",
+          "raw_source_medium": "(data not available)",
+          "raw_campaign": "(cross-network)",
+          "source_medium_label": "Google modeled traffic",
+          "campaign_label": "Cross-network traffic",
+          "traffic_note": "GA4 grouped this as modeled or cross-network traffic without a source."
+        },
+        {
+          "active_users": 19,
+          "campaign": "(organic)",
+          "event_count": 111,
+          "key_events": 0.0,
+          "screen_page_views": 27,
+          "sessions": 22,
+          "source_medium": "google / organic",
+          "raw_source_medium": "google / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Google organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
+        },
+        {
+          "active_users": 20,
+          "campaign": "(referral)",
+          "event_count": 86,
+          "key_events": 0.0,
+          "screen_page_views": 24,
+          "sessions": 20,
+          "source_medium": "threads / social",
+          "raw_source_medium": "threads / social",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Threads social",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Social-platform click; campaign detail depends on UTM tagging."
+        },
+        {
+          "active_users": 12,
+          "campaign": "(referral)",
+          "event_count": 71,
+          "key_events": 0.0,
+          "screen_page_views": 21,
+          "sessions": 13,
+          "source_medium": "onlyfans.com / referral",
+          "raw_source_medium": "onlyfans.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "OnlyFans referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 7,
+          "campaign": "(not set)",
+          "event_count": 33,
+          "key_events": 0.0,
+          "screen_page_views": 12,
+          "sessions": 12,
+          "source_medium": "ig / social",
+          "raw_source_medium": "ig / social",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Instagram social",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "Social-platform click; campaign detail depends on UTM tagging."
+        },
+        {
+          "active_users": 5,
+          "campaign": "(direct)",
+          "event_count": 7,
+          "key_events": 0.0,
+          "screen_page_views": 1,
+          "sessions": 5,
+          "source_medium": "ig / social",
+          "raw_source_medium": "ig / social",
+          "raw_campaign": "(direct)",
+          "source_medium_label": "Instagram social",
+          "campaign_label": "Direct traffic",
+          "traffic_note": "Social-platform click; campaign detail depends on UTM tagging."
+        },
+        {
+          "active_users": 5,
+          "campaign": "(referral)",
+          "event_count": 28,
+          "key_events": 0.0,
+          "screen_page_views": 6,
+          "sessions": 5,
+          "source_medium": "l.instagram.com / referral",
+          "raw_source_medium": "l.instagram.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Instagram referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 3,
+          "campaign": "(not set)",
+          "event_count": 11,
+          "key_events": 0.0,
+          "screen_page_views": 3,
+          "sessions": 3,
+          "source_medium": "ig / social",
+          "raw_source_medium": "ig / social",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Instagram social",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "Social-platform click; campaign detail depends on UTM tagging."
+        },
+        {
+          "active_users": 3,
+          "campaign": "(referral)",
+          "event_count": 13,
+          "key_events": 0.0,
+          "screen_page_views": 3,
+          "sessions": 3,
+          "source_medium": "yandex.ru / referral",
+          "raw_source_medium": "yandex.ru / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Yandex referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 2,
+          "campaign": "(referral)",
+          "event_count": 11,
+          "key_events": 0.0,
+          "screen_page_views": 4,
+          "sessions": 3,
+          "source_medium": "reddit.com / referral",
+          "raw_source_medium": "reddit.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Reddit referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 2,
+          "campaign": "(referral)",
+          "event_count": 8,
+          "key_events": 0.0,
+          "screen_page_views": 2,
+          "sessions": 2,
+          "source_medium": "m.facebook.com / referral",
+          "raw_source_medium": "m.facebook.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "m.facebook.com referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 1,
+          "campaign": "(referral)",
+          "event_count": 3,
+          "key_events": 0.0,
+          "screen_page_views": 1,
+          "sessions": 1,
+          "source_medium": "facebook.com / referral",
+          "raw_source_medium": "facebook.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "facebook.com referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 1,
+          "campaign": "(referral)",
+          "event_count": 8,
+          "key_events": 0.0,
+          "screen_page_views": 1,
+          "sessions": 1,
+          "source_medium": "l.facebook.com / referral",
+          "raw_source_medium": "l.facebook.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "l.facebook.com referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 1,
+          "campaign": "(not set)",
+          "event_count": 6,
+          "key_events": 0.0,
+          "screen_page_views": 1,
+          "sessions": 1,
+          "source_medium": "threads / social",
+          "raw_source_medium": "threads / social",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Threads social",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "Social-platform click; campaign detail depends on UTM tagging."
+        }
+      ],
+      "outbound_clicks": [
+        {
+          "active_users": 354,
+          "clicks": 455,
+          "url": "https://twitter.com/ladysublimebbw?utm_source=beacons&utm_medium=profile_icon&utm_campaign=x_twitter",
+          "destination_label": "X / Twitter"
+        },
+        {
+          "active_users": 256,
+          "clicks": 346,
+          "url": "https://onlyfans.com/ladysublimessbbw?utm_content=beacons_button_onlyfans&utm_campaign=OnlyFans&utm_",
+          "destination_label": "OnlyFans"
+        },
+        {
+          "active_users": 91,
+          "clicks": 126,
+          "url": "https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos/Creator-View?utm_content=b",
+          "destination_label": "ManyVids"
+        },
+        {
+          "active_users": 101,
+          "clicks": 125,
+          "url": "https://ladysublime.com/?utm_content=beacons_button_official_site&utm_campaign=Lady%20Sublime%20Offi",
+          "destination_label": "Lady Sublime site"
+        },
+        {
+          "active_users": 90,
+          "clicks": 122,
+          "url": "https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw?utm_content=beacons_button_clips4sale&ut",
+          "destination_label": "Clips4Sale"
+        },
+        {
+          "active_users": 49,
+          "clicks": 62,
+          "url": "https://curvage.org/forum/index.php?/profile/212446-ladysublimessbbw/&utm_content=beacons_button_cur",
+          "destination_label": "Curvage"
+        },
+        {
+          "active_users": 19,
+          "clicks": 22,
+          "url": "https://www.jotform.com/form/253026005926047?utm_content=beacons_button_custom_videos&utm_campaign=C",
+          "destination_label": "https://www.jotform.com/form/253026005926047?utm_content=beacons_butt..."
+        },
+        {
+          "active_users": 15,
+          "clicks": 19,
+          "url": "https://twitter.com/ladysublimebbw",
+          "destination_label": "X / Twitter"
+        },
+        {
+          "active_users": 11,
+          "clicks": 17,
+          "url": "http://ladysublime.com/?utm_campaign=Lady%20Sublime%20Official%20Website&utm_medium=link_in_bio&utm_",
+          "destination_label": "Lady Sublime site"
+        },
+        {
+          "active_users": 10,
+          "clicks": 15,
+          "url": "https://bsky.app/profile/ladysublimessbbw.bsky.social?utm_source=beacons&utm_medium=profile_icon&utm",
+          "destination_label": "https://bsky.app/profile/ladysublimessbbw.bsky.social?utm_source=beac..."
+        },
+        {
+          "active_users": 9,
+          "clicks": 15,
+          "url": "https://onlyfans.com/ladysublimessbbw?utm_campaign=OnlyFans&utm_medium=link_in_bio&utm_source=beacon",
+          "destination_label": "OnlyFans"
+        },
+        {
+          "active_users": 14,
+          "clicks": 15,
+          "url": "https://www.clips4sale.com/studio/163455/34040665/greedy-ssbbw-devours-roommates-leftovers?utm_conte",
+          "destination_label": "Clips4Sale"
+        },
+        {
+          "active_users": 8,
+          "clicks": 14,
+          "url": "https://www.manyvids.com/Profile/1003456685/ladysublimessbbw/Store/Videos/Creator-View?utm_campaign=",
+          "destination_label": "ManyVids"
+        },
+        {
+          "active_users": 12,
+          "clicks": 12,
+          "url": "https://curvage.org/forum/index.php?/files/file/77165-greedy-ssbbw-devours-roommates-leftovers/&utm_",
+          "destination_label": "Curvage"
+        },
+        {
+          "active_users": 10,
+          "clicks": 11,
+          "url": "https://www.youtube.com/@ladysublimessbbw?utm_source=beacons&utm_medium=profile_icon&utm_campaign=yo",
+          "destination_label": "https://www.youtube.com/@ladysublimessbbw?utm_source=beacons&utm_medi..."
+        },
+        {
+          "active_users": 8,
+          "clicks": 11,
+          "url": "https://youpay.me/LadySublime?utm_content=beacons_button_gifts_payment&utm_campaign=Gifts%2FPayment&",
+          "destination_label": "YouPay"
+        },
+        {
+          "active_users": 7,
+          "clicks": 10,
+          "url": "https://curvage.org/forum/index.php?/profile/212446-ladysublimessbbw/&utm_campaign=Curvage&utm_mediu",
+          "destination_label": "Curvage"
+        },
+        {
+          "active_users": 8,
+          "clicks": 9,
+          "url": "https://instagram.com/officialladysublime?utm_source=beacons&utm_medium=profile_icon&utm_campaign=in",
+          "destination_label": "https://instagram.com/officialladysublime?utm_source=beacons&utm_medi..."
+        },
+        {
+          "active_users": 5,
+          "clicks": 8,
+          "url": "https://beacons.ai/",
+          "destination_label": "https://beacons.ai/"
+        },
+        {
+          "active_users": 4,
+          "clicks": 7,
+          "url": "https://www.facebook.com/share/YywFoaNaegA3E7rB/?mibextid=LQQJ4d&utm_source=beacons&utm_medium=profi",
+          "destination_label": "https://www.facebook.com/share/YywFoaNaegA3E7rB/?mibextid=LQQJ4d&utm_..."
+        },
+        {
+          "active_users": 5,
+          "clicks": 7,
+          "url": "https://www.feabie.com/Member/Details/BBWLadySublime?utm_source=beacons&utm_medium=profile_icon&utm_",
+          "destination_label": "https://www.feabie.com/Member/Details/BBWLadySublime?utm_source=beaco..."
+        },
+        {
+          "active_users": 3,
+          "clicks": 3,
+          "url": "https://www.clips4sale.com/studio/163455/lady-sublime-ssbbw?utm_campaign=Clips4sale&utm_medium=link_",
+          "destination_label": "Clips4Sale"
+        },
+        {
+          "active_users": 2,
+          "clicks": 2,
+          "url": "https://tiktok.com/@ladysublimessbbw?utm_source=beacons&utm_medium=profile_icon&utm_campaign=tiktok&",
+          "destination_label": "https://tiktok.com/@ladysublimessbbw?utm_source=beacons&utm_medium=pr..."
+        },
+        {
+          "active_users": 2,
+          "clicks": 2,
+          "url": "https://www.clips4sale.com/studio/163455/34040665/greedy-ssbbw-devours-roommates-leftovers?utm_sourc",
+          "destination_label": "Clips4Sale"
+        },
+        {
+          "active_users": 1,
+          "clicks": 1,
+          "url": "https://beacons.ai/i/2023-cookie-notice",
+          "destination_label": "https://beacons.ai/i/2023-cookie-notice"
+        }
+      ],
+      "events": [
+        {
+          "active_users": 1031,
+          "event_count": 1446,
+          "event_name": "page_view",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 838,
+          "event_count": 1438,
+          "event_name": "click",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 1017,
+          "event_count": 1071,
+          "event_name": "session_start",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 1016,
+          "event_count": 1017,
+          "event_name": "first_visit",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 289,
+          "event_count": 480,
+          "event_name": "user_engagement",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 256,
+          "event_count": 327,
+          "event_name": "scroll",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 2,
+          "event_count": 2,
+          "event_name": "form_start",
+          "key_events": 0.0
+        }
+      ],
+      "top_source_label": "Instagram social / Referral traffic (869 sessions)",
+      "top_source_note": "Social-platform click; campaign detail depends on UTM tagging.",
+      "top_outbound_label": "X / Twitter (455 clicks)",
+      "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
+      "collected_at": "2026-07-06T12:21:03-04:00",
+      "snapshot_date": "2026-07-06",
+      "active_users_change": 2,
+      "sessions_change": 2,
+      "screen_page_views_change": 4,
+      "event_count_change": 10
+    },
+    {
+      "snapshot_id": 27,
+      "account_id": "lady-sublime-clips4sale",
+      "provider": "ga4",
+      "account_label": "Clips4Sale",
+      "property_id": "468766561",
+      "measurement_id": null,
+      "stream_id": "9992939210",
+      "stream_name": "Lady Sublime C4S",
+      "profile_url": "https://ladysublime.me/",
+      "period_label": "7daysAgo - today",
+      "start_date": "7daysAgo",
+      "end_date": "today",
+      "active_users": 2675,
+      "total_users": 2730,
+      "new_users": 2045,
+      "sessions": 3242,
+      "engaged_sessions": 1791,
+      "screen_page_views": 18821,
+      "event_count": 27322,
+      "key_events": 54.0,
+      "source_medium": [
+        {
+          "active_users": 1381,
+          "campaign": "(direct)",
+          "event_count": 11929,
+          "key_events": 47.0,
+          "screen_page_views": 7576,
+          "sessions": 1666,
+          "source_medium": "(direct) / (none)",
+          "raw_source_medium": "(direct) / (none)",
+          "raw_campaign": "(direct)",
+          "source_medium_label": "Direct or saved link",
+          "campaign_label": "Direct traffic",
+          "traffic_note": "Typed URL, saved link, app handoff, or privacy-filtered referral."
+        },
+        {
+          "active_users": 743,
+          "campaign": "(organic)",
+          "event_count": 8157,
+          "key_events": 3.0,
+          "screen_page_views": 5790,
+          "sessions": 885,
+          "source_medium": "google / organic",
+          "raw_source_medium": "google / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Google organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
+        },
+        {
+          "active_users": 311,
+          "campaign": "(not set)",
+          "event_count": 1899,
+          "key_events": 0.0,
+          "screen_page_views": 1635,
+          "sessions": 326,
+          "source_medium": "(not set)",
+          "raw_source_medium": "(not set)",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Unattributed traffic",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "GA4 did not receive referrer or UTM campaign details."
+        },
+        {
+          "active_users": 83,
+          "campaign": "Clips4sale",
+          "event_count": 403,
+          "key_events": 0.0,
+          "screen_page_views": 180,
+          "sessions": 91,
+          "source_medium": "beacons / link_in_bio",
+          "raw_source_medium": "beacons / link_in_bio",
+          "raw_campaign": "Clips4sale",
+          "source_medium_label": "Beacons Link In Bio",
+          "campaign_label": "Clips4sale",
+          "traffic_note": "Campaign tag is present; use it to connect traffic to a promo."
+        },
+        {
+          "active_users": 63,
+          "campaign": "(referral)",
+          "event_count": 826,
+          "key_events": 0.0,
+          "screen_page_views": 635,
+          "sessions": 78,
+          "source_medium": "bbw.wiki / referral",
+          "raw_source_medium": "bbw.wiki / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "BBW Wiki referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 59,
+          "campaign": "new-sale",
+          "event_count": 308,
+          "key_events": 0.0,
+          "screen_page_views": 162,
+          "sessions": 68,
+          "source_medium": "x / autopost",
+          "raw_source_medium": "x / autopost",
+          "raw_campaign": "new-sale",
+          "source_medium_label": "X / Twitter autopost",
+          "campaign_label": "New sale autopost",
+          "traffic_note": "Tagged traffic from an automated promo post."
+        },
+        {
+          "active_users": 54,
+          "campaign": "(referral)",
+          "event_count": 280,
+          "key_events": 0.0,
+          "screen_page_views": 112,
+          "sessions": 59,
+          "source_medium": "ladysublime.me / referral",
+          "raw_source_medium": "ladysublime.me / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Lady Sublime link-in-bio referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 40,
+          "campaign": "(organic)",
+          "event_count": 497,
+          "key_events": 0.0,
+          "screen_page_views": 349,
+          "sessions": 55,
+          "source_medium": "bing / organic",
+          "raw_source_medium": "bing / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Bing organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
+        },
+        {
+          "active_users": 38,
+          "campaign": "(referral)",
+          "event_count": 728,
+          "key_events": 1.0,
+          "screen_page_views": 610,
+          "sessions": 45,
+          "source_medium": "accounts.google.com / referral",
+          "raw_source_medium": "accounts.google.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Google account referral referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 29,
+          "campaign": "(not set)",
+          "event_count": 292,
+          "key_events": 0.0,
+          "screen_page_views": 206,
+          "sessions": 45,
+          "source_medium": "mail / mail",
+          "raw_source_medium": "mail / mail",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Email email",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "Source is known, but the link did not include a campaign tag."
+        },
+        {
+          "active_users": 30,
+          "campaign": "(referral)",
+          "event_count": 410,
+          "key_events": 1.0,
+          "screen_page_views": 329,
+          "sessions": 37,
+          "source_medium": "t.co / referral",
+          "raw_source_medium": "t.co / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "X / Twitter referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 14,
+          "campaign": "New: Greedy Leftovers on C4S",
+          "event_count": 73,
+          "key_events": 0.0,
+          "screen_page_views": 38,
+          "sessions": 16,
+          "source_medium": "beacons / link_in_bio",
+          "raw_source_medium": "beacons / link_in_bio",
+          "raw_campaign": "New: Greedy Leftovers on C4S",
+          "source_medium_label": "Beacons Link In Bio",
+          "campaign_label": "New: Greedy Leftovers On C4S",
+          "traffic_note": "Campaign tag is present; use it to connect traffic to a promo."
+        },
+        {
+          "active_users": 12,
+          "campaign": "(organic)",
+          "event_count": 81,
+          "key_events": 0.0,
+          "screen_page_views": 45,
+          "sessions": 13,
+          "source_medium": "duckduckgo / organic",
+          "raw_source_medium": "duckduckgo / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "DuckDuckGo organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
+        },
+        {
+          "active_users": 10,
+          "campaign": "(organic)",
+          "event_count": 145,
+          "key_events": 0.0,
+          "screen_page_views": 114,
+          "sessions": 13,
+          "source_medium": "yahoo / organic",
+          "raw_source_medium": "yahoo / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Yahoo organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
+        },
+        {
+          "active_users": 10,
+          "campaign": "(referral)",
+          "event_count": 127,
+          "key_events": 0.0,
+          "screen_page_views": 101,
+          "sessions": 12,
+          "source_medium": "linktr.ee / referral",
+          "raw_source_medium": "linktr.ee / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Linktree referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 11,
+          "campaign": "(cross-network)",
+          "event_count": 69,
+          "key_events": 0.0,
+          "screen_page_views": 41,
+          "sessions": 11,
+          "source_medium": "(data not available)",
+          "raw_source_medium": "(data not available)",
+          "raw_campaign": "(cross-network)",
+          "source_medium_label": "Google modeled traffic",
+          "campaign_label": "Cross-network traffic",
+          "traffic_note": "GA4 grouped this as modeled or cross-network traffic without a source."
+        },
+        {
+          "active_users": 7,
+          "campaign": "(referral)",
+          "event_count": 61,
+          "key_events": 2.0,
+          "screen_page_views": 40,
+          "sessions": 9,
+          "source_medium": "allmylinks.com / referral",
+          "raw_source_medium": "allmylinks.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "AllMyLinks referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 7,
+          "campaign": "(referral)",
+          "event_count": 55,
+          "key_events": 0.0,
+          "screen_page_views": 35,
+          "sessions": 7,
+          "source_medium": "onlyfans.com / referral",
+          "raw_source_medium": "onlyfans.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "OnlyFans referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 6,
+          "campaign": "(not set)",
+          "event_count": 42,
+          "key_events": 0.0,
+          "screen_page_views": 23,
+          "sessions": 7,
+          "source_medium": "mail / mail",
+          "raw_source_medium": "mail / mail",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Email email",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "Source is known, but the link did not include a campaign tag."
+        },
+        {
+          "active_users": 5,
+          "campaign": "(referral)",
+          "event_count": 165,
+          "key_events": 0.0,
+          "screen_page_views": 149,
+          "sessions": 7,
+          "source_medium": "x.com / referral",
+          "raw_source_medium": "x.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "X / Twitter referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 6,
+          "campaign": "(referral)",
+          "event_count": 40,
+          "key_events": 0.0,
+          "screen_page_views": 26,
+          "sessions": 6,
+          "source_medium": "beacons.ai / referral",
+          "raw_source_medium": "beacons.ai / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Beacons referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 5,
+          "campaign": "(direct)",
+          "event_count": 8,
+          "key_events": 0.0,
+          "screen_page_views": 5,
+          "sessions": 5,
+          "source_medium": "mail / mail",
+          "raw_source_medium": "mail / mail",
+          "raw_campaign": "(direct)",
+          "source_medium_label": "Email email",
+          "campaign_label": "Direct traffic",
+          "traffic_note": "Campaign tag is present; use it to connect traffic to a promo."
+        },
+        {
+          "active_users": 3,
+          "campaign": "(referral)",
+          "event_count": 39,
+          "key_events": 0.0,
+          "screen_page_views": 29,
+          "sessions": 5,
+          "source_medium": "ntp.msn.com / referral",
+          "raw_source_medium": "ntp.msn.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Microsoft Start referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 1,
+          "campaign": "(referral)",
+          "event_count": 120,
+          "key_events": 0.0,
+          "screen_page_views": 112,
+          "sessions": 5,
+          "source_medium": "e.mail.ru / referral",
+          "raw_source_medium": "e.mail.ru / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Email referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 3,
+          "campaign": "(referral)",
+          "event_count": 20,
+          "key_events": 0.0,
+          "screen_page_views": 11,
+          "sessions": 4,
+          "source_medium": "mail / mail",
+          "raw_source_medium": "mail / mail",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Email email",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Campaign tag is present; use it to connect traffic to a promo."
+        }
+      ],
+      "outbound_clicks": [
+        {
+          "active_users": 10,
+          "clicks": 12,
+          "url": "https://google.com/",
+          "destination_label": "Google"
+        },
+        {
+          "active_users": 4,
+          "clicks": 4,
+          "url": "https://ladysublime.com/",
+          "destination_label": "Lady Sublime site"
+        },
+        {
+          "active_users": 2,
+          "clicks": 2,
+          "url": "https://www.instagram.com/ladysublimessbbw",
+          "destination_label": "https://www.instagram.com/ladysublimessbbw"
+        },
+        {
+          "active_users": 1,
+          "clicks": 1,
+          "url": "https://bsky.app/profile/josie-juicebox420.bsky.social",
+          "destination_label": "https://bsky.app/profile/josie-juicebox420.bsky.social"
+        },
+        {
+          "active_users": 1,
+          "clicks": 1,
+          "url": "https://queencoco1122/",
+          "destination_label": "https://queencoco1122/"
+        },
+        {
+          "active_users": 1,
+          "clicks": 1,
+          "url": "https://www.instagram.com/alanaxxbaby",
+          "destination_label": "https://www.instagram.com/alanaxxbaby"
+        },
+        {
+          "active_users": 1,
+          "clicks": 1,
+          "url": "https://x.com/Queencoco1122",
+          "destination_label": "X / Twitter"
+        },
+        {
+          "active_users": 1,
+          "clicks": 1,
+          "url": "https://x.com/alanaxxbaby",
+          "destination_label": "X / Twitter"
+        },
+        {
+          "active_users": 1,
+          "clicks": 1,
+          "url": "https://x.com/ladysublimebbw",
+          "destination_label": "X / Twitter"
+        }
+      ],
+      "events": [
+        {
+          "active_users": 2261,
+          "event_count": 18816,
+          "event_name": "page_view",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 2598,
+          "event_count": 3184,
+          "event_name": "session_start",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 2039,
+          "event_count": 2043,
+          "event_name": "first_visit",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 1131,
+          "event_count": 1579,
+          "event_name": "user_engagement",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 1471,
+          "event_count": 1564,
+          "event_name": "scroll",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 17,
+          "event_count": 54,
+          "event_name": "add_to_cart",
+          "key_events": 54.0
+        },
+        {
+          "active_users": 25,
+          "event_count": 25,
+          "event_name": "form_start",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 18,
+          "event_count": 24,
+          "event_name": "click",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 16,
+          "event_count": 22,
+          "event_name": "form_submit",
+          "key_events": 0.0
+        }
+      ],
+      "top_source_label": "Direct or saved link / Direct traffic (1,666 sessions)",
+      "top_source_note": "Typed URL, saved link, app handoff, or privacy-filtered referral.",
+      "top_outbound_label": "Google (12 clicks)",
+      "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
+      "collected_at": "2026-07-06T12:21:04-04:00",
+      "snapshot_date": "2026-07-06",
+      "active_users_change": 2,
+      "sessions_change": 0,
+      "screen_page_views_change": 5,
+      "event_count_change": 11
+    },
+    {
+      "snapshot_id": 28,
+      "account_id": "lady-sublime-modelcentro",
+      "provider": "ga4",
+      "account_label": "ModelCentro",
+      "property_id": "468766561",
+      "measurement_id": "G-VNYHXP2WDP",
+      "stream_id": "15197806050",
+      "stream_name": "Lady Sublime ModelCentro",
+      "profile_url": "https://ladysublime.com/",
+      "period_label": "7daysAgo - today",
+      "start_date": "7daysAgo",
+      "end_date": "today",
+      "active_users": 863,
+      "total_users": 866,
+      "new_users": 809,
+      "sessions": 1190,
+      "engaged_sessions": 331,
+      "screen_page_views": 4815,
+      "event_count": 8976,
+      "key_events": 0.0,
+      "source_medium": [
+        {
+          "active_users": 417,
+          "campaign": "(not set)",
+          "event_count": 2161,
+          "key_events": 0.0,
+          "screen_page_views": 1418,
+          "sessions": 529,
+          "source_medium": "(not set)",
+          "raw_source_medium": "(not set)",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Unattributed traffic",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "GA4 did not receive referrer or UTM campaign details."
+        },
+        {
+          "active_users": 233,
+          "campaign": "(direct)",
+          "event_count": 2341,
+          "key_events": 0.0,
+          "screen_page_views": 1028,
+          "sessions": 464,
+          "source_medium": "(direct) / (none)",
+          "raw_source_medium": "(direct) / (none)",
+          "raw_campaign": "(direct)",
+          "source_medium_label": "Direct or saved link",
+          "campaign_label": "Direct traffic",
+          "traffic_note": "Typed URL, saved link, app handoff, or privacy-filtered referral."
+        },
+        {
+          "active_users": 384,
+          "campaign": "(organic)",
+          "event_count": 3004,
+          "key_events": 0.0,
+          "screen_page_views": 1626,
+          "sessions": 434,
+          "source_medium": "google / organic",
+          "raw_source_medium": "google / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Google organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
+        },
+        {
+          "active_users": 105,
+          "campaign": "Lady Sublime Official Website",
+          "event_count": 808,
+          "key_events": 0.0,
+          "screen_page_views": 421,
+          "sessions": 110,
+          "source_medium": "beacons / link_in_bio",
+          "raw_source_medium": "beacons / link_in_bio",
+          "raw_campaign": "Lady Sublime Official Website",
+          "source_medium_label": "Beacons Link In Bio",
+          "campaign_label": "Lady Sublime Official Website",
+          "traffic_note": "Campaign tag is present; use it to connect traffic to a promo."
+        },
+        {
+          "active_users": 16,
+          "campaign": "(cross-network)",
+          "event_count": 116,
+          "key_events": 0.0,
+          "screen_page_views": 59,
+          "sessions": 16,
+          "source_medium": "(data not available)",
+          "raw_source_medium": "(data not available)",
+          "raw_campaign": "(cross-network)",
+          "source_medium_label": "Google modeled traffic",
+          "campaign_label": "Cross-network traffic",
+          "traffic_note": "GA4 grouped this as modeled or cross-network traffic without a source."
+        },
+        {
+          "active_users": 16,
+          "campaign": "(referral)",
+          "event_count": 113,
+          "key_events": 0.0,
+          "screen_page_views": 63,
+          "sessions": 16,
+          "source_medium": "bbw.wiki / referral",
+          "raw_source_medium": "bbw.wiki / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "BBW Wiki referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 10,
+          "campaign": "(organic)",
+          "event_count": 64,
+          "key_events": 0.0,
+          "screen_page_views": 26,
+          "sessions": 10,
+          "source_medium": "bing / organic",
+          "raw_source_medium": "bing / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Bing organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
+        },
+        {
+          "active_users": 9,
+          "campaign": "(referral)",
+          "event_count": 83,
+          "key_events": 0.0,
+          "screen_page_views": 42,
+          "sessions": 10,
+          "source_medium": "yandex.ru / referral",
+          "raw_source_medium": "yandex.ru / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Yandex referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 7,
+          "campaign": "(organic)",
+          "event_count": 37,
+          "key_events": 0.0,
+          "screen_page_views": 18,
+          "sessions": 7,
+          "source_medium": "adsession / organic",
+          "raw_source_medium": "adsession / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Adsession organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
+        },
+        {
+          "active_users": 7,
+          "campaign": "(organic)",
+          "event_count": 39,
+          "key_events": 0.0,
+          "screen_page_views": 14,
+          "sessions": 7,
+          "source_medium": "duckduckgo / organic",
+          "raw_source_medium": "duckduckgo / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "DuckDuckGo organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
+        },
+        {
+          "active_users": 4,
+          "campaign": "(referral)",
+          "event_count": 16,
+          "key_events": 0.0,
+          "screen_page_views": 4,
+          "sessions": 4,
+          "source_medium": "freeones.com / referral",
+          "raw_source_medium": "freeones.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "freeones.com referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 3,
+          "campaign": "(referral)",
+          "event_count": 18,
+          "key_events": 0.0,
+          "screen_page_views": 9,
+          "sessions": 3,
+          "source_medium": "fr.search.yahoo.com / referral",
+          "raw_source_medium": "fr.search.yahoo.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "fr.search.yahoo.com referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 2,
+          "campaign": "(referral)",
+          "event_count": 11,
+          "key_events": 0.0,
+          "screen_page_views": 4,
+          "sessions": 3,
+          "source_medium": "m.baidu.com / referral",
+          "raw_source_medium": "m.baidu.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "m.baidu.com referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 2,
+          "campaign": "(referral)",
+          "event_count": 11,
+          "key_events": 0.0,
+          "screen_page_views": 3,
+          "sessions": 2,
+          "source_medium": "pornhub.com / referral",
+          "raw_source_medium": "pornhub.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "pornhub.com referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 2,
+          "campaign": "(referral)",
+          "event_count": 8,
+          "key_events": 0.0,
+          "screen_page_views": 2,
+          "sessions": 2,
+          "source_medium": "reddit.com / referral",
+          "raw_source_medium": "reddit.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Reddit referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 2,
+          "campaign": "(referral)",
+          "event_count": 9,
+          "key_events": 0.0,
+          "screen_page_views": 2,
+          "sessions": 2,
+          "source_medium": "ya.ru / referral",
+          "raw_source_medium": "ya.ru / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "ya.ru referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 1,
+          "campaign": "(referral)",
+          "event_count": 8,
+          "key_events": 0.0,
+          "screen_page_views": 3,
+          "sessions": 2,
+          "source_medium": "it.pornhub.com / referral",
+          "raw_source_medium": "it.pornhub.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "it.pornhub.com referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 1,
+          "campaign": "(referral)",
+          "event_count": 11,
+          "key_events": 0.0,
+          "screen_page_views": 5,
+          "sessions": 2,
+          "source_medium": "mail.google.com / referral",
+          "raw_source_medium": "mail.google.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "mail.google.com referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 1,
+          "campaign": "(referral)",
+          "event_count": 36,
+          "key_events": 0.0,
+          "screen_page_views": 16,
+          "sessions": 2,
+          "source_medium": "yandexsmartcamera / organic",
+          "raw_source_medium": "yandexsmartcamera / organic",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Yandexsmartcamera organic search",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
+        },
+        {
+          "active_users": 1,
+          "campaign": "(not set)",
+          "event_count": 4,
+          "key_events": 0.0,
+          "screen_page_views": 2,
+          "sessions": 1,
+          "source_medium": "adsession / ",
+          "raw_source_medium": "adsession /",
+          "raw_campaign": "(not set)",
+          "source_medium_label": "Adsession /",
+          "campaign_label": "No campaign tag",
+          "traffic_note": "Source is known, but the link did not include a campaign tag."
+        },
+        {
+          "active_users": 1,
+          "campaign": "(referral)",
+          "event_count": 18,
+          "key_events": 0.0,
+          "screen_page_views": 11,
+          "sessions": 1,
+          "source_medium": "cn.pornhub.com / referral",
+          "raw_source_medium": "cn.pornhub.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "cn.pornhub.com referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 1,
+          "campaign": "(referral)",
+          "event_count": 25,
+          "key_events": 0.0,
+          "screen_page_views": 22,
+          "sessions": 1,
+          "source_medium": "ladysublime.me / referral",
+          "raw_source_medium": "ladysublime.me / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "Lady Sublime link-in-bio referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 1,
+          "campaign": "(organic)",
+          "event_count": 7,
+          "key_events": 0.0,
+          "screen_page_views": 3,
+          "sessions": 1,
+          "source_medium": "naver / organic",
+          "raw_source_medium": "naver / organic",
+          "raw_campaign": "(organic)",
+          "source_medium_label": "Naver organic search",
+          "campaign_label": "Organic traffic",
+          "traffic_note": "Unpaid search traffic from the named search engine."
+        },
+        {
+          "active_users": 1,
+          "campaign": "(referral)",
+          "event_count": 3,
+          "key_events": 0.0,
+          "screen_page_views": 1,
+          "sessions": 1,
+          "source_medium": "pt.pornhub.com / referral",
+          "raw_source_medium": "pt.pornhub.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "pt.pornhub.com referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        },
+        {
+          "active_users": 1,
+          "campaign": "(referral)",
+          "event_count": 6,
+          "key_events": 0.0,
+          "screen_page_views": 2,
+          "sessions": 1,
+          "source_medium": "search.brave.com / referral",
+          "raw_source_medium": "search.brave.com / referral",
+          "raw_campaign": "(referral)",
+          "source_medium_label": "search.brave.com referral",
+          "campaign_label": "Referral traffic",
+          "traffic_note": "Unpaid click from the referring site."
+        }
+      ],
+      "outbound_clicks": [
+        {
+          "active_users": 12,
+          "clicks": 12,
+          "url": "https://google.com/",
+          "destination_label": "Google"
+        },
+        {
+          "active_users": 1,
+          "clicks": 1,
+          "url": "https://www.google.com/calendar/event?action=TEMPLATE&dates=20260711T100000Z%2F20260711T110000Z&text",
+          "destination_label": "Google"
+        }
+      ],
+      "events": [
+        {
+          "active_users": 844,
+          "event_count": 4815,
+          "event_name": "page_view",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 770,
+          "event_count": 1310,
+          "event_name": "scroll",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 808,
+          "event_count": 1110,
+          "event_name": "session_start",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 507,
+          "event_count": 835,
+          "event_name": "user_engagement",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 806,
+          "event_count": 809,
+          "event_name": "first_visit",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 68,
+          "event_count": 82,
+          "event_name": "form_start",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 13,
+          "event_count": 13,
+          "event_name": "click",
+          "key_events": 0.0
+        },
+        {
+          "active_users": 2,
+          "event_count": 2,
+          "event_name": "form_submit",
+          "key_events": 0.0
+        }
+      ],
+      "top_source_label": "Unattributed traffic (529 sessions)",
+      "top_source_note": "GA4 did not receive referrer or UTM campaign details.",
+      "top_outbound_label": "Google (12 clicks)",
+      "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
+      "collected_at": "2026-07-06T12:21:05-04:00",
+      "snapshot_date": "2026-07-06",
+      "active_users_change": 1,
+      "sessions_change": 1,
+      "screen_page_views_change": 8,
+      "event_count_change": 14
+    },
+    {
+      "snapshot_id": 29,
+      "account_id": "lady-sublime-mymember",
+      "provider": "ga4",
+      "account_label": "MyMember",
+      "property_id": "468766561",
+      "measurement_id": "G-WZBSTREQJR",
+      "stream_id": "15197890640",
+      "stream_name": "Lady Sublime MyMember",
+      "profile_url": "https://mymember.site/lady-sublime",
+      "period_label": "7daysAgo - today",
+      "start_date": "7daysAgo",
+      "end_date": "today",
+      "active_users": null,
+      "total_users": null,
+      "new_users": null,
+      "sessions": null,
+      "engaged_sessions": null,
+      "screen_page_views": null,
+      "event_count": null,
+      "key_events": null,
+      "source_medium": [],
+      "outbound_clicks": [],
+      "events": [],
+      "top_source_label": "",
+      "top_source_note": "",
+      "top_outbound_label": "",
+      "source_url": "https://analyticsdata.googleapis.com/v1beta/properties/468766561:runReport",
+      "collected_at": "2026-07-06T12:21:07-04:00",
       "snapshot_date": "2026-07-06",
       "active_users_change": null,
       "sessions_change": null,
