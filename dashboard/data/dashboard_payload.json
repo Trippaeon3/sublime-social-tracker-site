@@ -1,6 +1,6 @@
 {
   "title": "Social Media Growth Dashboard",
-  "generated_at": "2026-07-07T13:55:16-04:00",
+  "generated_at": "2026-07-07T15:24:20-04:00",
   "kpis": {
     "total_followers": 182876,
     "previous_snapshot_gain": 185,
@@ -4534,6 +4534,10 @@
     {
       "label": "Use Beacons for cross-platform engagement context",
       "text": "Beacons Social Analytics shows 110,000 connected-account followers, 12.80% average engagement, and 8,000.0 average views. Treat this as an engagement lens, not the canonical follower total."
+    },
+    {
+      "label": "Use Ahrefs as the ModelCentro site check",
+      "text": "Ahrefs shows 9 unique visitors, 9 visits, and 14 views for ModelCentro. Compare top pages and countries against GA4 before changing promo links."
     }
   ],
   "freshness": [
@@ -16055,6 +16059,102 @@
       "event_count_change": null
     }
   ],
+  "ahrefs_web": [
+    {
+      "snapshot_id": 1,
+      "account_id": "lady-sublime-modelcentro",
+      "provider": "ahrefs",
+      "account_label": "ModelCentro",
+      "project_id": "10063620",
+      "profile_url": "https://ladysublime.com/",
+      "period_label": "Last 30 days",
+      "total_views": 14,
+      "unique_visitors": 9,
+      "total_visits": 9,
+      "top_pages": [
+        {
+          "page_path": "/",
+          "visitors": 6
+        }
+      ],
+      "countries": [
+        {
+          "country": "Mexico",
+          "visitors": 4
+        },
+        {
+          "country": "United States",
+          "visitors": 3
+        },
+        {
+          "country": "Netherlands",
+          "visitors": 1
+        },
+        {
+          "country": "Canada",
+          "visitors": 1
+        }
+      ],
+      "top_page_label": "/ (6 visitors)",
+      "top_country_label": "Mexico (4 visitors)",
+      "source_url": "https://app.ahrefs.com/web-analytics",
+      "collected_at": "2026-07-07T15:23:55-04:00",
+      "snapshot_date": "2026-07-07",
+      "total_views_change": null,
+      "unique_visitors_change": null,
+      "total_visits_change": null,
+      "latest_success": "2026-07-07T15:23:55-04:00",
+      "latest_attempt": "2026-07-07T15:23:55-04:00",
+      "status": "ok",
+      "error_message": null
+    }
+  ],
+  "ahrefs_web_history": [
+    {
+      "snapshot_id": 1,
+      "account_id": "lady-sublime-modelcentro",
+      "provider": "ahrefs",
+      "account_label": "ModelCentro",
+      "project_id": "10063620",
+      "profile_url": "https://ladysublime.com/",
+      "period_label": "Last 30 days",
+      "total_views": 14,
+      "unique_visitors": 9,
+      "total_visits": 9,
+      "top_pages": [
+        {
+          "page_path": "/",
+          "visitors": 6
+        }
+      ],
+      "countries": [
+        {
+          "country": "Mexico",
+          "visitors": 4
+        },
+        {
+          "country": "United States",
+          "visitors": 3
+        },
+        {
+          "country": "Netherlands",
+          "visitors": 1
+        },
+        {
+          "country": "Canada",
+          "visitors": 1
+        }
+      ],
+      "top_page_label": "/ (6 visitors)",
+      "top_country_label": "Mexico (4 visitors)",
+      "source_url": "https://app.ahrefs.com/web-analytics",
+      "collected_at": "2026-07-07T15:23:55-04:00",
+      "snapshot_date": "2026-07-07",
+      "total_views_change": null,
+      "unique_visitors_change": null,
+      "total_visits_change": null
+    }
+  ],
   "beacons_social": [
     {
       "snapshot_id": 2,
@@ -16328,6 +16428,11 @@
       "platform": "GA4 Website Traffic",
       "url": "https://developers.google.com/analytics/devguides/reporting/data/v1",
       "note": "GA4 Data API traffic and event reports are tracked per configured web stream, separately from follower totals and Beacons-native link analytics."
+    },
+    {
+      "platform": "Ahrefs Web Analytics",
+      "url": "https://app.ahrefs.com/web-analytics",
+      "note": "Ahrefs Web Analytics snapshots are tracked from reviewed Ahrefs dashboard totals for ModelCentro and kept separate from follower totals."
     }
   ]
 }
