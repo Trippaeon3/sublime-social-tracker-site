@@ -1,16 +1,16 @@
 {
   "title": "Social Media Growth Dashboard",
-  "generated_at": "2026-07-10T08:03:57-04:00",
+  "generated_at": "2026-07-10T10:00:09-04:00",
   "kpis": {
-    "total_followers": 183501,
-    "previous_snapshot_gain": 149,
-    "organic_previous_snapshot_gain": 149,
+    "total_followers": 183516,
+    "previous_snapshot_gain": 154,
+    "organic_previous_snapshot_gain": 154,
     "newly_tracked_audience": 0,
-    "gain_7d": 1956,
+    "gain_7d": 1931,
     "gain_30d": 0,
     "gain_7d_status": "complete",
     "gain_30d_status": "partial",
-    "healthy_sources": 11,
+    "healthy_sources": 13,
     "tracked_accounts": 13,
     "previous_snapshot_sources": 13,
     "full_7d_sources": 13,
@@ -285,7 +285,7 @@
       "platform": "onlyfans",
       "label": "OnlyFans",
       "handle": "LadySublimeSSBBW",
-      "follower_count": 7801,
+      "follower_count": 7800,
       "following_count": null,
       "post_count": null,
       "like_count": null,
@@ -311,20 +311,20 @@
       "recent_best_content_url": null,
       "recent_latest_content_at": null,
       "insights_status": null,
-      "previous_snapshot_gain": 3,
-      "previous_snapshot_growth_rate": 0.00038471402923826624,
-      "gain_7d": 101,
-      "gain_7d_growth_rate": 0.013116883116883117,
+      "previous_snapshot_gain": -1,
+      "previous_snapshot_growth_rate": -0.00012818869375721061,
+      "gain_7d": 100,
+      "gain_7d_growth_rate": 0.012987012987012988,
       "gain_7d_complete": true,
-      "gain_7d_observed_days": 10,
-      "gain_30d": 125,
-      "gain_30d_growth_rate": 0.016284523189161022,
+      "gain_7d_observed_days": 11,
+      "gain_30d": 124,
+      "gain_30d_growth_rate": 0.01615424700364773,
       "gain_30d_complete": false,
-      "gain_30d_observed_days": 10,
+      "gain_30d_observed_days": 11,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-29",
-      "latest_success": "2026-07-09T21:57:42-04:00",
-      "latest_snapshot_date": "2026-07-09",
+      "latest_success": "2026-07-10T09:59:21-04:00",
+      "latest_snapshot_date": "2026-07-10",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
       "insight_profile_views_total_value": null,
@@ -347,7 +347,7 @@
       "platform": "curvage",
       "label": "Curvage",
       "handle": "LadySublimeSSBBW",
-      "follower_count": 7529,
+      "follower_count": 7541,
       "following_count": null,
       "post_count": null,
       "like_count": null,
@@ -373,20 +373,20 @@
       "recent_best_content_url": null,
       "recent_latest_content_at": null,
       "insights_status": null,
-      "previous_snapshot_gain": 4,
-      "previous_snapshot_growth_rate": 0.00053156146179402,
-      "gain_7d": 49,
-      "gain_7d_growth_rate": 0.006550802139037433,
+      "previous_snapshot_gain": 12,
+      "previous_snapshot_growth_rate": 0.00159383716296985,
+      "gain_7d": 39,
+      "gain_7d_growth_rate": 0.00519861370301253,
       "gain_7d_complete": true,
-      "gain_7d_observed_days": 9,
-      "gain_30d": 69,
-      "gain_30d_growth_rate": 0.009249329758713136,
+      "gain_7d_observed_days": 12,
+      "gain_30d": 81,
+      "gain_30d_growth_rate": 0.010857908847184987,
       "gain_30d_complete": false,
-      "gain_30d_observed_days": 9,
+      "gain_30d_observed_days": 12,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-28",
-      "latest_success": "2026-07-07T13:44:09-04:00",
-      "latest_snapshot_date": "2026-07-07",
+      "latest_success": "2026-07-10T09:59:21-04:00",
+      "latest_snapshot_date": "2026-07-10",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
       "insight_profile_views_total_value": null,
@@ -435,20 +435,20 @@
       "recent_best_content_url": null,
       "recent_latest_content_at": null,
       "insights_status": null,
-      "previous_snapshot_gain": 1,
-      "previous_snapshot_growth_rate": 0.00016041065126724414,
-      "gain_7d": 15,
-      "gain_7d_growth_rate": 0.002411575562700965,
+      "previous_snapshot_gain": 0,
+      "previous_snapshot_growth_rate": 0.0,
+      "gain_7d": 12,
+      "gain_7d_growth_rate": 0.0019283303872730194,
       "gain_7d_complete": true,
-      "gain_7d_observed_days": 10,
+      "gain_7d_observed_days": 11,
       "gain_30d": 26,
       "gain_30d_growth_rate": 0.004187469801900467,
       "gain_30d_complete": false,
-      "gain_30d_observed_days": 10,
+      "gain_30d_observed_days": 11,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-29",
-      "latest_success": "2026-07-09T21:55:13-04:00",
-      "latest_snapshot_date": "2026-07-09",
+      "latest_success": "2026-07-10T09:59:21-04:00",
+      "latest_snapshot_date": "2026-07-10",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
       "insight_profile_views_total_value": null,
@@ -719,7 +719,7 @@
       "platform": "feabie",
       "label": "Feabie",
       "handle": "LadySublimeSSBBW",
-      "follower_count": 782,
+      "follower_count": 786,
       "following_count": null,
       "post_count": null,
       "like_count": null,
@@ -745,20 +745,20 @@
       "recent_best_content_url": null,
       "recent_latest_content_at": null,
       "insights_status": null,
-      "previous_snapshot_gain": 2,
-      "previous_snapshot_growth_rate": 0.002564102564102564,
-      "gain_7d": 41,
-      "gain_7d_growth_rate": 0.0553306342780027,
+      "previous_snapshot_gain": 4,
+      "previous_snapshot_growth_rate": 0.005115089514066497,
+      "gain_7d": 30,
+      "gain_7d_growth_rate": 0.03968253968253968,
       "gain_7d_complete": true,
-      "gain_7d_observed_days": 8,
-      "gain_30d": 41,
-      "gain_30d_growth_rate": 0.0553306342780027,
+      "gain_7d_observed_days": 11,
+      "gain_30d": 45,
+      "gain_30d_growth_rate": 0.06072874493927125,
       "gain_30d_complete": false,
-      "gain_30d_observed_days": 8,
+      "gain_30d_observed_days": 11,
       "first_snapshot": false,
       "first_snapshot_date": "2026-06-29",
-      "latest_success": "2026-07-07T13:44:09-04:00",
-      "latest_snapshot_date": "2026-07-07",
+      "latest_success": "2026-07-10T09:59:21-04:00",
+      "latest_snapshot_date": "2026-07-10",
       "insight_reach_latest": null,
       "insight_views_total_value": null,
       "insight_profile_views_total_value": null,
@@ -3253,6 +3253,24 @@
       "daily_gain": 4
     },
     {
+      "snapshot_id": 328,
+      "account_id": "lady-sublime-curvage",
+      "platform": "curvage",
+      "account_label": "Curvage",
+      "account_handle": "LadySublimeSSBBW",
+      "external_id": null,
+      "follower_count": 7541,
+      "following_count": null,
+      "post_count": null,
+      "like_count": null,
+      "view_count": null,
+      "profile_url": "https://curvage.org/forum/index.php",
+      "source_url": "https://curvage.org/forum/index.php",
+      "collected_at": "2026-07-10T09:59:21-04:00",
+      "snapshot_date": "2026-07-10",
+      "daily_gain": 12
+    },
+    {
       "snapshot_id": 13,
       "account_id": "lady-sublime-facebook-page",
       "platform": "facebook",
@@ -3829,6 +3847,24 @@
       "daily_gain": 2
     },
     {
+      "snapshot_id": 329,
+      "account_id": "lady-sublime-feabie",
+      "platform": "feabie",
+      "account_label": "Feabie",
+      "account_handle": "LadySublimeSSBBW",
+      "external_id": null,
+      "follower_count": 786,
+      "following_count": null,
+      "post_count": null,
+      "like_count": null,
+      "view_count": null,
+      "profile_url": "https://www.feabie.com/Member/Details/LadySublimeSSBBW",
+      "source_url": "https://www.feabie.com/Member/Details/LadySublimeSSBBW",
+      "collected_at": "2026-07-10T09:59:21-04:00",
+      "snapshot_date": "2026-07-10",
+      "daily_gain": 4
+    },
+    {
       "snapshot_id": 53,
       "account_id": "lady-sublime-manyvids",
       "platform": "manyvids",
@@ -4387,6 +4423,24 @@
       "daily_gain": 3
     },
     {
+      "snapshot_id": 327,
+      "account_id": "lady-sublime-onlyfans",
+      "platform": "onlyfans",
+      "account_label": "OnlyFans",
+      "account_handle": "LadySublimeSSBBW",
+      "external_id": null,
+      "follower_count": 7800,
+      "following_count": null,
+      "post_count": null,
+      "like_count": null,
+      "view_count": null,
+      "profile_url": "https://onlyfans.com/LadySublimeSSBBW",
+      "source_url": "https://onlyfans.com/LadySublimeSSBBW",
+      "collected_at": "2026-07-10T09:59:21-04:00",
+      "snapshot_date": "2026-07-10",
+      "daily_gain": -1
+    },
+    {
       "snapshot_id": 148,
       "account_id": "lady-sublime-reddit-profile",
       "platform": "reddit",
@@ -4547,6 +4601,24 @@
       "collected_at": "2026-07-09T21:55:13-04:00",
       "snapshot_date": "2026-07-09",
       "daily_gain": 1
+    },
+    {
+      "snapshot_id": 326,
+      "account_id": "lady-sublime-reddit-profile",
+      "platform": "reddit",
+      "account_label": "Reddit Profile",
+      "account_handle": "LadySublimeSSBBW",
+      "external_id": null,
+      "follower_count": 6235,
+      "following_count": null,
+      "post_count": null,
+      "like_count": null,
+      "view_count": null,
+      "profile_url": "https://www.reddit.com/user/LadySublimeSSBBW/",
+      "source_url": "https://www.reddit.com/user/LadySublimeSSBBW/",
+      "collected_at": "2026-07-10T09:59:21-04:00",
+      "snapshot_date": "2026-07-10",
+      "daily_gain": 0
     },
     {
       "snapshot_id": 204,
@@ -4857,9 +4929,9 @@
     },
     {
       "snapshot_date": "2026-07-10",
-      "follower_count": 183501,
-      "daily_gain": 139,
-      "organic_gain": 139,
+      "follower_count": 183516,
+      "daily_gain": 154,
+      "organic_gain": 154,
       "newly_tracked_audience": 0
     }
   ],
@@ -4873,16 +4945,6 @@
       "level": "warning",
       "issue": "Facebook follows context",
       "detail": "Meta returned both a latest page-follows value (14,955) and a summed value across returned rows. The dashboard displays the latest value to avoid double-counting."
-    },
-    {
-      "level": "error",
-      "issue": "OnlyFans source issue",
-      "detail": "Could not find a onlyfans follower/fan count on the logged-in page."
-    },
-    {
-      "level": "error",
-      "issue": "Reddit Profile source issue",
-      "detail": "Could not find a reddit follower/fan count on the logged-in page."
     }
   ],
   "recommendations": [
@@ -4904,7 +4966,7 @@
     },
     {
       "label": "Use Beacons as the link funnel baseline",
-      "text": "Beacons shows 2,086 clicks from 2,364 views (88.20%). Keep the bio destination stable until the next pull so traffic changes can be tied to posts and promos."
+      "text": "Beacons shows 2,176 clicks from 2,421 views (89.90%). Keep the bio destination stable until the next pull so traffic changes can be tied to posts and promos."
     },
     {
       "label": "Use GA4 to qualify Beacons traffic",
@@ -4955,26 +5017,26 @@
     {
       "platform": "OnlyFans",
       "handle": "LadySublimeSSBBW",
-      "latest_success": "2026-07-09T21:57:42-04:00",
-      "latest_attempt": "2026-07-10T08:03:04-04:00",
-      "status": "error",
-      "error_message": "Could not find a onlyfans follower/fan count on the logged-in page."
+      "latest_success": "2026-07-10T09:59:21-04:00",
+      "latest_attempt": "2026-07-10T09:59:21-04:00",
+      "status": "ok",
+      "error_message": null
     },
     {
       "platform": "Curvage",
       "handle": "LadySublimeSSBBW",
-      "latest_success": "2026-07-07T13:44:09-04:00",
-      "latest_attempt": "2026-07-07T13:44:09-04:00",
+      "latest_success": "2026-07-10T09:59:21-04:00",
+      "latest_attempt": "2026-07-10T09:59:21-04:00",
       "status": "ok",
       "error_message": null
     },
     {
       "platform": "Reddit Profile",
       "handle": "LadySublimeSSBBW",
-      "latest_success": "2026-07-09T21:55:13-04:00",
-      "latest_attempt": "2026-07-10T08:03:01-04:00",
-      "status": "error",
-      "error_message": "Could not find a reddit follower/fan count on the logged-in page."
+      "latest_success": "2026-07-10T09:59:21-04:00",
+      "latest_attempt": "2026-07-10T09:59:21-04:00",
+      "status": "ok",
+      "error_message": null
     },
     {
       "platform": "TikTok",
@@ -5011,8 +5073,8 @@
     {
       "platform": "Feabie",
       "handle": "LadySublimeSSBBW",
-      "latest_success": "2026-07-07T13:44:09-04:00",
-      "latest_attempt": "2026-07-07T13:44:09-04:00",
+      "latest_success": "2026-07-10T09:59:21-04:00",
+      "latest_attempt": "2026-07-10T09:59:21-04:00",
       "status": "ok",
       "error_message": null
     },
@@ -5027,26 +5089,26 @@
   ],
   "link_analytics": [
     {
-      "snapshot_id": 6,
+      "snapshot_id": 7,
       "account_id": "lady-sublime-beacons",
       "provider": "beacons",
       "account_label": "Beacons",
       "profile_url": null,
       "period_label": "Beacons Link in Bio Last 7 days",
-      "views": 2364,
-      "clicks": 2086,
-      "click_through_rate": 0.882,
+      "views": 2421,
+      "clicks": 2176,
+      "click_through_rate": 0.899,
       "subscribers": null,
       "sales": null,
       "revenue": null,
       "top_links": [],
       "source_url": "https://account.beacons.ai/account/home/insights",
-      "collected_at": "2026-07-07T13:45:31-04:00",
-      "snapshot_date": "2026-07-07",
-      "views_change": -65,
-      "clicks_change": -99,
-      "latest_success": "2026-07-07T13:45:31-04:00",
-      "latest_attempt": "2026-07-07T13:45:31-04:00",
+      "collected_at": "2026-07-10T09:59:57-04:00",
+      "snapshot_date": "2026-07-10",
+      "views_change": 57,
+      "clicks_change": 90,
+      "latest_success": "2026-07-10T09:59:57-04:00",
+      "latest_attempt": "2026-07-10T09:59:57-04:00",
       "status": "ok",
       "error_message": null
     }
@@ -5171,6 +5233,26 @@
       "snapshot_date": "2026-07-07",
       "views_change": -65,
       "clicks_change": -99
+    },
+    {
+      "snapshot_id": 7,
+      "account_id": "lady-sublime-beacons",
+      "provider": "beacons",
+      "account_label": "Beacons",
+      "profile_url": null,
+      "period_label": "Beacons Link in Bio Last 7 days",
+      "views": 2421,
+      "clicks": 2176,
+      "click_through_rate": 0.899,
+      "subscribers": null,
+      "sales": null,
+      "revenue": null,
+      "top_links": [],
+      "source_url": "https://account.beacons.ai/account/home/insights",
+      "collected_at": "2026-07-10T09:59:57-04:00",
+      "snapshot_date": "2026-07-10",
+      "views_change": 57,
+      "clicks_change": 90
     }
   ],
   "ga4_traffic": [
@@ -20011,7 +20093,7 @@
       "platform_same_day_gain": -11,
       "total_same_day_gain": 523,
       "total_3d_gain": 737,
-      "total_7d_gain": 1333
+      "total_7d_gain": 1348
     },
     {
       "activity_id": null,
@@ -20047,7 +20129,7 @@
       "platform_same_day_gain": -7,
       "total_same_day_gain": 492,
       "total_3d_gain": 1229,
-      "total_7d_gain": 1825
+      "total_7d_gain": 1840
     },
     {
       "activity_id": null,
@@ -20083,7 +20165,7 @@
       "platform_same_day_gain": 200,
       "total_same_day_gain": 492,
       "total_3d_gain": 1229,
-      "total_7d_gain": 1825
+      "total_7d_gain": 1840
     },
     {
       "activity_id": null,
@@ -21705,7 +21787,7 @@
       "platform_same_day_gain": -11,
       "total_same_day_gain": 523,
       "total_3d_gain": 737,
-      "total_7d_gain": 1333
+      "total_7d_gain": 1348
     },
     {
       "activity_id": null,
@@ -21741,7 +21823,7 @@
       "platform_same_day_gain": -7,
       "total_same_day_gain": 492,
       "total_3d_gain": 1229,
-      "total_7d_gain": 1825
+      "total_7d_gain": 1840
     },
     {
       "activity_id": null,
@@ -21777,7 +21859,7 @@
       "platform_same_day_gain": 200,
       "total_same_day_gain": 492,
       "total_3d_gain": 1229,
-      "total_7d_gain": 1825
+      "total_7d_gain": 1840
     },
     {
       "activity_id": null,
