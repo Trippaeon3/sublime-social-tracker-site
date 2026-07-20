@@ -12,3 +12,4 @@ snapshot_id,account_id,provider,account_label,profile_url,period_label,views,cli
 11,lady-sublime-beacons,beacons,Beacons,,Last 7 days,1059,967,0.9129999999999999,,,,[],https://account.beacons.ai/account/home/insights,2026-07-17T08:17:24-04:00,2026-07-17,6,9
 12,lady-sublime-beacons,beacons,Beacons,,Last 7 days,1060,962,0.9079999999999999,,,,[],https://account.beacons.ai/account/home/insights,2026-07-18T08:15:38-04:00,2026-07-18,1,-5
 13,lady-sublime-beacons,beacons,Beacons,,Last 7 days,1104,1001,0.907,,,,[],https://account.beacons.ai/account/home/insights,2026-07-19T08:14:00-04:00,2026-07-19,44,39
+14,lady-sublime-beacons,beacons,Beacons,,Last 7 days,1228,1122,0.914,,,,[],https://account.beacons.ai/account/home/insights,2026-07-20T08:16:48-04:00,2026-07-20,124,121
