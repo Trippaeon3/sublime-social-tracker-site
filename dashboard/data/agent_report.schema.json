@@ -1,0 +1,391 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "agent_report.schema.json",
+  "title": "Social Media Dashboard Agent Report",
+  "description": "Compact daily source-health contract for machine consumers.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "$schema",
+    "contract_name",
+    "schema_version",
+    "report_type",
+    "run_id",
+    "generated_at",
+    "report_date",
+    "timezone",
+    "freshness_policy",
+    "overall_status",
+    "coverage",
+    "kpis",
+    "lanes",
+    "exceptions",
+    "artifacts",
+    "details"
+  ],
+  "properties": {
+    "$schema": {
+      "const": "agent_report.schema.json"
+    },
+    "contract_name": {
+      "const": "social_media_dashboard.agent_report"
+    },
+    "schema_version": {
+      "const": "1.0.0"
+    },
+    "report_type": {
+      "const": "daily_source_health"
+    },
+    "run_id": {
+      "$ref": "#/$defs/stableIdentifier"
+    },
+    "generated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "report_date": {
+      "type": "string",
+      "format": "date"
+    },
+    "timezone": {
+      "type": "string",
+      "minLength": 1
+    },
+    "freshness_policy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "rule",
+        "healthy_lane_status",
+        "carried_forward_is_current"
+      ],
+      "properties": {
+        "rule": {
+          "const": "same_day_snapshot_and_successful_event"
+        },
+        "healthy_lane_status": {
+          "const": "ok"
+        },
+        "carried_forward_is_current": {
+          "const": false
+        }
+      }
+    },
+    "overall_status": {
+      "$ref": "#/$defs/overallStatus"
+    },
+    "coverage": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["followers", "analytics", "combined"],
+      "properties": {
+        "followers": {
+          "$ref": "#/$defs/coverageBucket"
+        },
+        "analytics": {
+          "$ref": "#/$defs/coverageBucket"
+        },
+        "combined": {
+          "$ref": "#/$defs/coverageBucket"
+        }
+      }
+    },
+    "kpis": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "$ref": "#/$defs/kpi"
+      }
+    },
+    "lanes": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/lane"
+      }
+    },
+    "exceptions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/exception"
+      }
+    },
+    "artifacts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/artifact"
+      }
+    },
+    "details": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lane_csv", "full_payload", "source_health_csv"],
+      "properties": {
+        "lane_csv": {
+          "const": "agent_source_status.csv"
+        },
+        "full_payload": {
+          "const": "dashboard_payload.json"
+        },
+        "source_health_csv": {
+          "const": "daily_source_health.csv"
+        }
+      }
+    }
+  },
+  "$defs": {
+    "overallStatus": {
+      "enum": ["complete", "partial", "blocked", "failed", "not_started"]
+    },
+    "coverageStatus": {
+      "enum": ["complete", "partial", "not_started"]
+    },
+    "laneStatus": {
+      "enum": [
+        "ok",
+        "stale",
+        "not_attempted",
+        "awaiting_manual",
+        "needs_login",
+        "needs_permission",
+        "blocked",
+        "pending_setup",
+        "error"
+      ]
+    },
+    "valueState": {
+      "enum": ["current", "carried_forward", "missing"]
+    },
+    "stableIdentifier": {
+      "type": "string",
+      "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*$"
+    },
+    "nullableTimestamp": {
+      "oneOf": [
+        {
+          "type": "string",
+          "format": "date-time"
+        },
+        {
+          "type": "null"
+        }
+      ]
+    },
+    "coverageBucket": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["current", "required", "missing", "status"],
+      "properties": {
+        "current": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "required": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "missing": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "status": {
+          "$ref": "#/$defs/coverageStatus"
+        }
+      }
+    },
+    "metricCompleteness": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["status", "current", "required"],
+      "properties": {
+        "status": {
+          "enum": ["complete", "partial", "unavailable"]
+        },
+        "current": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "required": {
+          "type": "integer",
+          "minimum": 0
+        }
+      }
+    },
+    "kpi": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["metric_id", "value", "unit", "definition", "completeness"],
+      "properties": {
+        "metric_id": {
+          "enum": [
+            "total_followers",
+            "organic_previous_snapshot_gain",
+            "gain_7d",
+            "gain_30d"
+          ]
+        },
+        "value": {
+          "type": ["number", "null"]
+        },
+        "unit": {
+          "enum": ["followers", "followers_change"]
+        },
+        "definition": {
+          "type": "string",
+          "minLength": 1
+        },
+        "completeness": {
+          "$ref": "#/$defs/metricCompleteness"
+        }
+      }
+    },
+    "lane": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "lane_id",
+        "account_id",
+        "category",
+        "source_type",
+        "latest_event_id",
+        "latest_snapshot_id",
+        "status",
+        "value_state",
+        "snapshot_age_days",
+        "latest_success_at",
+        "latest_attempt_at",
+        "collection_mode"
+      ],
+      "properties": {
+        "lane_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*:[A-Za-z0-9][A-Za-z0-9._-]*:[A-Za-z0-9][A-Za-z0-9._-]*$"
+        },
+        "account_id": {
+          "$ref": "#/$defs/stableIdentifier"
+        },
+        "category": {
+          "enum": ["follower", "analytics"]
+        },
+        "source_type": {
+          "$ref": "#/$defs/stableIdentifier"
+        },
+        "latest_event_id": {
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "latest_snapshot_id": {
+          "type": ["integer", "null"],
+          "minimum": 1
+        },
+        "status": {
+          "$ref": "#/$defs/laneStatus"
+        },
+        "value_state": {
+          "$ref": "#/$defs/valueState"
+        },
+        "snapshot_age_days": {
+          "type": ["integer", "null"],
+          "minimum": 0
+        },
+        "latest_success_at": {
+          "$ref": "#/$defs/nullableTimestamp"
+        },
+        "latest_attempt_at": {
+          "$ref": "#/$defs/nullableTimestamp"
+        },
+        "collection_mode": {
+          "$ref": "#/$defs/stableIdentifier"
+        }
+      }
+    },
+    "requiredAction": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["actor", "code"],
+      "properties": {
+        "actor": {
+          "enum": ["automation", "operator", "user"]
+        },
+        "code": {
+          "enum": [
+            "authenticate_source",
+            "complete_source_setup",
+            "grant_source_permission",
+            "investigate_collection_error",
+            "provide_exact_value",
+            "record_same_day_snapshot",
+            "resolve_source_block",
+            "run_collection"
+          ]
+        }
+      }
+    },
+    "exception": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["lane_id", "account_id", "status", "value_state", "required_action"],
+      "properties": {
+        "lane_id": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9._-]*:[A-Za-z0-9][A-Za-z0-9._-]*:[A-Za-z0-9][A-Za-z0-9._-]*$"
+        },
+        "account_id": {
+          "$ref": "#/$defs/stableIdentifier"
+        },
+        "status": {
+          "enum": [
+            "stale",
+            "not_attempted",
+            "awaiting_manual",
+            "needs_login",
+            "needs_permission",
+            "blocked",
+            "pending_setup",
+            "error"
+          ]
+        },
+        "value_state": {
+          "$ref": "#/$defs/valueState"
+        },
+        "required_action": {
+          "$ref": "#/$defs/requiredAction"
+        }
+      }
+    },
+    "artifact": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["artifact_id", "relative_path"],
+      "properties": {
+        "artifact_id": {
+          "$ref": "#/$defs/stableIdentifier"
+        },
+        "relative_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "media_type": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "size_bytes": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "generated_at": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "validation_status": {
+          "enum": ["passed", "failed", "not_checked"]
+        }
+      }
+    }
+  }
+}
