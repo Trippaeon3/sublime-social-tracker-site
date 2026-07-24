@@ -16,3 +16,4 @@ snapshot_id,account_id,provider,account_label,profile_url,period_label,views,cli
 15,lady-sublime-beacons,beacons,Beacons,,Last 7 days,1335,1210,0.9059999999999999,,,,[],https://account.beacons.ai/,2026-07-21T08:15:02-04:00,2026-07-21,107,88
 16,lady-sublime-beacons,beacons,Beacons,,Last 7 days,1408,1274,0.905,,,,[],https://account.beacons.ai/,2026-07-22T08:14:25-04:00,2026-07-22,73,64
 17,lady-sublime-beacons,beacons,Beacons,,Last 7 days,1467,1348,0.919,,,,[],https://account.beacons.ai/account/home/insights,2026-07-23T08:14:04-04:00,2026-07-23,59,74
+18,lady-sublime-beacons,beacons,Beacons,,Last 7 days,1875,1719,0.917,,,,[],https://account.beacons.ai/account/home/insights,2026-07-24T08:13:02-04:00,2026-07-24,408,371
