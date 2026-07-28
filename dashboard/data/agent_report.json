@@ -3,9 +3,9 @@
   "contract_name": "social_media_dashboard.agent_report",
   "schema_version": "1.0.0",
   "report_type": "daily_source_health",
-  "run_id": "20260727T121507Z-fd85dfd7",
-  "generated_at": "2026-07-27T08:15:07-04:00",
-  "report_date": "2026-07-27",
+  "run_id": "20260728T120506Z-115c0061",
+  "generated_at": "2026-07-28T08:05:35-04:00",
+  "report_date": "2026-07-28",
   "timezone": "America/New_York",
   "freshness_policy": {
     "rule": "same_day_snapshot_and_successful_event",
@@ -15,39 +15,39 @@
   "overall_status": "partial",
   "coverage": {
     "followers": {
-      "current": 12,
+      "current": 10,
       "required": 13,
-      "missing": 1,
+      "missing": 3,
       "status": "partial"
     },
     "analytics": {
-      "current": 7,
+      "current": 4,
       "required": 8,
-      "missing": 1,
+      "missing": 4,
       "status": "partial"
     },
     "combined": {
-      "current": 19,
+      "current": 14,
       "required": 21,
-      "missing": 2,
+      "missing": 7,
       "status": "partial"
     }
   },
   "kpis": [
     {
       "metric_id": "total_followers",
-      "value": 187342,
+      "value": 187713,
       "unit": "followers",
       "definition": "Sum of the latest available follower counts across required follower lanes; accounts are not deduplicated.",
       "completeness": {
         "status": "partial",
-        "current": 12,
+        "current": 10,
         "required": 13
       }
     },
     {
       "metric_id": "organic_previous_snapshot_gain",
-      "value": 580,
+      "value": 418,
       "unit": "followers_change",
       "definition": "Follower change since each account's previous snapshot, excluding newly tracked audience.",
       "completeness": {
@@ -58,7 +58,7 @@
     },
     {
       "metric_id": "gain_7d",
-      "value": 2834,
+      "value": 2715,
       "unit": "followers_change",
       "definition": "Organic follower change across accounts with usable seven-day history.",
       "completeness": {
@@ -69,7 +69,7 @@
     },
     {
       "metric_id": "gain_30d",
-      "value": 3684,
+      "value": 3790,
       "unit": "followers_change",
       "definition": "Organic follower change across accounts with usable thirty-day history.",
       "completeness": {
@@ -85,13 +85,13 @@
       "account_id": "lady-sublime-modelcentro",
       "category": "analytics",
       "source_type": "ahrefs",
-      "latest_event_id": 798,
+      "latest_event_id": 819,
       "latest_snapshot_id": 18,
-      "status": "ok",
-      "value_state": "current",
-      "snapshot_age_days": 0,
+      "status": "not_attempted",
+      "value_state": "carried_forward",
+      "snapshot_age_days": 1,
       "latest_success_at": "2026-07-27T08:14:40-04:00",
-      "latest_attempt_at": "2026-07-27T08:14:40-04:00",
+      "latest_attempt_at": "2026-07-28T08:05:23-04:00",
       "collection_mode": "real_chrome"
     },
     {
@@ -99,13 +99,13 @@
       "account_id": "lady-sublime-mymember",
       "category": "analytics",
       "source_type": "ahrefs",
-      "latest_event_id": 794,
+      "latest_event_id": 820,
       "latest_snapshot_id": 6,
       "status": "pending_setup",
       "value_state": "carried_forward",
-      "snapshot_age_days": 15,
+      "snapshot_age_days": 16,
       "latest_success_at": "2026-07-12T17:48:38-04:00",
-      "latest_attempt_at": "2026-07-27T08:07:18-04:00",
+      "latest_attempt_at": "2026-07-28T08:05:23-04:00",
       "collection_mode": "pending_setup"
     },
     {
@@ -113,13 +113,13 @@
       "account_id": "lady-sublime-beacons",
       "category": "analytics",
       "source_type": "beacons_social",
-      "latest_event_id": 796,
+      "latest_event_id": 817,
       "latest_snapshot_id": 15,
-      "status": "ok",
-      "value_state": "current",
-      "snapshot_age_days": 0,
+      "status": "not_attempted",
+      "value_state": "carried_forward",
+      "snapshot_age_days": 1,
       "latest_success_at": "2026-07-27T08:11:45-04:00",
-      "latest_attempt_at": "2026-07-27T08:11:45-04:00",
+      "latest_attempt_at": "2026-07-28T08:05:23-04:00",
       "collection_mode": "real_chrome"
     },
     {
@@ -127,13 +127,13 @@
       "account_id": "lady-sublime-beacons",
       "category": "analytics",
       "source_type": "ga4",
-      "latest_event_id": 777,
-      "latest_snapshot_id": 94,
+      "latest_event_id": 803,
+      "latest_snapshot_id": 98,
       "status": "ok",
       "value_state": "current",
       "snapshot_age_days": 0,
-      "latest_success_at": "2026-07-27T08:07:05-04:00",
-      "latest_attempt_at": "2026-07-27T08:07:05-04:00",
+      "latest_success_at": "2026-07-28T08:05:07-04:00",
+      "latest_attempt_at": "2026-07-28T08:05:07-04:00",
       "collection_mode": "automatic"
     },
     {
@@ -141,13 +141,13 @@
       "account_id": "lady-sublime-clips4sale",
       "category": "analytics",
       "source_type": "ga4",
-      "latest_event_id": 778,
-      "latest_snapshot_id": 95,
+      "latest_event_id": 804,
+      "latest_snapshot_id": 99,
       "status": "ok",
       "value_state": "current",
       "snapshot_age_days": 0,
-      "latest_success_at": "2026-07-27T08:07:09-04:00",
-      "latest_attempt_at": "2026-07-27T08:07:09-04:00",
+      "latest_success_at": "2026-07-28T08:05:13-04:00",
+      "latest_attempt_at": "2026-07-28T08:05:13-04:00",
       "collection_mode": "automatic"
     },
     {
@@ -155,13 +155,13 @@
       "account_id": "lady-sublime-modelcentro",
       "category": "analytics",
       "source_type": "ga4",
-      "latest_event_id": 779,
-      "latest_snapshot_id": 96,
+      "latest_event_id": 805,
+      "latest_snapshot_id": 100,
       "status": "ok",
       "value_state": "current",
       "snapshot_age_days": 0,
-      "latest_success_at": "2026-07-27T08:07:12-04:00",
-      "latest_attempt_at": "2026-07-27T08:07:12-04:00",
+      "latest_success_at": "2026-07-28T08:05:16-04:00",
+      "latest_attempt_at": "2026-07-28T08:05:16-04:00",
       "collection_mode": "automatic"
     },
     {
@@ -169,13 +169,13 @@
       "account_id": "lady-sublime-mymember",
       "category": "analytics",
       "source_type": "ga4",
-      "latest_event_id": 780,
-      "latest_snapshot_id": 97,
+      "latest_event_id": 806,
+      "latest_snapshot_id": 101,
       "status": "ok",
       "value_state": "current",
       "snapshot_age_days": 0,
-      "latest_success_at": "2026-07-27T08:07:15-04:00",
-      "latest_attempt_at": "2026-07-27T08:07:15-04:00",
+      "latest_success_at": "2026-07-28T08:05:20-04:00",
+      "latest_attempt_at": "2026-07-28T08:05:20-04:00",
       "collection_mode": "automatic"
     },
     {
@@ -183,13 +183,13 @@
       "account_id": "lady-sublime-beacons",
       "category": "analytics",
       "source_type": "link_analytics",
-      "latest_event_id": 797,
+      "latest_event_id": 816,
       "latest_snapshot_id": 20,
-      "status": "ok",
-      "value_state": "current",
-      "snapshot_age_days": 0,
+      "status": "not_attempted",
+      "value_state": "carried_forward",
+      "snapshot_age_days": 1,
       "latest_success_at": "2026-07-27T08:12:10-04:00",
-      "latest_attempt_at": "2026-07-27T08:12:10-04:00",
+      "latest_attempt_at": "2026-07-28T08:05:23-04:00",
       "collection_mode": "real_chrome"
     },
     {
@@ -197,13 +197,13 @@
       "account_id": "lady-sublime-bluesky",
       "category": "follower",
       "source_type": "bluesky",
-      "latest_event_id": 786,
-      "latest_snapshot_id": 504,
+      "latest_event_id": 812,
+      "latest_snapshot_id": 515,
       "status": "ok",
       "value_state": "current",
       "snapshot_age_days": 0,
-      "latest_success_at": "2026-07-27T08:07:39-04:00",
-      "latest_attempt_at": "2026-07-27T08:07:39-04:00",
+      "latest_success_at": "2026-07-28T08:05:32-04:00",
+      "latest_attempt_at": "2026-07-28T08:05:32-04:00",
       "collection_mode": "automatic"
     },
     {
@@ -211,13 +211,13 @@
       "account_id": "lady-sublime-clips4sale",
       "category": "follower",
       "source_type": "clips4sale",
-      "latest_event_id": 787,
-      "latest_snapshot_id": 505,
+      "latest_event_id": 813,
+      "latest_snapshot_id": 516,
       "status": "ok",
       "value_state": "current",
       "snapshot_age_days": 0,
-      "latest_success_at": "2026-07-27T08:07:39-04:00",
-      "latest_attempt_at": "2026-07-27T08:07:39-04:00",
+      "latest_success_at": "2026-07-28T08:05:32-04:00",
+      "latest_attempt_at": "2026-07-28T08:05:32-04:00",
       "collection_mode": "automatic"
     },
     {
@@ -225,13 +225,13 @@
       "account_id": "lady-sublime-curvage",
       "category": "follower",
       "source_type": "curvage",
-      "latest_event_id": 795,
+      "latest_event_id": 815,
       "latest_snapshot_id": 507,
-      "status": "ok",
-      "value_state": "current",
-      "snapshot_age_days": 0,
+      "status": "error",
+      "value_state": "carried_forward",
+      "snapshot_age_days": 1,
       "latest_success_at": "2026-07-27T08:10:52-04:00",
-      "latest_attempt_at": "2026-07-27T08:10:52-04:00",
+      "latest_attempt_at": "2026-07-28T08:05:34-04:00",
       "collection_mode": "automatic_then_real_chrome"
     },
     {
@@ -239,13 +239,13 @@
       "account_id": "lady-sublime-facebook-page",
       "category": "follower",
       "source_type": "facebook",
-      "latest_event_id": 782,
-      "latest_snapshot_id": 500,
+      "latest_event_id": 808,
+      "latest_snapshot_id": 511,
       "status": "ok",
       "value_state": "current",
       "snapshot_age_days": 0,
-      "latest_success_at": "2026-07-27T08:07:20-04:00",
-      "latest_attempt_at": "2026-07-27T08:07:20-04:00",
+      "latest_success_at": "2026-07-28T08:05:27-04:00",
+      "latest_attempt_at": "2026-07-28T08:05:27-04:00",
       "collection_mode": "automatic"
     },
     {
@@ -253,13 +253,13 @@
       "account_id": "lady-sublime-feabie",
       "category": "follower",
       "source_type": "feabie",
-      "latest_event_id": 776,
+      "latest_event_id": 801,
       "latest_snapshot_id": 498,
-      "status": "ok",
-      "value_state": "current",
-      "snapshot_age_days": 0,
+      "status": "needs_login",
+      "value_state": "carried_forward",
+      "snapshot_age_days": 1,
       "latest_success_at": "2026-07-27T08:06:46-04:00",
-      "latest_attempt_at": "2026-07-27T08:06:46-04:00",
+      "latest_attempt_at": "2026-07-28T08:03:22-04:00",
       "collection_mode": "persistent_browser_then_real_chrome"
     },
     {
@@ -267,13 +267,13 @@
       "account_id": "girlfriend-instagram",
       "category": "follower",
       "source_type": "instagram",
-      "latest_event_id": 781,
-      "latest_snapshot_id": 499,
+      "latest_event_id": 807,
+      "latest_snapshot_id": 510,
       "status": "ok",
       "value_state": "current",
       "snapshot_age_days": 0,
-      "latest_success_at": "2026-07-27T08:07:18-04:00",
-      "latest_attempt_at": "2026-07-27T08:07:18-04:00",
+      "latest_success_at": "2026-07-28T08:05:23-04:00",
+      "latest_attempt_at": "2026-07-28T08:05:23-04:00",
       "collection_mode": "automatic"
     },
     {
@@ -281,13 +281,13 @@
       "account_id": "lady-sublime-manyvids",
       "category": "follower",
       "source_type": "manyvids",
-      "latest_event_id": 788,
-      "latest_snapshot_id": 506,
+      "latest_event_id": 814,
+      "latest_snapshot_id": 517,
       "status": "ok",
       "value_state": "current",
       "snapshot_age_days": 0,
-      "latest_success_at": "2026-07-27T08:07:40-04:00",
-      "latest_attempt_at": "2026-07-27T08:07:40-04:00",
+      "latest_success_at": "2026-07-28T08:05:33-04:00",
+      "latest_attempt_at": "2026-07-28T08:05:33-04:00",
       "collection_mode": "automatic"
     },
     {
@@ -295,13 +295,13 @@
       "account_id": "lady-sublime-onlyfans",
       "category": "follower",
       "source_type": "onlyfans",
-      "latest_event_id": 792,
+      "latest_event_id": 818,
       "latest_snapshot_id": 435,
       "status": "awaiting_manual",
       "value_state": "carried_forward",
-      "snapshot_age_days": 7,
+      "snapshot_age_days": 8,
       "latest_success_at": "2026-07-20T13:54:06-04:00",
-      "latest_attempt_at": "2026-07-27T08:07:18-04:00",
+      "latest_attempt_at": "2026-07-28T08:05:23-04:00",
       "collection_mode": "manual"
     },
     {
@@ -309,13 +309,13 @@
       "account_id": "lady-sublime-reddit-profile",
       "category": "follower",
       "source_type": "reddit",
-      "latest_event_id": 775,
-      "latest_snapshot_id": 497,
+      "latest_event_id": 802,
+      "latest_snapshot_id": 509,
       "status": "ok",
       "value_state": "current",
       "snapshot_age_days": 0,
-      "latest_success_at": "2026-07-27T08:06:27-04:00",
-      "latest_attempt_at": "2026-07-27T08:06:27-04:00",
+      "latest_success_at": "2026-07-28T08:04:18-04:00",
+      "latest_attempt_at": "2026-07-28T08:04:18-04:00",
       "collection_mode": "persistent_browser_then_real_chrome"
     },
     {
@@ -323,13 +323,13 @@
       "account_id": "lady-sublime-threads",
       "category": "follower",
       "source_type": "threads",
-      "latest_event_id": 773,
-      "latest_snapshot_id": 496,
+      "latest_event_id": 800,
+      "latest_snapshot_id": 508,
       "status": "ok",
       "value_state": "current",
       "snapshot_age_days": 0,
-      "latest_success_at": "2026-07-27T08:04:43-04:00",
-      "latest_attempt_at": "2026-07-27T08:04:43-04:00",
+      "latest_success_at": "2026-07-28T08:03:20-04:00",
+      "latest_attempt_at": "2026-07-28T08:03:20-04:00",
       "collection_mode": "persistent_browser"
     },
     {
@@ -337,13 +337,13 @@
       "account_id": "girlfriend-tiktok",
       "category": "follower",
       "source_type": "tiktok",
-      "latest_event_id": 783,
-      "latest_snapshot_id": 501,
+      "latest_event_id": 809,
+      "latest_snapshot_id": 512,
       "status": "ok",
       "value_state": "current",
       "snapshot_age_days": 0,
-      "latest_success_at": "2026-07-27T08:07:38-04:00",
-      "latest_attempt_at": "2026-07-27T08:07:38-04:00",
+      "latest_success_at": "2026-07-28T08:05:31-04:00",
+      "latest_attempt_at": "2026-07-28T08:05:31-04:00",
       "collection_mode": "automatic"
     },
     {
@@ -351,13 +351,13 @@
       "account_id": "girlfriend-x",
       "category": "follower",
       "source_type": "x",
-      "latest_event_id": 785,
-      "latest_snapshot_id": 503,
+      "latest_event_id": 811,
+      "latest_snapshot_id": 514,
       "status": "ok",
       "value_state": "current",
       "snapshot_age_days": 0,
-      "latest_success_at": "2026-07-27T08:07:38-04:00",
-      "latest_attempt_at": "2026-07-27T08:07:38-04:00",
+      "latest_success_at": "2026-07-28T08:05:32-04:00",
+      "latest_attempt_at": "2026-07-28T08:05:32-04:00",
       "collection_mode": "automatic"
     },
     {
@@ -365,17 +365,27 @@
       "account_id": "girlfriend-youtube",
       "category": "follower",
       "source_type": "youtube",
-      "latest_event_id": 784,
-      "latest_snapshot_id": 502,
+      "latest_event_id": 810,
+      "latest_snapshot_id": 513,
       "status": "ok",
       "value_state": "current",
       "snapshot_age_days": 0,
-      "latest_success_at": "2026-07-27T08:07:38-04:00",
-      "latest_attempt_at": "2026-07-27T08:07:38-04:00",
+      "latest_success_at": "2026-07-28T08:05:32-04:00",
+      "latest_attempt_at": "2026-07-28T08:05:32-04:00",
       "collection_mode": "automatic"
     }
   ],
   "exceptions": [
+    {
+      "lane_id": "analytics:ahrefs:lady-sublime-modelcentro",
+      "account_id": "lady-sublime-modelcentro",
+      "status": "not_attempted",
+      "value_state": "carried_forward",
+      "required_action": {
+        "actor": "automation",
+        "code": "run_collection"
+      }
+    },
     {
       "lane_id": "analytics:ahrefs:lady-sublime-mymember",
       "account_id": "lady-sublime-mymember",
@@ -384,6 +394,46 @@
       "required_action": {
         "actor": "user",
         "code": "complete_source_setup"
+      }
+    },
+    {
+      "lane_id": "analytics:beacons_social:lady-sublime-beacons",
+      "account_id": "lady-sublime-beacons",
+      "status": "not_attempted",
+      "value_state": "carried_forward",
+      "required_action": {
+        "actor": "automation",
+        "code": "run_collection"
+      }
+    },
+    {
+      "lane_id": "analytics:link_analytics:lady-sublime-beacons",
+      "account_id": "lady-sublime-beacons",
+      "status": "not_attempted",
+      "value_state": "carried_forward",
+      "required_action": {
+        "actor": "automation",
+        "code": "run_collection"
+      }
+    },
+    {
+      "lane_id": "follower:curvage:lady-sublime-curvage",
+      "account_id": "lady-sublime-curvage",
+      "status": "error",
+      "value_state": "carried_forward",
+      "required_action": {
+        "actor": "automation",
+        "code": "investigate_collection_error"
+      }
+    },
+    {
+      "lane_id": "follower:feabie:lady-sublime-feabie",
+      "account_id": "lady-sublime-feabie",
+      "status": "needs_login",
+      "value_state": "carried_forward",
+      "required_action": {
+        "actor": "user",
+        "code": "authenticate_source"
       }
     },
     {
@@ -404,34 +454,34 @@
       "media_type": "application/schema+json",
       "size_bytes": 9337,
       "sha256": "c33c26ea74bad51daf151d4a3dbaeeee06c897a6c8d17520a6a6614f7b201506",
-      "generated_at": "2026-07-27T08:15:07-04:00",
+      "generated_at": "2026-07-28T08:05:35-04:00",
       "validation_status": "passed"
     },
     {
       "artifact_id": "agent_source_status",
       "relative_path": "agent_source_status.csv",
       "media_type": "text/csv",
-      "size_bytes": 5683,
-      "sha256": "1dc0722371aa6f07b382459ad7de84fd5c9936f3d6ced2ac566dc10e90cf22af",
-      "generated_at": "2026-07-27T08:15:07-04:00",
+      "size_bytes": 5903,
+      "sha256": "edddc3437c5bdb8845ae2b281b273693f89d993e9f76ac19712088bc87d57925",
+      "generated_at": "2026-07-28T08:05:35-04:00",
       "validation_status": "passed"
     },
     {
       "artifact_id": "daily_source_health",
       "relative_path": "daily_source_health.csv",
       "media_type": "text/csv",
-      "size_bytes": 5160,
-      "sha256": "7ba210c8527ab41f7ae0255711f5c7afc53f49f990b1bb11faf1b295fcb26048",
-      "generated_at": "2026-07-27T08:15:07-04:00",
+      "size_bytes": 7006,
+      "sha256": "64d6a123e2fdf20b0a18ffb0a93e12a4d610314e8e97b706002bc2e07ce03592",
+      "generated_at": "2026-07-28T08:05:35-04:00",
       "validation_status": "passed"
     },
     {
       "artifact_id": "dashboard_payload",
       "relative_path": "dashboard_payload.json",
       "media_type": "application/json",
-      "size_bytes": 1810047,
-      "sha256": "efa0db9e6f7ae2505b2dd4ed8a8dbd213562b6273ba635360e2232480c1f5a75",
-      "generated_at": "2026-07-27T08:15:07-04:00",
+      "size_bytes": 1920790,
+      "sha256": "a5ccf05a31c2df05be0dcb36d881f5c98f2ccdc6386ebf086d30caeeacd58187",
+      "generated_at": "2026-07-28T08:05:35-04:00",
       "validation_status": "passed"
     }
   ],
