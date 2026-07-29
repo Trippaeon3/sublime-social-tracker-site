@@ -1,22 +1,42 @@
 account_id,platform,platform_key,handle,latest_success,latest_event_id,latest_snapshot_id,daily_required,latest_attempt,status,error_message,status_detail,updated_today,snapshot_age_days,value_state,collection_mode,category,source_type
-girlfriend-instagram,Instagram,instagram,officialladysublime,2026-07-28T08:05:23-04:00,807,510,True,2026-07-28T08:05:23-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,follower,instagram
-girlfriend-x,X,x,LadySublimeBBW,2026-07-28T08:05:32-04:00,811,514,True,2026-07-28T08:05:32-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,follower,x
-lady-sublime-facebook-page,Facebook Page,facebook,Lady Sublime,2026-07-28T08:05:27-04:00,808,511,True,2026-07-28T08:05:27-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,follower,facebook
-lady-sublime-threads,Threads,threads,officialladysublime,2026-07-28T08:03:20-04:00,800,508,True,2026-07-28T08:03:20-04:00,ok,,Exact source data was collected today.,True,0,current,persistent_browser,follower,threads
-lady-sublime-onlyfans,OnlyFans,onlyfans,LadySublimeSSBBW,2026-07-20T13:54:06-04:00,818,435,True,2026-07-28T08:05:23-04:00,awaiting_manual,No exact user-supplied value was recorded for 2026-07-28; the last-good value is carried forward.,No exact user-supplied value was recorded for 2026-07-28; the last-good value is carried forward.,False,8,carried_forward,manual,follower,onlyfans
-lady-sublime-curvage,Curvage,curvage,https://curvage.org/forum/index.php?/profile/212446-ladysublimessbbw/,2026-07-28T08:09:22-04:00,821,518,True,2026-07-28T08:09:22-04:00,ok,,Exact source data was collected today.,True,0,current,automatic_then_real_chrome,follower,curvage
-lady-sublime-reddit-profile,Reddit Profile,reddit,LadySublimeSSBBW,2026-07-28T08:04:18-04:00,802,509,True,2026-07-28T08:04:18-04:00,ok,,Exact source data was collected today.,True,0,current,persistent_browser_then_real_chrome,follower,reddit
-girlfriend-youtube,YouTube,youtube,@ladysublimessbbw,2026-07-28T08:05:32-04:00,810,513,True,2026-07-28T08:05:32-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,follower,youtube
-girlfriend-tiktok,TikTok,tiktok,ladysublimessbbw,2026-07-28T08:05:31-04:00,809,512,True,2026-07-28T08:05:31-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,follower,tiktok
-lady-sublime-manyvids,ManyVids,manyvids,LadySublimeSSBBW,2026-07-28T08:05:33-04:00,814,517,True,2026-07-28T08:05:33-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,follower,manyvids
-lady-sublime-clips4sale,Clips4Sale,clips4sale,Lady Sublime SSBBW,2026-07-28T08:05:32-04:00,813,516,True,2026-07-28T08:05:32-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,follower,clips4sale
-lady-sublime-feabie,Feabie,feabie,LadySublimeSSBBW,2026-07-27T08:06:46-04:00,801,498,True,2026-07-28T08:03:22-04:00,needs_login,Feabie requires a fresh browser login.,Feabie requires a fresh browser login.,False,1,carried_forward,persistent_browser_then_real_chrome,follower,feabie
-lady-sublime-bluesky,Bluesky,bluesky,ladysublimessbbw.bsky.social,2026-07-28T08:05:32-04:00,812,515,True,2026-07-28T08:05:32-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,follower,bluesky
-lady-sublime-beacons:ga4,Beacons GA4,ga4,Lady Sublime Beacons / Link in Bio,2026-07-28T08:05:07-04:00,803,98,True,2026-07-28T08:05:07-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,analytics,ga4
-lady-sublime-beacons,Beacons Link in Bio,link_analytics,beacons,2026-07-28T08:13:45-04:00,823,21,True,2026-07-28T08:13:45-04:00,ok,,Exact source data was collected today.,True,0,current,real_chrome,analytics,link_analytics
-lady-sublime-beacons:beacons_social,Beacons Social Analytics,beacons_social,beacons,2026-07-28T08:13:38-04:00,822,16,True,2026-07-28T08:13:38-04:00,ok,,Exact source data was collected today.,True,0,current,real_chrome,analytics,beacons_social
-lady-sublime-clips4sale:ga4,Clips4Sale GA4,ga4,Lady Sublime C4S,2026-07-28T08:05:13-04:00,804,99,True,2026-07-28T08:05:13-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,analytics,ga4
-lady-sublime-modelcentro:ga4,ModelCentro GA4,ga4,Lady Sublime ModelCentro,2026-07-28T08:05:16-04:00,805,100,True,2026-07-28T08:05:16-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,analytics,ga4
-lady-sublime-modelcentro:ahrefs,ModelCentro Ahrefs,ahrefs,ahrefs,2026-07-27T08:14:40-04:00,819,18,True,2026-07-28T08:05:23-04:00,not_attempted,No real_chrome collection attempt was recorded for 2026-07-28; the last-good value is carried forward.,No real_chrome collection attempt was recorded for 2026-07-28; the last-good value is carried forward.,False,1,carried_forward,real_chrome,analytics,ahrefs
-lady-sublime-mymember:ga4,MyMember GA4,ga4,Lady Sublime MyMember,2026-07-28T08:05:20-04:00,806,101,True,2026-07-28T08:05:20-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,analytics,ga4
-lady-sublime-mymember:ahrefs,MyMember Ahrefs,ahrefs,ahrefs,2026-07-12T17:48:38-04:00,820,6,True,2026-07-28T08:05:23-04:00,pending_setup,The source is still pending setup on 2026-07-28; the last-good value is carried forward.,The source is still pending setup on 2026-07-28; the last-good value is carried forward.,False,16,carried_forward,pending_setup,analytics,ahrefs
+girlfriend-instagram,Instagram,instagram,officialladysublime,2026-07-29T08:06:29-04:00,832,521,True,2026-07-29T08:06:29-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,follower,instagram
+girlfriend-x,X,x,LadySublimeBBW,2026-07-29T08:06:36-04:00,836,525,True,2026-07-29T08:06:36-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,follower,x
+lady-sublime-facebook-page,Facebook Page,facebook,Lady Sublime,2026-07-29T08:06:32-04:00,833,522,True,2026-07-29T08:06:32-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,follower,facebook
+lady-sublime-threads,Threads,threads,officialladysublime,2026-07-29T08:05:09-04:00,825,519,True,2026-07-29T08:05:09-04:00,ok,,Exact source data was collected today.,True,0,current,persistent_browser,follower,threads
+lady-sublime-onlyfans,OnlyFans,onlyfans,LadySublimeSSBBW,2026-07-20T13:54:06-04:00,843,435,True,2026-07-29T08:06:29-04:00,awaiting_manual,No exact user-supplied value was recorded for 2026-07-29; the last-good value is carried forward.,No exact user-supplied value was recorded for 2026-07-29; the last-good value is carried forward.,False,9,carried_forward,manual,follower,onlyfans
+lady-sublime-curvage,Curvage,curvage,https://curvage.org/forum/index.php?/profile/212446-ladysublimessbbw/,2026-07-28T08:09:22-04:00,840,518,True,2026-07-29T08:06:38-04:00,error,"HTTP 403 from https://curvage.org/forum/index.php?/profile/212446-ladysublimessbbw/: <!DOCTYPE html>
+<html lang=""en-US"" dir=""ltr"">
+	<head>
+		<meta charset=""utf-8"">
+        
+            
+
+<!-- IPS Data Layer Start -->
+<script>
+    /* IPS Configuration */
+    const IpsDataLayerConfig = {""_events"":{""account_login"":{""enabled"":true,""formatted_name"":""account_login""},""account_logout"":{""enabled"":true,""formatted_name"":""account_logout""},""account_register"":{""enabled"":true,""formatted_name"":""account_register""},""content_comment"":{""enabled"":true,""formatted_name"":""content_comment""},""content_cre","HTTP 403 from https://curvage.org/forum/index.php?/profile/212446-ladysublimessbbw/: <!DOCTYPE html>
+<html lang=""en-US"" dir=""ltr"">
+	<head>
+		<meta charset=""utf-8"">
+        
+            
+
+<!-- IPS Data Layer Start -->
+<script>
+    /* IPS Configuration */
+    const IpsDataLayerConfig = {""_events"":{""account_login"":{""enabled"":true,""formatted_name"":""account_login""},""account_logout"":{""enabled"":true,""formatted_name"":""account_logout""},""account_register"":{""enabled"":true,""formatted_name"":""account_register""},""content_comment"":{""enabled"":true,""formatted_name"":""content_comment""},""content_cre",False,1,carried_forward,automatic_then_real_chrome,follower,curvage
+lady-sublime-reddit-profile,Reddit Profile,reddit,LadySublimeSSBBW,2026-07-29T08:06:00-04:00,827,520,True,2026-07-29T08:06:00-04:00,ok,,Exact source data was collected today.,True,0,current,persistent_browser_then_real_chrome,follower,reddit
+girlfriend-youtube,YouTube,youtube,@ladysublimessbbw,2026-07-29T08:06:36-04:00,835,524,True,2026-07-29T08:06:36-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,follower,youtube
+girlfriend-tiktok,TikTok,tiktok,ladysublimessbbw,2026-07-29T08:06:36-04:00,834,523,True,2026-07-29T08:06:36-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,follower,tiktok
+lady-sublime-manyvids,ManyVids,manyvids,LadySublimeSSBBW,2026-07-29T08:06:37-04:00,839,528,True,2026-07-29T08:06:37-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,follower,manyvids
+lady-sublime-clips4sale,Clips4Sale,clips4sale,Lady Sublime SSBBW,2026-07-29T08:06:37-04:00,838,527,True,2026-07-29T08:06:37-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,follower,clips4sale
+lady-sublime-feabie,Feabie,feabie,LadySublimeSSBBW,2026-07-27T08:06:46-04:00,826,498,True,2026-07-29T08:05:11-04:00,needs_login,Feabie requires a fresh browser login.,Feabie requires a fresh browser login.,False,2,carried_forward,persistent_browser_then_real_chrome,follower,feabie
+lady-sublime-bluesky,Bluesky,bluesky,ladysublimessbbw.bsky.social,2026-07-29T08:06:37-04:00,837,526,True,2026-07-29T08:06:37-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,follower,bluesky
+lady-sublime-beacons:ga4,Beacons GA4,ga4,Lady Sublime Beacons / Link in Bio,2026-07-29T08:06:18-04:00,828,102,True,2026-07-29T08:06:18-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,analytics,ga4
+lady-sublime-beacons,Beacons Link in Bio,link_analytics,beacons,2026-07-28T08:13:45-04:00,841,21,True,2026-07-29T08:06:29-04:00,not_attempted,No real_chrome collection attempt was recorded for 2026-07-29; the last-good value is carried forward.,No real_chrome collection attempt was recorded for 2026-07-29; the last-good value is carried forward.,False,1,carried_forward,real_chrome,analytics,link_analytics
+lady-sublime-beacons:beacons_social,Beacons Social Analytics,beacons_social,beacons,2026-07-28T08:13:38-04:00,842,16,True,2026-07-29T08:06:29-04:00,not_attempted,No real_chrome collection attempt was recorded for 2026-07-29; the last-good value is carried forward.,No real_chrome collection attempt was recorded for 2026-07-29; the last-good value is carried forward.,False,1,carried_forward,real_chrome,analytics,beacons_social
+lady-sublime-clips4sale:ga4,Clips4Sale GA4,ga4,Lady Sublime C4S,2026-07-29T08:06:21-04:00,829,103,True,2026-07-29T08:06:21-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,analytics,ga4
+lady-sublime-modelcentro:ga4,ModelCentro GA4,ga4,Lady Sublime ModelCentro,2026-07-29T08:06:24-04:00,830,104,True,2026-07-29T08:06:24-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,analytics,ga4
+lady-sublime-modelcentro:ahrefs,ModelCentro Ahrefs,ahrefs,ahrefs,2026-07-27T08:14:40-04:00,844,18,True,2026-07-29T08:06:29-04:00,not_attempted,No real_chrome collection attempt was recorded for 2026-07-29; the last-good value is carried forward.,No real_chrome collection attempt was recorded for 2026-07-29; the last-good value is carried forward.,False,2,carried_forward,real_chrome,analytics,ahrefs
+lady-sublime-mymember:ga4,MyMember GA4,ga4,Lady Sublime MyMember,2026-07-29T08:06:27-04:00,831,105,True,2026-07-29T08:06:27-04:00,ok,,Exact source data was collected today.,True,0,current,automatic,analytics,ga4
+lady-sublime-mymember:ahrefs,MyMember Ahrefs,ahrefs,ahrefs,2026-07-12T17:48:38-04:00,845,6,True,2026-07-29T08:06:29-04:00,pending_setup,The source is still pending setup on 2026-07-29; the last-good value is carried forward.,The source is still pending setup on 2026-07-29; the last-good value is carried forward.,False,17,carried_forward,pending_setup,analytics,ahrefs
