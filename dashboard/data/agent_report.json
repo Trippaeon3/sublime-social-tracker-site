@@ -3,8 +3,8 @@
   "contract_name": "social_media_dashboard.agent_report",
   "schema_version": "1.0.0",
   "report_type": "daily_source_health",
-  "run_id": "20260804T122131Z-0e94471c",
-  "generated_at": "2026-08-04T08:22:19-04:00",
+  "run_id": "20260804T123836Z-2c728a54",
+  "generated_at": "2026-08-04T08:38:36-04:00",
   "report_date": "2026-08-04",
   "timezone": "America/New_York",
   "freshness_policy": {
@@ -15,39 +15,39 @@
   "overall_status": "partial",
   "coverage": {
     "followers": {
-      "current": 9,
+      "current": 10,
       "required": 13,
-      "missing": 4,
+      "missing": 3,
       "status": "partial"
     },
     "analytics": {
-      "current": 4,
+      "current": 5,
       "required": 8,
-      "missing": 4,
+      "missing": 3,
       "status": "partial"
     },
     "combined": {
-      "current": 13,
+      "current": 15,
       "required": 21,
-      "missing": 8,
+      "missing": 6,
       "status": "partial"
     }
   },
   "kpis": [
     {
       "metric_id": "total_followers",
-      "value": 189237,
+      "value": 189242,
       "unit": "followers",
       "definition": "Sum of the latest available follower counts across required follower lanes; accounts are not deduplicated.",
       "completeness": {
         "status": "partial",
-        "current": 9,
+        "current": 10,
         "required": 13
       }
     },
     {
       "metric_id": "organic_previous_snapshot_gain",
-      "value": 190,
+      "value": 180,
       "unit": "followers_change",
       "definition": "Follower change since each account's previous snapshot, excluding newly tracked audience.",
       "completeness": {
@@ -69,7 +69,7 @@
     },
     {
       "metric_id": "gain_30d",
-      "value": 6963,
+      "value": 6956,
       "unit": "followers_change",
       "definition": "Organic follower change across accounts with usable thirty-day history.",
       "completeness": {
@@ -85,13 +85,13 @@
       "account_id": "lady-sublime-modelcentro",
       "category": "analytics",
       "source_type": "ahrefs",
-      "latest_event_id": 984,
-      "latest_snapshot_id": 20,
-      "status": "not_attempted",
-      "value_state": "carried_forward",
-      "snapshot_age_days": 1,
-      "latest_success_at": "2026-08-03T08:16:56-04:00",
-      "latest_attempt_at": "2026-08-04T08:22:11-04:00",
+      "latest_event_id": 987,
+      "latest_snapshot_id": 21,
+      "status": "ok",
+      "value_state": "current",
+      "snapshot_age_days": 0,
+      "latest_success_at": "2026-08-04T08:38:07-04:00",
+      "latest_attempt_at": "2026-08-04T08:38:07-04:00",
       "collection_mode": "real_chrome"
     },
     {
@@ -225,13 +225,13 @@
       "account_id": "lady-sublime-curvage",
       "category": "follower",
       "source_type": "curvage",
-      "latest_event_id": 980,
-      "latest_snapshot_id": 578,
-      "status": "error",
-      "value_state": "carried_forward",
-      "snapshot_age_days": 1,
-      "latest_success_at": "2026-08-03T08:11:59-04:00",
-      "latest_attempt_at": "2026-08-04T08:22:18-04:00",
+      "latest_event_id": 986,
+      "latest_snapshot_id": 588,
+      "status": "ok",
+      "value_state": "current",
+      "snapshot_age_days": 0,
+      "latest_success_at": "2026-08-04T08:34:48-04:00",
+      "latest_attempt_at": "2026-08-04T08:34:48-04:00",
       "collection_mode": "automatic_then_real_chrome"
     },
     {
@@ -377,16 +377,6 @@
   ],
   "exceptions": [
     {
-      "lane_id": "analytics:ahrefs:lady-sublime-modelcentro",
-      "account_id": "lady-sublime-modelcentro",
-      "status": "not_attempted",
-      "value_state": "carried_forward",
-      "required_action": {
-        "actor": "automation",
-        "code": "run_collection"
-      }
-    },
-    {
       "lane_id": "analytics:ahrefs:lady-sublime-mymember",
       "account_id": "lady-sublime-mymember",
       "status": "pending_setup",
@@ -414,16 +404,6 @@
       "required_action": {
         "actor": "automation",
         "code": "run_collection"
-      }
-    },
-    {
-      "lane_id": "follower:curvage:lady-sublime-curvage",
-      "account_id": "lady-sublime-curvage",
-      "status": "error",
-      "value_state": "carried_forward",
-      "required_action": {
-        "actor": "automation",
-        "code": "investigate_collection_error"
       }
     },
     {
@@ -464,34 +444,34 @@
       "media_type": "application/schema+json",
       "size_bytes": 9337,
       "sha256": "c33c26ea74bad51daf151d4a3dbaeeee06c897a6c8d17520a6a6614f7b201506",
-      "generated_at": "2026-08-04T08:23:04-04:00",
+      "generated_at": "2026-08-04T08:38:37-04:00",
       "validation_status": "passed"
     },
     {
       "artifact_id": "agent_source_status",
       "relative_path": "agent_source_status.csv",
       "media_type": "text/csv",
-      "size_bytes": 5956,
-      "sha256": "d7d45089d897101dea052533399d1af563d12c0be9cc8003177313103e7b55f7",
-      "generated_at": "2026-08-04T08:23:04-04:00",
+      "size_bytes": 5864,
+      "sha256": "c3deaa7dc62b8c1d8f65b52e060030d9b38d07f0fe34012bf9fb28c735b22f9b",
+      "generated_at": "2026-08-04T08:38:37-04:00",
       "validation_status": "passed"
     },
     {
       "artifact_id": "daily_source_health",
       "relative_path": "daily_source_health.csv",
       "media_type": "text/csv",
-      "size_bytes": 7461,
-      "sha256": "21b7d0cc2724eafdfde42ff0babb45f1559692dd271dddafecf4af45e5a0c3c7",
-      "generated_at": "2026-08-04T08:22:30-04:00",
+      "size_bytes": 6045,
+      "sha256": "1d62c724f691826f5e29da1cf332c4ef02cf7d935259e7d00b729a98789d432b",
+      "generated_at": "2026-08-04T08:38:37-04:00",
       "validation_status": "passed"
     },
     {
       "artifact_id": "dashboard_payload",
       "relative_path": "dashboard_payload.json",
       "media_type": "application/json",
-      "size_bytes": 2339097,
-      "sha256": "dcbefb20f7dc6174bb1b25d86be3f4c98e7a98e122a5d375f5229a1010c96b42",
-      "generated_at": "2026-08-04T08:22:58-04:00",
+      "size_bytes": 2336840,
+      "sha256": "82e95d6fc8925d8faa5eb8e32c9247ee68eb5af2a68868600541b57992ca86de",
+      "generated_at": "2026-08-04T08:38:37-04:00",
       "validation_status": "passed"
     }
   ],
