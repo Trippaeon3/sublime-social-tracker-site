@@ -3,8 +3,8 @@
   "contract_name": "social_media_dashboard.agent_report",
   "schema_version": "1.0.0",
   "report_type": "daily_source_health",
-  "run_id": "20261026T012023Z-b97e3e25",
-  "generated_at": "2026-10-25T21:20:23-04:00",
+  "run_id": "20261026T012238Z-1ddd1ef7",
+  "generated_at": "2026-10-25T21:22:38-04:00",
   "report_date": "2026-10-25",
   "timezone": "America/New_York",
   "freshness_policy": {
@@ -85,13 +85,13 @@
       "account_id": "lady-sublime-modelcentro",
       "category": "analytics",
       "source_type": "ahrefs",
-      "latest_event_id": 1044,
+      "latest_event_id": 1046,
       "latest_snapshot_id": 22,
-      "status": "needs_login",
+      "status": "pending_setup",
       "value_state": "carried_forward",
       "snapshot_age_days": 81,
       "latest_success_at": "2026-08-05T08:18:10-04:00",
-      "latest_attempt_at": "2026-10-25T21:14:49-04:00",
+      "latest_attempt_at": "2026-10-25T21:22:06-04:00",
       "collection_mode": "real_chrome"
     },
     {
@@ -379,11 +379,11 @@
     {
       "lane_id": "analytics:ahrefs:lady-sublime-modelcentro",
       "account_id": "lady-sublime-modelcentro",
-      "status": "needs_login",
+      "status": "pending_setup",
       "value_state": "carried_forward",
       "required_action": {
         "actor": "user",
-        "code": "authenticate_source"
+        "code": "complete_source_setup"
       }
     },
     {
@@ -404,34 +404,34 @@
       "media_type": "application/schema+json",
       "size_bytes": 9337,
       "sha256": "c33c26ea74bad51daf151d4a3dbaeeee06c897a6c8d17520a6a6614f7b201506",
-      "generated_at": "2026-10-25T21:20:23-04:00",
+      "generated_at": "2026-10-25T21:22:39-04:00",
       "validation_status": "passed"
     },
     {
       "artifact_id": "agent_source_status",
       "relative_path": "agent_source_status.csv",
       "media_type": "text/csv",
-      "size_bytes": 5706,
-      "sha256": "c8c2f6e6ef3d8ae750e1afd36f983f65c53f1ec8e6e215bc77a1de1051e428a6",
-      "generated_at": "2026-10-25T21:20:23-04:00",
+      "size_bytes": 5710,
+      "sha256": "514ec7d52d678bcdc4fecb7bbba6cfd6d728db0409d0cd95908963257601b619",
+      "generated_at": "2026-10-25T21:22:39-04:00",
       "validation_status": "passed"
     },
     {
       "artifact_id": "daily_source_health",
       "relative_path": "daily_source_health.csv",
       "media_type": "text/csv",
-      "size_bytes": 5121,
-      "sha256": "b78c8ce2c39168e930e74d280c71abd71929408c6cb0708ded7a2862012dab6a",
-      "generated_at": "2026-10-25T21:20:23-04:00",
+      "size_bytes": 5169,
+      "sha256": "b1eee97388dfa51dc5826113f2b24db22a77e51274eb3116059477e8c44d97b2",
+      "generated_at": "2026-10-25T21:22:38-04:00",
       "validation_status": "passed"
     },
     {
       "artifact_id": "dashboard_payload",
       "relative_path": "dashboard_payload.json",
       "media_type": "application/json",
-      "size_bytes": 2485247,
-      "sha256": "36c2facc17740cf9721250e33ebb8bd26cf70bfd8f7a1b8b487949ecf881ebb7",
-      "generated_at": "2026-10-25T21:20:23-04:00",
+      "size_bytes": 2485343,
+      "sha256": "17c275795594c8286e7c1a45d57880720670bdf117163677d882f50aff2f413c",
+      "generated_at": "2026-10-25T21:22:39-04:00",
       "validation_status": "passed"
     }
   ],
